@@ -12,13 +12,6 @@ public interface ReimbursementDAO {
 //    public ReimbursementStatus status(String status);
 //    public ReimbursementType type(String type);
 
-    //
-
-    public boolean updateReimbursement();
-    public boolean deleteReimbursement();
-    public ReimbursementStatus status(String status);
-    public ReimbursementType type(String type);
-
     //test change comment
 
     public boolean updateReimbursement(Reimbursement reimbursement);
@@ -30,8 +23,6 @@ public interface ReimbursementDAO {
     public List<Reimbursement> getAllReimbursementsByUsernameAndStatus(String username, int id);
     public Reimbursement getReimbursementById(int id);
 
-//manager
-//    approv/deny pending and resolved
 
 
 }
