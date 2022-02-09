@@ -1,7 +1,7 @@
 package com.revature.daos;
 
 import com.revature.model.User;
-import com.revature.model.UserType;
+import com.revature.model.UserRoles;
 import com.revature.util.ConnectionUtil;
 
 import java.sql.*;
@@ -23,7 +23,7 @@ public class UserDaoImpl implements UserDao{
             ps.setString(3, user.getFirstName());
             ps.setString(4, user.getLastName());
             ps.setString(5, user.getEmail());
-            ps.setInt(6, user.getType().ordinal());
+            ps.setInt(6, user.getRole().ordinal());
 
             int rowsAffected = ps.executeUpdate();
             if(rowsAffected == 1){
@@ -65,20 +65,13 @@ public class UserDaoImpl implements UserDao{
 
                 int typeOrdinal = rs.getInt("user_type");
                 typeOrdinal = typeOrdinal -1; //start index at position 1
-                UserType[] userTypes = UserType.values();
-                user.setType(userTypes[typeOrdinal]);
+                UserRoles[] userRole = UserRoles.values();
+                user.setType(userRole[typeOrdinal]);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return users;
-    }
-
-    @Override
-    public User getUserByType(UserType type) {
-        String sql = "select * from ers_user;";
-
-        return null;
     }
 
     @Override
@@ -102,8 +95,8 @@ public class UserDaoImpl implements UserDao{
 
                 int typeOrdinal = rs.getInt("type_id");
                 typeOrdinal = typeOrdinal - 1; // start index at position 1
-                UserType[] userTypes = UserType.values();
-                user.setType(userTypes[typeOrdinal]);
+                UserRoles[] userRole = UserRoles.values();
+                user.setType(userRole[typeOrdinal]);
 
 
                 return user;
@@ -127,7 +120,7 @@ public class UserDaoImpl implements UserDao{
             ps.setString(4, user.getFirstName());
             ps.setString(5, user.getLastName());
             ps.setString(6, user.getEmail());
-            ps.setInt(7, user.getType().ordinal());
+            ps.setInt(7, user.getRole().ordinal());
 
             //ps.setInt(7, user.getType().ordinal()+1);
 
@@ -164,8 +157,8 @@ public class UserDaoImpl implements UserDao{
                 user.setEmail(rs.getString("user_email"));
 
                 int typeOrdinal = rs.getInt("user_id" );
-                UserType[] types = UserType.values();
-                user.setType(types[typeOrdinal -1]);
+                UserRoles[] userRole = UserRoles.values();
+                user.setType(userRole[typeOrdinal -1]);
 
                 return user;
             }
