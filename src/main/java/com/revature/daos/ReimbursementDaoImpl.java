@@ -1,23 +1,24 @@
 package com.revature.daos;
 
-import com.revature.model.Reimbursement;
-import com.revature.model.ReimbursementStatus;
-import com.revature.model.ReimbursementType;
+import com.revature.model.*;
 import com.revature.util.ConnectionUtil;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ReimbursementDaoImpl implements ReimbursementDAO {
+
+
+
+//*************************************************************
+//create
     @Override
     public boolean addReimbursement(Reimbursement reimbursement) {
         String sql = "insert into ers_reimbursement (users_id, reimb_type,status_type,reimb_amount,reimb_submitted,reimb_resolved, reimb_description,reimb_receipt) " +
                 "values(?,CAST(? AS ERS_REIMBURSEMENT_TYPE),CAST(? AS ERS_REIMBURSEMENT_STATUS), ?, ?,? ,?,?)";
         try (Connection conn = ConnectionUtil.getConnection();
-            PreparedStatement ps = conn.prepareStatement(sql);){
+             PreparedStatement ps = conn.prepareStatement(sql);){
 
             ps.setInt(1, reimbursement.getUser_id());
             ps.setString(2, reimbursement.getReimbursementType().name());
@@ -41,24 +42,19 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
     }
 
 
-//*****************************************************
+//*************************************************************
 //update
     @Override
     public boolean updateReimbursement(Reimbursement reimbursement) {
-        String sql ="update ERS_REIMBURSEMENT set id = ?, ers  ";
+        String sql ="update ERS_REIMBURSEMENT reimb_resolved = ?, reimb_submitted = ?, " +
+                "where users_id = ?";
         try (Connection c = ConnectionUtil.getConnection();
              PreparedStatement ps = c.prepareStatement(sql)) {
 
-            ps.setInt(1, reimbursement.getReimbursementId());
+            ps.setBoolean(1, reimbursement.isReimbusementResolved());
+            ps.setBoolean(2, reimbursement.isReimbusementSubmitted());
+            ps.setInt(3,reimbursement.getUser_id());
 
-//            ps.setString(2, reim.getUsername());
-//            ps.setString(3, user.getPassword());
-//            ps.setString(4, user.getFirstName());
-//            ps.setString(5, user.getLastName());
-//            ps.setString(6, user.getEmail());
-//            ps.setInt(7, user.getType().ordinal());
-
-            //ps.setInt(7, user.getType().ordinal()+1);
 
             int rowsAffected = ps.executeUpdate();
 
@@ -70,9 +66,10 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
         }
         return false;
     }
-
+//*************************************************************
+//delete
     @Override
-    public boolean deleteReimbursement() {
+    public boolean deleteReimbursement(int id) {
         String sql = "delete from ERS_REIMBURSEMENT where id = ?; ";
         try (Connection c = ConnectionUtil.getConnection();
              PreparedStatement ps = c.prepareStatement(sql)) {
@@ -92,14 +89,60 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 
 
     }
-
+//*************************************************************
+//get all
     @Override
     public List<Reimbursement> getAllReimbursements() {
-        return null;
+        List <Reimbursement> reimbursements = new ArrayList<>();
+        String sql ="Select * from ERS_REIMBURSEMENT";
+
+        try(Connection c = ConnectionUtil.getConnection();
+            Statement s = c.createStatement();) {
+            ResultSet rs = s.executeQuery(sql);
+
+            while (rs.next()) {
+                Reimbursement reimb = new Reimbursement();
+
+                int id = rs.getInt("id");
+                reimb.setUser_id(id);
+
+                int typeOrdinal = rs.getInt("reimb_type");
+                typeOrdinal = typeOrdinal -1; //start index at position 1
+                ReimbursementType[] reimbType = ReimbursementType.values();
+                reimb.setReimbursementType(reimbType[typeOrdinal]);
+
+                int typeOrdinal2 = rs.getInt("status_type");
+                typeOrdinal2 = typeOrdinal2 -1; //start index at position 1
+                ReimbursementStatus[] reimbStatus = ReimbursementStatus.values();
+                reimb.setReimbursementStatus(reimbStatus[typeOrdinal]);
+
+                double amount = rs.getDouble("reimb_amount");
+                reimb.setReimbursementAmount(amount);
+
+                boolean submitted = rs.getBoolean("reimb_submitted");
+                reimb.setReimbusementSubmitted(submitted);
+
+                boolean resolved = rs.getBoolean("reimb_resolved");
+                reimb.setReimbusementResolved(resolved);
+
+                String description = rs.getString("reimb_description");
+                reimb.setDescription(description);
+
+                boolean receipt = rs.getBoolean("reimb_receipt");
+                reimb.setReimbursmentReceipt(receipt);
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return reimbursements;
+
+
+
     }
 
     @Override
-    public List<Reimbursement> getAllReimbursementsByStatus(int id) {
+    public List<Reimbursement> getAllReimbursementsByStatus(Reimbursement reimbursement) {
         return null;
     }
 
@@ -112,6 +155,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
     public Reimbursement getReimbursementById(int id) {
         return null;
     }
+
 
 //    @Override
 //    public ReimbursementStatus status(String status) {
