@@ -12,14 +12,19 @@ public interface ReimbursementDAO {
 //    public ReimbursementStatus status(String status);
 //    public ReimbursementType type(String type);
 
+    //
     public boolean addReimbursement(Reimbursement reimbursement);
     public boolean updateReimbursement(Reimbursement reimbursement);
-    public boolean deleteReimbursement();
-    public List<Reimbursement> getAllReimbursements();
-    public List<Reimbursement> getAllReimbursementsByStatus(int id);
+    public boolean deleteReimbursement();//id
+
+    //view all
+    public List<Reimbursement> getAllReimbursements();//list everything including status
+    public List<Reimbursement> getAllReimbursementsByStatus(Reimbursement reimbursement);
     public List<Reimbursement> getAllReimbursementsByUsernameAndStatus(String username, int id);
     public Reimbursement getReimbursementById(int id);
 
+//manager
+//    approv/deny pending and resolved
 
 }
 

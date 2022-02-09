@@ -41,20 +41,22 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
     }
 
 
-
+//*****************************************************
+//update
     @Override
     public boolean updateReimbursement(Reimbursement reimbursement) {
         String sql ="update ERS_REIMBURSEMENT set id = ?, ers  "
         try (Connection c = ConnectionUtil.getConnection();
              PreparedStatement ps = c.prepareStatement(sql)) {
 
-            ps.setInt(1, user.getUserId());
-            ps.setString(2, user.getUsername());
-            ps.setString(3, user.getPassword());
-            ps.setString(4, user.getFirstName());
-            ps.setString(5, user.getLastName());
-            ps.setString(6, user.getEmail());
-            ps.setInt(7, user.getType().ordinal());
+            ps.setInt(1, reimbursement.getReimbursementId());
+
+//            ps.setString(2, reim.getUsername());
+//            ps.setString(3, user.getPassword());
+//            ps.setString(4, user.getFirstName());
+//            ps.setString(5, user.getLastName());
+//            ps.setString(6, user.getEmail());
+//            ps.setInt(7, user.getType().ordinal());
 
             //ps.setInt(7, user.getType().ordinal()+1);
 
