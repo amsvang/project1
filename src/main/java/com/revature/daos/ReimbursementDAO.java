@@ -13,7 +13,7 @@ public interface ReimbursementDAO {
 //    public ReimbursementType type(String type);
 
     //test change comment
-
+    public boolean addReimbursement(Reimbursement reimbursement)
     public boolean updateReimbursement(Reimbursement reimbursement);
     public boolean deleteReimbursement();//id
 

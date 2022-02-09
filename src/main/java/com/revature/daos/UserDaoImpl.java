@@ -111,6 +111,8 @@ public class UserDaoImpl implements UserDao{
     public boolean updateUsers(User user) {
         String sql = "update ers_users set id = ?, ers_username = ?, ers_password = ?, " +
                 "ers_first_name = ?, ers_last_name = ?, user_type = ?;";
+
+
         try (Connection c = ConnectionUtil.getConnection();
              PreparedStatement ps = c.prepareStatement(sql)) {
 
