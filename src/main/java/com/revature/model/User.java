@@ -8,26 +8,26 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-    private UserType type;
+    private UserRoles role;
 
     public User() {
     }
 
-    public User(int userId, String firstName, String lastName, String email, String password, UserType type) {
+    public User(int userId, String firstName, String lastName, String email, String password, UserRoles role) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
-        this.type = type;
+        this.role = role;
     }
 
-    public User(String firstName, String lastName, String email, String password, UserType role) {
+    public User(String firstName, String lastName, String email, String password, UserRoles role) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
-        this.type = type;
+        this.role = role;
     }
 
     public int getUserId() {
@@ -54,12 +54,12 @@ public class User {
         this.password = password;
     }
 
-    public UserType getType() {
-        return type;
+    public UserRoles getRole() {
+        return role;
     }
 
-    public void setType(UserType type) {
-        this.type = type;
+    public void setType(UserRoles role) {
+        this.role = role;
     }
 
     public String getFirstName() {
@@ -86,7 +86,7 @@ public class User {
         this.email = email;
     }
 
-    @Override
+    /*@Override
     public String toString() {
         return "User{" +
                 "UserId=" + userId +
@@ -94,7 +94,7 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", type=" + type +
+                ", type=" + role +
                 '}';
-    }
+    }*/
 }
