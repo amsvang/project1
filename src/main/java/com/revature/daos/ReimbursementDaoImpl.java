@@ -8,12 +8,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReimbursementDaoImpl implements ReimbursementDAO {
+
+
+
+//*************************************************************
+//create
     @Override
     public boolean addReimbursement(Reimbursement reimbursement) {
         String sql = "insert into ers_reimbursement (users_id, reimb_type,status_type,reimb_amount,reimb_submitted,reimb_resolved, reimb_description,reimb_receipt) " +
                 "values(?,CAST(? AS ERS_REIMBURSEMENT_TYPE),CAST(? AS ERS_REIMBURSEMENT_STATUS), ?, ?,? ,?,?)";
         try (Connection conn = ConnectionUtil.getConnection();
-            PreparedStatement ps = conn.prepareStatement(sql);){
+             PreparedStatement ps = conn.prepareStatement(sql);){
 
             ps.setInt(1, reimbursement.getUser_id());
             ps.setString(2, reimbursement.getReimbursementType().name());
@@ -37,12 +42,13 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
     }
 
 
-//*****************************************************
+//*************************************************************
 //update
     @Override
     public boolean updateReimbursement(Reimbursement reimbursement) {
         String sql ="update ERS_REIMBURSEMENT reimb_resolved = ?, reimb_submitted = ?, " +
                        "where users_id = ?";
+
         try (Connection c = ConnectionUtil.getConnection();
              PreparedStatement ps = c.prepareStatement(sql)) {
 
@@ -64,7 +70,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 //*************************************************************
 //delete
     @Override
-    public boolean deleteReimbursement() {
+    public boolean deleteReimbursement(int id) {
         String sql = "delete from ERS_REIMBURSEMENT where id = ?; ";
         try (Connection c = ConnectionUtil.getConnection();
              PreparedStatement ps = c.prepareStatement(sql)) {
@@ -84,7 +90,8 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 
 
     }
-
+//*************************************************************
+//get all
     @Override
     public List<Reimbursement> getAllReimbursements() {
         List <Reimbursement> reimbursements = new ArrayList<>();
@@ -133,17 +140,15 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 
 
 
+
     }
 
     @Override
     public List<Reimbursement> getAllReimbursementsByStatus(Reimbursement reimbursement) {
         return null;
+
     }
 
-    @Override
-    public List<Reimbursement> getAllReimbursementsByStatus(int id) {
-        return null;
-    }
 
     @Override
     public List<Reimbursement> getAllReimbursementsByUsernameAndStatus(String username, int id) {
@@ -154,6 +159,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
     public Reimbursement getReimbursementById(int id) {
         return null;
     }
+
 
 //    @Override
 //    public ReimbursementStatus status(String status) {

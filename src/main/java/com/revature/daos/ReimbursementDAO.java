@@ -6,16 +6,20 @@ import java.util.List;
 
 public interface ReimbursementDAO {
 
+//original from Jaffar
 //    public boolean addReimbursement(Reimbursement reimbursement);
 //    public boolean updateReimbursement();
 //    public boolean deleteReimbursement();
 //    public ReimbursementStatus status(String status);
 //    public ReimbursementType type(String type);
 
-    //test change comment
-    public boolean addReimbursement(Reimbursement reimbursement)
+
+//**************************************************************
+
+    public boolean addReimbursement(Reimbursement reimbursement);
+
     public boolean updateReimbursement(Reimbursement reimbursement);
-    public boolean deleteReimbursement();//id
+    public boolean deleteReimbursement(int id);//id
 
     //view all
     public List<Reimbursement> getAllReimbursements();//list everything including status
@@ -26,4 +30,3 @@ public interface ReimbursementDAO {
 
 
 }
-
