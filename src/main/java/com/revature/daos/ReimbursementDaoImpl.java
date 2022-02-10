@@ -145,13 +145,20 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //*************************************************************
 =======
+=======
+>>>>>>> origin/main
     @Override
     public List<Reimbursement> getAllReimbursementsByUsernameAndStatus(String username, int id) {
         return null;
     }
     //*************************************************************
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
+
 >>>>>>> origin/main
 //get all by ID
     @Override

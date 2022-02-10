@@ -12,42 +12,65 @@ import java.util.List;
 public class ReimbursementServices {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    private ReimbursementDAO rmbDao = new ReimbursementDaoImpl();
+=======
+>>>>>>> origin/main
 
-//*************************************************************
-//create
+// private ReimbursementDAO rmbDao = new ReimbursementDaoImpl();
 
-    public boolean createReimbursement(Reimbursement reimbursement) {
+// //*************************************************************
+// //create
+
+//     public boolean createReimbursement(Reimbursement reimbursement) {
 
 
-        return rmbDao.createReimbursement(reimbursement);
+//         return rmbDao.createReimbursement(reimbursement);
 
-    }
-
+<<<<<<< HEAD
 =======
     private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
 >>>>>>> origin/main
+=======
+//     }
+>>>>>>> origin/main
 
-//*************************************************************
-//update
+//
+private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
+// 
 
-    public boolean updateReimbursement(Reimbursement reimbursement){
-        return rmbDao.updateReimbursement(reimbursement);
+// //*************************************************************
+// //update
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
+=======
+//     public boolean updateReimbursement(Reimbursement reimbursement){
+//         return rmbDao.updateReimbursement(reimbursement);
+>>>>>>> origin/main
 
-//*************************************************************
-//delete
-    public boolean deletReimbursement(int id){
-        return rmbDao.deleteReimbursement(id);
-    }
+// <<<<<<< niko
+//     }
+
+// //*************************************************************
+// //delete
+//     public boolean deletReimbursement(int id){
+//         return rmbDao.deleteReimbursement(id);
+//     }
 
 //*************************************************************
 //get all
+<<<<<<< HEAD
 =======
     //Jaffar's method
     /*public boolean createReimbursement(int userId, ReimbursementType rt, ReimbursementStatus rs, double ra, boolean rsub, boolean rr, String des, boolean rrecp) {
+>>>>>>> origin/main
+=======
+
+    //Jaffar's method
+    /*public boolean createReimbursement(int userId, ReimbursementType rt, ReimbursementStatus rs, double ra, boolean rsub, boolean rr, String des, boolean rrecp) {
+
 >>>>>>> origin/main
 
     public List<Reimbursement> getAllReimbursements(){
@@ -58,6 +81,10 @@ public class ReimbursementServices {
 //get by ID
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
     public Reimbursement getReimbursementById(int id){
         return rmbDao.getReimbursementById(id);
 
@@ -65,7 +92,11 @@ public class ReimbursementServices {
     }
 
 
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> origin/main
         return rd.createReimbursement(reimb);
     }*/
 
@@ -95,4 +126,8 @@ public class ReimbursementServices {
 
 
 }
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
+
 >>>>>>> origin/main
