@@ -11,11 +11,6 @@ import java.util.List;
 
 public class ReimbursementServices {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-   private ReimbursementDAO rmbDao = new ReimbursementDaoImpl();
-=======
->>>>>>> origin/main
 
 // private ReimbursementDAO rmbDao = new ReimbursementDaoImpl();
 
@@ -27,28 +22,17 @@ public class ReimbursementServices {
 
 //         return rmbDao.createReimbursement(reimbursement);
 
-<<<<<<< HEAD
-=======
-    private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
->>>>>>> origin/main
-=======
 //     }
->>>>>>> origin/main
 
+    //
+    private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
 //
-private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
-// 
 
 // //*************************************************************
 // //update
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    }
-=======
 //     public boolean updateReimbursement(Reimbursement reimbursement){
 //         return rmbDao.updateReimbursement(reimbursement);
->>>>>>> origin/main
 
 // <<<<<<< niko
 //     }
@@ -61,42 +45,18 @@ private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
 
 //*************************************************************
 //get all
-<<<<<<< HEAD
-=======
-    //Jaffar's method
-    /*public boolean createReimbursement(int userId, ReimbursementType rt, ReimbursementStatus rs, double ra, boolean rsub, boolean rr, String des, boolean rrecp) {
->>>>>>> origin/main
-=======
 
     //Jaffar's method
     /*public boolean createReimbursement(int userId, ReimbursementType rt, ReimbursementStatus rs, double ra, boolean rsub, boolean rr, String des, boolean rrecp) {
-
->>>>>>> origin/main
-
     public List<Reimbursement> getAllReimbursements(){
         return rmbDao.getAllReimbursements();
     }
-
 //*************************************************************
 //get by ID
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
     public Reimbursement getReimbursementById(int id){
         return rmbDao.getReimbursementById(id);
-
         }
     }
-
-
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> origin/main
         return rd.createReimbursement(reimb);
     }*/
 
@@ -126,8 +86,3 @@ private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
 
 
 }
-<<<<<<< HEAD
->>>>>>> origin/main
-=======
-
->>>>>>> origin/main
