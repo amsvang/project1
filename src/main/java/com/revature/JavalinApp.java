@@ -1,5 +1,6 @@
 package com.revature;
 
+import com.revature.controllers.ReimbursementController;
 import com.revature.controllers.UserController;
 import io.javalin.Javalin;
 import static io.javalin.apibuilder.ApiBuilder.*;
@@ -13,22 +14,26 @@ public class JavalinApp {
     private final AppExceptionHandler appExceptionHandler = new AppExceptionHandler();
     private AuthController authController = new AuthController();
     private final UserController userController = new UserController();
+    private final ReimbursementController reimbursementController = new ReimbursementController();
     private final LoggingSingletonUtil logger = LoggingSingletonUtil.getLogger();
 
     private Javalin app = Javalin.create().routes(()->{
 
         //TODO: UPDATE ADMIN ACCESS ROUTES
-        /*path("admin",()->{
+        path("admin",()->{
             before(authController::authorizeAdminToken);
             path("reimbursement",()->{
-                get(reimbController::handleGetAll);
-                post(reimbController::handleCreate);
-                put(reimbController::handleUpdate);
-                delete(reimbController::handleDelete);
+                get(reimbursementController::handleGetAllReimbursements);
+                post(reimbursementController::handleCreate);
+                put(reimbursementController::handleUpdate);
+                delete(reimbursementController::handleDelete);
+                path("status",()->{
+                    get(reimbursementController::handleGetAllReimbursementByStatus);
+                });
                 path("{id}",()->{
-                    get(reimbController::handleGetOne);
-                    put(reimbController::handleUpdate);
-                    delete(reimbController::handleDelete);
+                    get(reimbursementController::handleGetOne);
+                    put(reimbursementController::handleUpdate);
+                    delete(reimbursementController::handleDelete);
                 });
             });
             path("users",()->{
@@ -41,7 +46,7 @@ public class JavalinApp {
                     delete(userController::handleDelete);
                 });
             });
-        });*/
+        });
 
         path("employee",()->{
             before(authController::authorizeEmployeeToken);

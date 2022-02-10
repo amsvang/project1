@@ -20,11 +20,11 @@ public class ReimbursementController {
         }
     }
 
-    public void handleGetAllTransactions(Context ctx) {
+    public void handleGetAllReimbursements(Context ctx) {
         List<Reimbursement> reimbursements = reimbursementService.getAllReimbursements();
         ctx.json(reimbursements);
     }
-    public void handleGetAllTransactionsByStatus(Context ctx) {
+    public void handleGetAllReimbursementByStatus(Context ctx) {
         List<Reimbursement> reimbursements = reimbursementService.getAllReimbursementsByStatus();
         ctx.json(reimbursements);
     }
