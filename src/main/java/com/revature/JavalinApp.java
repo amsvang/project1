@@ -32,14 +32,13 @@ public class JavalinApp {
                 });
             });
             path("users",()->{
-                get(reimbController::handleGetAll);
-                post(reimbController::handleCreate);
-                put(reimbController::handleUpdate);
-                delete(reimbController::handleDelete);
+                get(userController::handleGetAll);
+                put(userController::handleUpdate);
                 path("{id}",()->{
-                    get(reimbController::handleGetOne);
-                    put(reimbController::handleUpdate);
-                    delete(reimbController::handleDelete);
+                    get(userController::handleGetOne);
+                    post(userController::handleCreate);
+                    put(userController::handleUpdate);
+                    delete(userController::handleDelete);
                 });
             });
         });*/
