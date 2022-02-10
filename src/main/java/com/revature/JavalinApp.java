@@ -58,12 +58,12 @@ public class JavalinApp {
             });
 
             path("reimbursement",()->{
-                post(ReimbursementController::handleCreate);
+                post(reimbursementController::handleCreate);
                 path("status",()->{
-                    get(ReimbursementController::handleGetAllReimbursementByStatus);
+                    get(reimbursementController::handleGetAllReimbursementByStatus);
                 });
                 path("{id}",()->{
-                    get(ReimbursementController::handleGetAllReimbursements);
+                    get(reimbursementController::handleGetAllReimbursements);
                 });
             });
 
