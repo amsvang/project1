@@ -24,6 +24,10 @@ public class ReimbursementController {
         List<Reimbursement> reimbursements = reimbursementService.getAllReimbursements();
         ctx.json(reimbursements);
     }
+    public void handleGetAllTransactionsByStatus(Context ctx) {
+        List<Reimbursement> reimbursements = reimbursementService.getAllReimbursementsByStatus();
+        ctx.json(reimbursements);
+    }
 
     public void handleGetOne(Context ctx) {
         String idParam = ctx.pathParam("id");
