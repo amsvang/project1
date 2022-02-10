@@ -29,22 +29,4 @@ public interface ReimbursementDAO {
 //    public ReimbursementStatus status(String status);
 //    public ReimbursementType type(String type);
 
-<<<<<<< HEAD
-
-//**************************************************************
-
-    public boolean createReimbursement(Reimbursement reimbursement);
-    public boolean updateReimbursement(Reimbursement reimbursement);
-    public boolean deleteReimbursement(int id);//id
-
-    //view all
-    public List<Reimbursement> getAllReimbursements();//list everything including status
-    public List<Reimbursement> getAllReimbursementsByStatus(Reimbursement reimbursement);
-    public List<Reimbursement> getAllReimbursementsByUsernameAndStatus(String username, int id);
-    public Reimbursement getReimbursementById(int id);
-
-
-
-=======
->>>>>>> origin/main
 }
