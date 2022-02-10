@@ -12,64 +12,23 @@ import java.util.List;
 public class ReimbursementServices {
 
 
-// private ReimbursementDAO rmbDao = new ReimbursementDaoImpl();
-
-// //*************************************************************
-// //create
-
-//     public boolean createReimbursement(Reimbursement reimbursement) {
-
-
-//         return rmbDao.createReimbursement(reimbursement);
-
-//     }
-
-    //
     private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
+<<<<<<< HEAD
+=======
 
-
-// //*************************************************************
-// //update
-
-//     public boolean updateReimbursement(Reimbursement reimbursement){
-//         return rmbDao.updateReimbursement(reimbursement);
-
-// <<<<<<< niko
-//     }
-
-// //*************************************************************
-// //delete
-//     public boolean deletReimbursement(int id){
-//         return rmbDao.deleteReimbursement(id);
-//     }
-
-//*************************************************************
-//get all
-
-    //Jaffar's method
-    /*public boolean createReimbursement(int userId, ReimbursementType rt, ReimbursementStatus rs, double ra, boolean rsub, boolean rr, String des, boolean rrecp) {
-    public List<Reimbursement> getAllReimbursements(){
-        return rmbDao.getAllReimbursements();
-    }
-//*************************************************************
-//get by ID
-    public Reimbursement getReimbursementById(int id){
-        return rmbDao.getReimbursementById(id);
-        }
-    }
-        return rd.createReimbursement(reimb);
-    }*/
+>>>>>>> origin/main
 
 
 
-    public boolean createReimbursement(Reimbursement reimbursement) {
 
-        return reimbursementDao.createReimbursement(reimbursement);
-    }
+    public boolean createReimbursement(Reimbursement reimbursement)
+    {return reimbursementDao.createReimbursement(reimbursement);}
 
-    public List<Reimbursement> getAllReimbursements() {
-        return reimbursementDao.getAllReimbursements();
-    }
+    public List<Reimbursement> getAllReimbursements()
+    {return reimbursementDao.getAllReimbursements();}
+
+    public List<Reimbursement> getAllReimbursementsByStatus()
+    {return reimbursementDao.getReimbursementsByStatus();}
 
     public Reimbursement getReimbursementById(int id) {
         return reimbursementDao.getReimbursementById(id);
