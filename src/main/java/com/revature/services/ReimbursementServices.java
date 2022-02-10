@@ -24,8 +24,8 @@ public class ReimbursementServices {
 
 //     }
 
-//
-private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
+    //
+    private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
 // 
 
 // //*************************************************************
@@ -48,24 +48,15 @@ private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
 
     //Jaffar's method
     /*public boolean createReimbursement(int userId, ReimbursementType rt, ReimbursementStatus rs, double ra, boolean rsub, boolean rr, String des, boolean rrecp) {
-
-
     public List<Reimbursement> getAllReimbursements(){
         return rmbDao.getAllReimbursements();
     }
-
 //*************************************************************
 //get by ID
-
-
     public Reimbursement getReimbursementById(int id){
         return rmbDao.getReimbursementById(id);
-
         }
     }
-
-
-
         return rd.createReimbursement(reimb);
     }*/
 
@@ -95,4 +86,3 @@ private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
 
 
 }
-
