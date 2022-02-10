@@ -110,3 +110,14 @@ INFO - 2022-02-09T23:02:21.973 - GET request made to: /employee/user/3
 INFO - 2022-02-09T23:10:28.442 - PUT request made to: /employee/user/3
 INFO - 2022-02-10T12:50:50.552 - GET request made to: /employee/user/2
 INFO - 2022-02-10T12:51:45.138 - PUT request made to: /employee/user/3
+INFO - 2022-02-10T14:14:18.314 - PUT request made to: /employee/user/3
+INFO - 2022-02-10T14:18:59.424 - GET request made to: /
+INFO - 2022-02-10T14:34:54.040 - POST request made to: /admin/reimbursement
+INFO - 2022-02-10T14:35:34.046 - GET request made to: /admin/reimbursement
+INFO - 2022-02-10T14:36:28.047 - POST request made to: /admin/reimbursement
+INFO - 2022-02-10T14:39:00.149 - POST request made to: /admin/reimbursement
+INFO - 2022-02-10T14:46:41.350 - GET request made to: /admin/reimbursement
+INFO - 2022-02-10T14:48:26.029 - GET request made to: /admin/reimbursement
+INFO - 2022-02-10T14:50:20.221 - GET request made to: /admin/reimbursement
+INFO - 2022-02-10T14:52:21.645 - GET request made to: /admin/reimbursement
+INFO - 2022-02-10T14:52:44.243 - GET request made to: /admin/reimbursement
