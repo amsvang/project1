@@ -20,17 +20,20 @@ public class JavalinApp {
     private Javalin app = Javalin.create().routes(()->{
 
         //TODO: UPDATE ADMIN ACCESS ROUTES
-        /*path("admin",()->{
+        path("admin",()->{
             before(authController::authorizeAdminToken);
             path("reimbursement",()->{
-                get(reimbController::handleGetAll);
-                post(reimbController::handleCreate);
-                put(reimbController::handleUpdate);
-                delete(reimbController::handleDelete);
+                get(reimbursementController::handleGetAllReimbursements);
+                post(reimbursementController::handleCreate);
+                put(reimbursementController::handleUpdate);
+                delete(reimbursementController::handleDelete);
+                path("status",()->{
+                    get(reimbursementController::handleGetAllReimbursementByStatus);
+                });
                 path("{id}",()->{
-                    get(reimbController::handleGetOne);
-                    put(reimbController::handleUpdate);
-                    delete(reimbController::handleDelete);
+                    get(reimbursementController::handleGetOne);
+                    put(reimbursementController::handleUpdate);
+                    delete(reimbursementController::handleDelete);
                 });
             });
             path("users",()->{
@@ -43,7 +46,7 @@ public class JavalinApp {
                     delete(userController::handleDelete);
                 });
             });
-        });*/
+        });
 
         path("employee",()->{
             before(authController::authorizeEmployeeToken);

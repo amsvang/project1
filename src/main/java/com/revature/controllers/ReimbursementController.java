@@ -26,8 +26,10 @@ public class ReimbursementController {
         ctx.json(reimbursements);
     }
     public void handleGetAllReimbursementByStatus(Context ctx) {
+
         ReimbursementInput reimbursementInput = ctx.bodyAsClass(ReimbursementInput.class);
         List<Reimbursement> reimbursements = reimbursementService.getAllReimbursementsByStatus(reimbursementInput.getStatus());
+
         ctx.json(reimbursements);
     }
 
