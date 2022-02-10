@@ -11,7 +11,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 
 
 
-//*************************************************************
+    //*************************************************************
 //create
     @Override
     public boolean createReimbursement(Reimbursement reimbursement) {
@@ -42,12 +42,12 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
     }
 
 
-//*************************************************************
+    //*************************************************************
 //update
     @Override
     public boolean updateReimbursement(Reimbursement reimbursement) {
         String sql ="update ERS_REIMBURSEMENT reimb_resolved = ?, reimb_submitted = ?, " +
-                       "where users_id = ?";
+                "where users_id = ?";
 
         try (Connection c = ConnectionUtil.getConnection();
              PreparedStatement ps = c.prepareStatement(sql)) {
@@ -67,7 +67,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
         }
         return false;
     }
-//*************************************************************
+    //*************************************************************
 //delete
     @Override
     public boolean deleteReimbursement(int id) {
@@ -90,7 +90,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 
 
     }
-//*************************************************************
+    //*************************************************************
 //get all
     @Override
     public List<Reimbursement> getAllReimbursements() {
@@ -144,11 +144,16 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
     }
 
 
-//*************************************************************
+    @Override
+    public List<Reimbursement> getAllReimbursementsByUsernameAndStatus(String username, int id) {
+        return null;
+    }
+    //*************************************************************
+
 //get all by ID
     @Override
     public Reimbursement getReimbursementById(int id) {
-       String sql = "select * from ERS_REIMBURSEMENT where id =?";
+        String sql = "select * from ERS_REIMBURSEMENT where id =?";
 
         try (Connection c = ConnectionUtil.getConnection();
              PreparedStatement ps = c.prepareStatement(sql)){
