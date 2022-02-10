@@ -6,20 +6,51 @@ import com.revature.model.Reimbursement;
 import com.revature.model.ReimbursementStatus;
 import com.revature.model.ReimbursementType;
 
+import java.util.List;
+
 public class ReimbursementServices {
 
-   private ReimbursementDAO rd = new ReimbursementDaoImpl();
+   private ReimbursementDAO rmbDao = new ReimbursementDaoImpl();
+
+//*************************************************************
+//create
+
+    public boolean createReimbursement(Reimbursement reimbursement) {
 
 
+        return rmbDao.createReimbursement(reimbursement);
 
-    public boolean addReimbursement(int userId, ReimbursementType rt, ReimbursementStatus rs, double ra, boolean rsub, boolean rr, String des, boolean rrecp) {
-
-        Reimbursement reimb = new Reimbursement(userId, rt, rs, ra, rsub, rr, des, rrecp);
-
-       return rd.addReimbursement(reimb);
     }
-    //user get reimbursement all by userId
-    //update reimbursement status (admin only)
-    //
 
-}
+
+//*************************************************************
+//update
+
+    public boolean updateReimbursement(Reimbursement reimbursement){
+        return rmbDao.updateReimbursement(reimbursement);
+
+    }
+
+//*************************************************************
+//delete
+    public boolean deletReimbursement(int id){
+        return rmbDao.deleteReimbursement(id);
+    }
+
+//*************************************************************
+//get all
+
+    public List<Reimbursement> getAllReimbursements(){
+        return rmbDao.getAllReimbursements();
+    }
+
+//*************************************************************
+//get by ID
+
+    public Reimbursement getReimbursementById(int id){
+        return rmbDao.getReimbursementById(id);
+
+        }
+    }
+
+
