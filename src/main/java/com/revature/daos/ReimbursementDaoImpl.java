@@ -41,7 +41,6 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
         return false;
     }
 
-
     //*************************************************************
 //update
     @Override
@@ -162,11 +161,8 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
                 reimb.setReimbusementSubmitted(rs.getBoolean("reimb_submitted"));
                 reimb.setReimbusementResolved(rs.getBoolean("reimb_resolved"));
                 reimb.setDescription(rs.getString("reimb_description"));
-
-
                 String reimbStatus = rs.getString("status_type");
                 reimb.setReimbursementStatus(ReimbursementStatus.valueOf(reimbStatus));
-
                 String reimbType = rs.getString("reimb_type");
                 reimb.setReimbursementType(ReimbursementType.valueOf(reimbType));
 
@@ -180,13 +176,16 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 //*************************************************************
 //get all by Status
     @Override
-    public List<Reimbursement> getReimbursementsByStatus() {
+    public List<Reimbursement> getReimbursementsByStatus(ReimbursementStatus status) {
         List <Reimbursement> reimbursements = new ArrayList<>();
-        String sql ="Select * from ERS_REIMBURSEMENT where status_type = ? ";
+        String sql ="Select * from ERS_REIMBURSEMENT where status_type = ?::project1.ers_reimbursement_status ";
 
         try(Connection c = ConnectionUtil.getConnection();
-            Statement s = c.createStatement();) {
-            ResultSet rs = s.executeQuery(sql);
+            PreparedStatement ps = c.prepareStatement(sql)) {
+
+            ps.setString(1, status.name());
+
+            ResultSet rs = ps.executeQuery(sql);
 
             while (rs.next()) {
                 Reimbursement reimb = new Reimbursement();

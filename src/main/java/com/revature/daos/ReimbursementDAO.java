@@ -13,7 +13,7 @@ public interface ReimbursementDAO {
     public boolean deleteReimbursement(int id);
     public List<Reimbursement> getAllReimbursements();
     public Reimbursement getReimbursementById(int id);
-    public List<Reimbursement> getReimbursementsByStatus();
+    public List<Reimbursement> getReimbursementsByStatus(ReimbursementStatus status);
 
 
 

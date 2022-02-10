@@ -50,7 +50,15 @@ public class UserController {
     }
 
     public void handleDelete(Context ctx){
-        ctx.status(405);
+        String idParam = ctx.pathParam("id");
+        int id = Integer.parseInt(idParam);
+        boolean success = userService.deleteUser(id);
+
+        if (success) {
+            ctx.status(200);
+        } else {
+            ctx.status(400);
+        }
     }
 
 }

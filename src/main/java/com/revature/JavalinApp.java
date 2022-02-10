@@ -1,5 +1,6 @@
 package com.revature;
 
+import com.revature.controllers.ReimbursementController;
 import com.revature.controllers.UserController;
 import io.javalin.Javalin;
 import static io.javalin.apibuilder.ApiBuilder.*;
@@ -13,6 +14,7 @@ public class JavalinApp {
     private final AppExceptionHandler appExceptionHandler = new AppExceptionHandler();
     private AuthController authController = new AuthController();
     private final UserController userController = new UserController();
+    private final ReimbursementController reimbursementController = new ReimbursementController();
     private final LoggingSingletonUtil logger = LoggingSingletonUtil.getLogger();
 
     private Javalin app = Javalin.create().routes(()->{
@@ -51,20 +53,17 @@ public class JavalinApp {
                     put(userController::handleUpdate);
                 });
             });
-            /*
+
             path("reimbursement",()->{
-                post(reimbursementController::handleCreate);
-                path("pending",()->{
-                    get();
-                });
-                path("resolved",()->{
-                    get();
+                post(ReimbursementController::handleCreate);
+                path("status",()->{
+                    get(ReimbursementController::handleGetAllReimbursementByStatus);
                 });
                 path("{id}",()->{
-                    get();
+                    get(ReimbursementController::handleGetAllReimbursements);
                 });
             });
-            */
+
         });
 
         path("login", ()->{

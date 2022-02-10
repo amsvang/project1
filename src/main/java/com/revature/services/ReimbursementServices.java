@@ -13,13 +13,6 @@ public class ReimbursementServices {
 
 
     private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
-
-
-
 
     public boolean createReimbursement(Reimbursement reimbursement)
     {return reimbursementDao.createReimbursement(reimbursement);}
@@ -27,8 +20,8 @@ public class ReimbursementServices {
     public List<Reimbursement> getAllReimbursements()
     {return reimbursementDao.getAllReimbursements();}
 
-    public List<Reimbursement> getAllReimbursementsByStatus()
-    {return reimbursementDao.getReimbursementsByStatus();}
+    public List<Reimbursement> getAllReimbursementsByStatus(ReimbursementStatus status)
+    {return reimbursementDao.getReimbursementsByStatus(status);}
 
     public Reimbursement getReimbursementById(int id) {
         return reimbursementDao.getReimbursementById(id);
