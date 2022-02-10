@@ -143,18 +143,13 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 
     }
 
-    @Override
-    public List<Reimbursement> getAllReimbursementsByStatus(Reimbursement reimbursement) {
-        return null;
-
-    }
-
 
     @Override
     public List<Reimbursement> getAllReimbursementsByUsernameAndStatus(String username, int id) {
         return null;
     }
     //*************************************************************
+
 //get all by ID
     @Override
     public Reimbursement getReimbursementById(int id) {
@@ -194,6 +189,17 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
         }
         return null;
     }
+
+//    @Override
+//    public List<Reimbursement> getAllReimbursementsByStatus(Reimbursement reimbursement) {
+//        return null;
+//
+//    }
+
+//    @Override
+//    public List<Reimbursement> getAllReimbursementsByUsernameAndStatus(String username, int id) {
+//
+//    }
 
 
 
