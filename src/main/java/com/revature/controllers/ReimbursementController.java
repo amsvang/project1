@@ -1,6 +1,7 @@
 package com.revature.controllers;
 
 import com.revature.model.Reimbursement;
+import com.revature.model.ReimbursementInput;
 import com.revature.services.ReimbursementServices;
 import io.javalin.http.Context;
 import java.util.List;
@@ -25,7 +26,10 @@ public class ReimbursementController {
         ctx.json(reimbursements);
     }
     public void handleGetAllReimbursementByStatus(Context ctx) {
-        List<Reimbursement> reimbursements = reimbursementService.getAllReimbursementsByStatus();
+
+        ReimbursementInput reimbursementInput = ctx.bodyAsClass(ReimbursementInput.class);
+        List<Reimbursement> reimbursements = reimbursementService.getAllReimbursementsByStatus(reimbursementInput.getStatus());
+
         ctx.json(reimbursements);
     }
 
@@ -44,7 +48,7 @@ public class ReimbursementController {
 
         boolean success = reimbursementService.updateReimbursement(reimbursementToUpdate);
 
-        if(success) {
+        if (success) {
             ctx.status(200);
         } else {
             ctx.status(400);
@@ -52,7 +56,15 @@ public class ReimbursementController {
     }
 
     public void handleDelete(Context ctx) {
-        ctx.status(405);
+        String idParam = ctx.pathParam("id");
+        int id = Integer.parseInt(idParam);
+        boolean success = reimbursementService.deleteReimbursement(id);
+
+        if (success) {
+            ctx.status(200);
+        } else {
+            ctx.status(400);
+        }
     }
 
 

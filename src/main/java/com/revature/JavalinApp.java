@@ -56,20 +56,17 @@ public class JavalinApp {
                     put(userController::handleUpdate);
                 });
             });
-            /*
+
             path("reimbursement",()->{
-                post(reimbursementController::handleCreate);
-                path("pending",()->{
-                    get();
-                });
-                path("resolved",()->{
-                    get();
+                post(ReimbursementController::handleCreate);
+                path("status",()->{
+                    get(ReimbursementController::handleGetAllReimbursementByStatus);
                 });
                 path("{id}",()->{
-                    get();
+                    get(ReimbursementController::handleGetAllReimbursements);
                 });
             });
-            */
+
         });
 
         path("login", ()->{

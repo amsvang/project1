@@ -108,3 +108,5 @@ INFO - 2022-02-09T22:44:41.798 - PUT request made to: /employee/user/3
 INFO - 2022-02-09T22:52:35.607 - GET request made to: /employee/user/3
 INFO - 2022-02-09T23:02:21.973 - GET request made to: /employee/user/3
 INFO - 2022-02-09T23:10:28.442 - PUT request made to: /employee/user/3
+INFO - 2022-02-10T12:50:50.552 - GET request made to: /employee/user/2
+INFO - 2022-02-10T12:51:45.138 - PUT request made to: /employee/user/3
