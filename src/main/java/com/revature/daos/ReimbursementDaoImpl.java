@@ -15,7 +15,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 //create
     @Override
     public boolean createReimbursement(Reimbursement reimbursement) {
-        String sql = "insert into ers_reimbursement (users_id, reimb_type,status_type,reimb_amount,reimb_submitted,reimb_resolved, reimb_description,reimb_receipt) " +
+        String sql = "insert into project1.ers_reimbursement (users_id, reimb_type,status_type,reimb_amount,reimb_submitted,reimb_resolved, reimb_description,reimb_receipt) " +
                 "values ?,  ?::project1.ers_reimbursement_type ,?::project1.ers_reimbursement_status, ?, ?, ?,?,?)";
         try (Connection conn = ConnectionUtil.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql);){
@@ -45,7 +45,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 //update
     @Override
     public boolean updateReimbursement(Reimbursement reimbursement) {
-        String sql ="update ERS_REIMBURSEMENT reimb_resolved = ?, reimb_submitted = ?, " +
+        String sql ="update project1.ERS_REIMBURSEMENT reimb_resolved = ?, reimb_submitted = ?, " +
                 "where users_id = ?";
 
         try (Connection c = ConnectionUtil.getConnection();
@@ -70,7 +70,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 //delete
     @Override
     public boolean deleteReimbursement(int id) {
-        String sql = "delete from ERS_REIMBURSEMENT where id = ?; ";
+        String sql = "delete from project1.ERS_REIMBURSEMENT where id = ?; ";
         try (Connection c = ConnectionUtil.getConnection();
              PreparedStatement ps = c.prepareStatement(sql)) {
 
@@ -94,7 +94,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
     @Override
     public List<Reimbursement> getAllReimbursements() {
         List <Reimbursement> reimbursements = new ArrayList<>();
-        String sql ="Select * from ERS_REIMBURSEMENT";
+        String sql ="Select * from project1.ERS_REIMBURSEMENT";
 
         try(Connection c = ConnectionUtil.getConnection();
             Statement s = c.createStatement();) {
@@ -104,7 +104,10 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
                 Reimbursement reimb = new Reimbursement();
 
                 int id = rs.getInt("id");
-                reimb.setUser_id(id);
+                reimb.setReimbursementId(id);
+
+                int user_id = rs.getInt("users_id");
+                reimb.setUser_id(user_id);
 
                 String reimbStatus = rs.getString("status_type");
                 reimb.setReimbursementStatus(ReimbursementStatus.valueOf(reimbStatus));
@@ -144,7 +147,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
 
     @Override
     public Reimbursement getReimbursementById(int id) {
-        String sql = "select * from ERS_REIMBURSEMENT where id =?";
+        String sql = "select * from project1.ERS_REIMBURSEMENT where id =?";
 
         try (Connection c = ConnectionUtil.getConnection();
              PreparedStatement ps = c.prepareStatement(sql)){
@@ -178,7 +181,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
     @Override
     public List<Reimbursement> getReimbursementsByStatus(ReimbursementStatus status) {
         List <Reimbursement> reimbursements = new ArrayList<>();
-        String sql ="Select * from ERS_REIMBURSEMENT where status_type = ?::project1.ers_reimbursement_status ";
+        String sql ="Select * from project1.ERS_REIMBURSEMENT where status_type = ?::project1.ers_reimbursement_status ";
 
         try(Connection c = ConnectionUtil.getConnection();
             PreparedStatement ps = c.prepareStatement(sql)) {
