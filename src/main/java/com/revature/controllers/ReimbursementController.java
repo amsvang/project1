@@ -11,6 +11,7 @@ public class ReimbursementController {
     private final ReimbursementServices reimbursementService = new ReimbursementServices();
 
     public void handleCreate(Context ctx) {
+
         Reimbursement newReimbursement = ctx.bodyAsClass(Reimbursement.class);
         boolean success = reimbursementService.createReimbursement(newReimbursement);
 
@@ -21,6 +22,7 @@ public class ReimbursementController {
         }
     }
 
+
     public void handleGetAllReimbursements(Context ctx) {
         List<Reimbursement> reimbursements = reimbursementService.getAllReimbursements();
         ctx.json(reimbursements);
@@ -30,6 +32,22 @@ public class ReimbursementController {
         ReimbursementInput reimbursementInput = ctx.bodyAsClass(ReimbursementInput.class);
         List<Reimbursement> reimbursements = reimbursementService.getAllReimbursementsByStatus(reimbursementInput.getStatus());
 
+        ctx.json(reimbursements);
+    }
+
+    public void handleGetAllReimbursementByStatusAndId(Context ctx) {
+
+        ReimbursementInput reimbursementInput = ctx.bodyAsClass(ReimbursementInput.class);
+        String idParam = ctx.pathParam("id");
+        int inputId = Integer.parseInt(idParam);
+        List<Reimbursement> reimbursements = reimbursementService.getAllReimbursementsByStatusAndId(reimbursementInput.getStatus(), inputId);
+        ctx.json(reimbursements);
+    }
+
+    public void handleGetAllReimbursementByUserId(Context ctx) {
+        String idParam = ctx.pathParam("id");
+        int inputUserId = Integer.parseInt(idParam);
+        List<Reimbursement> reimbursements = reimbursementService.getAllReimbursementsByUserId(inputUserId);
         ctx.json(reimbursements);
     }
 
@@ -44,7 +62,7 @@ public class ReimbursementController {
         String idParam = ctx.pathParam("id");
         Reimbursement reimbursementToUpdate = ctx.bodyAsClass(Reimbursement.class);
         int idToUpdate = Integer.parseInt(idParam);
-        reimbursementToUpdate.setReimbursementId(idToUpdate);
+        reimbursementToUpdate.setId(idToUpdate);
 
         boolean success = reimbursementService.updateReimbursement(reimbursementToUpdate);
 
