@@ -23,6 +23,12 @@ public class ReimbursementServices {
     public List<Reimbursement> getAllReimbursementsByStatus(ReimbursementStatus status)
     {return reimbursementDao.getReimbursementsByStatus(status);}
 
+    public List<Reimbursement> getAllReimbursementsByStatusAndId(ReimbursementStatus status, int inputId)
+    {return reimbursementDao.getReimbursementsByStatusAndId(status, inputId);}
+
+    public List<Reimbursement> getAllReimbursementsByUserId(int inputUserId)
+    {return reimbursementDao.getReimbursementsByUserId(inputUserId);}
+
     public Reimbursement getReimbursementById(int id) {
         return reimbursementDao.getReimbursementById(id);
     }

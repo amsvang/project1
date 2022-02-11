@@ -29,11 +29,19 @@ public class JavalinApp {
                 delete(reimbursementController::handleDelete);
                 path("status",()->{
                     get(reimbursementController::handleGetAllReimbursementByStatus);
+                    path("{id}",()->{
+                        get(reimbursementController::handleGetAllReimbursementByStatusAndId);
+                    });
                 });
                 path("{id}",()->{
                     get(reimbursementController::handleGetOne);
                     put(reimbursementController::handleUpdate);
                     delete(reimbursementController::handleDelete);
+                });
+                path("users",()->{
+                    path("{id}",()->{
+                        get(reimbursementController::handleGetAllReimbursementByUserId);
+                    });
                 });
             });
             path("users",()->{
@@ -60,10 +68,13 @@ public class JavalinApp {
             path("reimbursement",()->{
                 post(reimbursementController::handleCreate);
                 path("status",()->{
-                    get(reimbursementController::handleGetAllReimbursementByStatus);
+                    path("{id}", () ->{
+                        get(reimbursementController::handleGetAllReimbursementByStatusAndId);
+                    });
                 });
                 path("{id}",()->{
-                    get(reimbursementController::handleGetAllReimbursements);
+                    get(reimbursementController::handleGetOne);
+                    put(reimbursementController::handleUpdate);
                 });
             });
 
