@@ -14,6 +14,8 @@ public interface ReimbursementDAO {
     public List<Reimbursement> getAllReimbursements();
     public Reimbursement getReimbursementById(int id);
     public List<Reimbursement> getReimbursementsByStatus(ReimbursementStatus status);
+    public List<Reimbursement> getReimbursementsByStatusAndId(ReimbursementStatus status, int id);
+    public List<Reimbursement> getReimbursementsByUserId(int inputUserid);
 
 
 
