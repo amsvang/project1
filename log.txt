@@ -188,3 +188,16 @@ INFO - 2022-02-10T18:01:08.632 - PUT request made to: /admin/reimbursement/9
 INFO - 2022-02-10T18:04:28.366 - GET request made to: /admin/reimbursement/9
 INFO - 2022-02-10T18:13:33.004 - GET request made to: /admin/reimbursement/users/9
 INFO - 2022-02-10T18:13:47.083 - GET request made to: /admin/reimbursement/users/5
+INFO - 2022-02-13T02:58:34.135 - GET request made to: /
+INFO - 2022-02-13T02:59:03.584 - GET request made to: /users
+INFO - 2022-02-13T02:59:36.617 - GET request made to: /users
+INFO - 2022-02-13T03:00:15.618 - GET request made to: /users
+INFO - 2022-02-13T03:00:23.288 - GET request made to: /users
+INFO - 2022-02-13T03:00:45.528 - GET request made to: /users
+INFO - 2022-02-13T03:01:33.591 - GET request made to: /employee/users
+INFO - 2022-02-13T03:03:15.913 - GET request made to: /employee/users
+INFO - 2022-02-13T03:03:48.377 - GET request made to: /employee/user
+INFO - 2022-02-13T03:04:09.705 - GET request made to: /employee/reimbursement
+INFO - 2022-02-13T03:05:13.825 - GET request made to: /admin/users
+INFO - 2022-02-13T03:05:39.940 - GET request made to: /employee/users
+INFO - 2022-02-13T03:06:15.590 - GET request made to: /admin/users

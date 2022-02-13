@@ -1,6 +1,7 @@
 package com.revature.controllers;
 
 import com.revature.model.User;
+import com.revature.services.AuthService;
 import com.revature.services.UserServices;
 import com.revature.util.LoggingSingletonUtil;
 import io.javalin.http.Context;
@@ -9,6 +10,7 @@ import io.javalin.http.UnauthorizedResponse;
 
 public class AuthController {
     private final UserServices userService = new UserServices();
+//    private final AuthService authService = new AuthService();
     LoggingSingletonUtil logger = LoggingSingletonUtil.getLogger();
 
     public void authenticateLogin(Context ctx){
