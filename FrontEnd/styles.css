@@ -2,7 +2,19 @@
 	box-sizing: border-box;
 }
 
-.login-form {
+.image-container {
+	border: solid;
+}
+.login-image {
+}
+.main-login-container {
+	margin-top: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.login-form-container {
+	border: solid;
 	display: flex;
 	align-items: center;
 	justify-content: center;

@@ -19,79 +19,7 @@ public class JavalinApp {
 
     private Javalin app = Javalin.create().routes(()->{
 
-//        //TODO: UPDATE ADMIN ACCESS ROUTES
-//        path("admin",()->{
-//            before(authController::authorizeAdminToken);
-//            path("reimbursement",()->{
-//                get(reimbursementController::handleGetAllReimbursements);
-//                post(reimbursementController::handleCreate);
-//                put(reimbursementController::handleUpdate);
-//                delete(reimbursementController::handleDelete);
-//                path("status",()->{
-//                    get(reimbursementController::handleGetAllReimbursementByStatus);
-//                    path("{id}",()->{
-//                        get(reimbursementController::handleGetAllReimbursementByStatusAndId);
-//                    });
-//                });
-//                path("{id}",()->{
-//                    get(reimbursementController::handleGetOne);
-//                    put(reimbursementController::handleUpdate);
-//                    delete(reimbursementController::handleDelete);
-//                });
-//                path("users",()->{
-//                    path("{id}",()->{
-//                        get(reimbursementController::handleGetAllReimbursementByUserId);
-//                    });
-//                });
-//            });
-//            path("users",()->{
-//                get(userController::handleGetAll);
-//                put(userController::handleUpdate);
-//                path("{id}",()->{
-//                    get(userController::handleGetOne);
-//                    post(userController::handleCreate);
-//                    put(userController::handleUpdate);
-//                    delete(userController::handleDelete);
-//                });
-//            });
-//        });
-//
-//        path("employee",()->{
-//            before(authController::authorizeEmployeeToken);
-//            path("user",()->{
-//                path("{id}",()->{
-//                    get(userController::handleGetOne);
-//                    put(userController::handleUpdate);
-//                });
-//            });
-//
-//            path("reimbursement",()->{
-//                post(reimbursementController::handleCreate);
-//                path("status",()->{
-//
-//                    get(reimbursementController::handleGetAllReimbursementByStatus);
-//                });
-//                path("{id}",()->{
-//                    get(reimbursementController::handleGetAllReimbursements);
-//
-//                    path("{id}", () ->{
-//                        get(reimbursementController::handleGetAllReimbursementByStatusAndId);
-//                    });
-//                });
-//                path("{id}",()->{
-//                    get(reimbursementController::handleGetOne);
-//                    put(reimbursementController::handleUpdate);
-//
-//                });
-//            });
-//
-//        });
-//
-//        path("login", ()->{
-//            post(authController::authenticateLogin);
-//        });
-//        before("*",logger::logRequest);
-//    }).exception(NumberFormatException.class, appExceptionHandler::handleNumberFormatException);
+        //TODO: UPDATE ADMIN ACCESS ROUTES
         path("admin",()->{
             before(authController::authorizeAdminToken);
             path("reimbursement",()->{
@@ -140,6 +68,12 @@ public class JavalinApp {
             path("reimbursement",()->{
                 post(reimbursementController::handleCreate);
                 path("status",()->{
+
+                    get(reimbursementController::handleGetAllReimbursementByStatus);
+                });
+                path("{id}",()->{
+                    get(reimbursementController::handleGetAllReimbursements);
+
                     path("{id}", () ->{
                         get(reimbursementController::handleGetAllReimbursementByStatusAndId);
                     });
@@ -147,6 +81,7 @@ public class JavalinApp {
                 path("{id}",()->{
                     get(reimbursementController::handleGetOne);
                     put(reimbursementController::handleUpdate);
+
                 });
             });
 
@@ -157,7 +92,5 @@ public class JavalinApp {
         });
         before("*",logger::logRequest);
     }).exception(NumberFormatException.class, appExceptionHandler::handleNumberFormatException);
-    public void start(int port){
-        app.start(port);
-        }
+
 }
