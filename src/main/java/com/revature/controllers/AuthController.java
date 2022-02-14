@@ -6,10 +6,14 @@ import com.revature.util.LoggingSingletonUtil;
 import io.javalin.http.Context;
 import io.javalin.http.ForbiddenResponse;
 import io.javalin.http.UnauthorizedResponse;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class AuthController {
     private final UserServices userService = new UserServices();
     LoggingSingletonUtil logger = LoggingSingletonUtil.getLogger();
+    private ObjectMapper mapper = new ObjectMapper();
+
+    // Validate user and set session data (respond to client with session info ---------------------------------------------
 
     public void authenticateLogin(Context ctx){
         // interpret request
@@ -17,7 +21,7 @@ public class AuthController {
         String password = ctx.formParam("password");
 
         logger.setWriteToFile(true);
-        logger.info(username + "attemped login");
+        logger.info(username + "Attemped login");
         logger.setWriteToFile(false);
 
         // fulfill the request
@@ -27,11 +31,24 @@ public class AuthController {
         if(user==null){
             throw new UnauthorizedResponse("Incorrect username or password");
         } else {
-            String simpleToken = user.getRole()+"-TOKEN"; // Employee-token or Admin-token
+            /* simpleToken = user.getRole()+"-TOKEN"; // Employee-token or Admin-token
             ctx.header("Authorization", simpleToken);
-            ctx.status(200);
+            ctx.status(200);*/
+
+            ctx.req.getSession().setAttribute("id", ""+user.getUserId());
+            ctx.req.getSession().setAttribute("loggedIn", user.getEmail());
+
+            ctx.header("userId", ""+user.getUserId());
+            ctx.header("loggedIn", user.getEmail());
+            try {
+                ctx.result(mapper.writeValueAsString(user));
+            } catch (Exception e) {
+                ctx.status(500);
+            }
         }
     }
+    // Check session (who person is) ----------------------------------------------------------------------------------
+
     public void authorizeAdminToken(Context ctx){
         String authHeader = ctx.header("Authorization");
 
@@ -56,6 +73,32 @@ public class AuthController {
         }
         throw new UnauthorizedResponse("please login and try again");
     }
+
+    // Check if the person is still logged on ---------------------------------------------------------------
+
+    public void verify(Context ctx) {
+        ctx.header("Access-Control-Expose-Headers", "*");
+
+        System.out.println(ctx.req.getSession().getAttribute("id"));
+
+        if(ctx.req.getSession().getAttribute("id") == null) {
+            ctx.status(400);
+            ctx.result("User not logged in");
+        }
+        else {
+            ctx.header("userId", ""+ctx.req.getSession().getAttribute("id"));
+            ctx.result("User was verified as logged in");
+        }
+    }
+
+    // Log user out ---------------------------------------------------------------------------------------
+
+    public void logout(Context ctx) {
+        ctx.req.getSession().invalidate();
+        ctx.status(200);
+        ctx.result("User logged out");
+    }
+
 
 
 }

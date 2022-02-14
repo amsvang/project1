@@ -19,7 +19,9 @@ public class JavalinApp {
 
     private Javalin app = Javalin.create().routes(()->{
 
-        //TODO: UPDATE ADMIN ACCESS ROUTES
+        // Admin paths -------------------------------------------------------------------------------------------
+
+        // app.get("/admin/reimbursement", reimbursementController::handleGetAllReimbursements);
         path("admin",()->{
             before(authController::authorizeAdminToken);
             path("reimbursement",()->{
@@ -56,6 +58,8 @@ public class JavalinApp {
             });
         });
 
+        // Employee paths --------------------------------------------------------------------------------------
+
         path("employee",()->{
             before(authController::authorizeEmployeeToken);
             path("user",()->{
@@ -80,8 +84,16 @@ public class JavalinApp {
 
         });
 
+        // Logins and logouts ----------------------------------------------------------------------------------
+
         path("login", ()->{
             post(authController::authenticateLogin);
+        });
+        path("verify", ()->{
+            get(authController::verify);
+        });
+        path("logout", ()->{
+            get(authController::logout);
         });
         before("*",logger::logRequest);
     }).exception(NumberFormatException.class, appExceptionHandler::handleNumberFormatException);
