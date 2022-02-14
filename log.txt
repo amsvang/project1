@@ -188,6 +188,7 @@ INFO - 2022-02-10T18:01:08.632 - PUT request made to: /admin/reimbursement/9
 INFO - 2022-02-10T18:04:28.366 - GET request made to: /admin/reimbursement/9
 INFO - 2022-02-10T18:13:33.004 - GET request made to: /admin/reimbursement/users/9
 INFO - 2022-02-10T18:13:47.083 - GET request made to: /admin/reimbursement/users/5
+<<<<<<< HEAD
 INFO - 2022-02-13T02:58:34.135 - GET request made to: /
 INFO - 2022-02-13T02:59:03.584 - GET request made to: /users
 INFO - 2022-02-13T02:59:36.617 - GET request made to: /users
@@ -201,3 +202,30 @@ INFO - 2022-02-13T03:04:09.705 - GET request made to: /employee/reimbursement
 INFO - 2022-02-13T03:05:13.825 - GET request made to: /admin/users
 INFO - 2022-02-13T03:05:39.940 - GET request made to: /employee/users
 INFO - 2022-02-13T03:06:15.590 - GET request made to: /admin/users
+=======
+INFO - 2022-02-11T09:37:54.083 - POST request made to: /employee/reimbursement
+INFO - 2022-02-11T09:40:31.959 - GET request made to: /employee/reimbursement/5
+INFO - 2022-02-11T09:43:33.480 - GET request made to: /employee/reimbursement/users/2
+INFO - 2022-02-11T09:43:59.877 - GET request made to: /admin/reimbursement/users/5
+INFO - 2022-02-11T09:44:57.238 - GET request made to: /admin/user/reimbursement/5
+INFO - 2022-02-11T09:45:48.382 - GET request made to: /employee/user/reimbursement/2
+INFO - 2022-02-11T09:47:48.927 - GET request made to: /admin/reimbursement/status/5
+INFO - 2022-02-11T09:54:20.155 - GET request made to: /employee/reimbursement/status/2
+INFO - 2022-02-12T17:16:47.553 - POST request made to: /login
+INFO - 2022-02-12T17:16:47.570 - glanders1Attemped login
+INFO - 2022-02-12T17:32:39.935 - POST request made to: /login
+INFO - 2022-02-12T17:32:39.963 - glanders1Attemped login
+INFO - 2022-02-12T17:35:38.405 - GET request made to: /verify
+INFO - 2022-02-12T17:35:45.122 - GET request made to: /verify
+INFO - 2022-02-12T17:35:45.925 - GET request made to: /verify
+INFO - 2022-02-12T17:35:46.321 - GET request made to: /verify
+INFO - 2022-02-12T17:35:50.224 - GET request made to: /verify
+INFO - 2022-02-12T17:35:50.836 - GET request made to: /verify
+INFO - 2022-02-12T17:35:51.110 - GET request made to: /verify
+INFO - 2022-02-12T17:36:02.696 - GET request made to: /verify
+INFO - 2022-02-12T17:36:59.075 - GET request made to: /verify
+INFO - 2022-02-12T17:37:00.647 - GET request made to: /verify
+INFO - 2022-02-12T17:41:50.139 - GET request made to: /logout
+INFO - 2022-02-12T17:42:05.792 - GET request made to: /logout
+INFO - 2022-02-12T17:42:10.610 - GET request made to: /verify
+>>>>>>> origin/main
