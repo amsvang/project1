@@ -23,3 +23,9 @@ F
 FrontEnd/employee.html,9\a\9abd2fe2efb4b8058f983193e70b0f5879eecd6d
 C
 FrontEnd/admin.html,6\7\670a0db066830009366fb92f12ac77d615fda488
+d
+4src/main/java/com/revature/services/AuthService.java,7\7\77d4ed5c27db009104d82abff92c056656cf7748
+i
+9src/main/java/com/revature/util/LoggingSingletonUtil.java,0\5\05f47b6fc2116d4e2e9459985634ae6606023756
+o
+?src/main/java/com/revature/controllers/AppExceptionHandler.java,e\0\e09e48648ab1ccc286598eef34f2efa18f675810

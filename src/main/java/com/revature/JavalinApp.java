@@ -7,6 +7,7 @@ import static io.javalin.apibuilder.ApiBuilder.*;
 import com.revature.controllers.AppExceptionHandler;
 import com.revature.controllers.AuthController;
 import com.revature.util.LoggingSingletonUtil;
+import io.javalin.http.staticfiles.Location;
 
 public class JavalinApp {
 
@@ -17,7 +18,10 @@ public class JavalinApp {
     private final ReimbursementController reimbursementController = new ReimbursementController();
     private final LoggingSingletonUtil logger = LoggingSingletonUtil.getLogger();
 
-    private Javalin app = Javalin.create().routes(()->{
+    private Javalin app = Javalin.create((config->{
+        config.enableCorsForAllOrigins();
+//        config.addStaticFiles("/static", Location.CLASSPATH);
+    })).routes(()->{
 
         // Admin paths -------------------------------------------------------------------------------------------
 
