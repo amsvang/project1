@@ -7,6 +7,7 @@ import static io.javalin.apibuilder.ApiBuilder.*;
 import com.revature.controllers.AppExceptionHandler;
 import com.revature.controllers.AuthController;
 import com.revature.util.LoggingSingletonUtil;
+import io.javalin.http.staticfiles.Location;
 
 public class JavalinApp {
 
@@ -17,13 +18,16 @@ public class JavalinApp {
     private final ReimbursementController reimbursementController = new ReimbursementController();
     private final LoggingSingletonUtil logger = LoggingSingletonUtil.getLogger();
 
-    private Javalin app = Javalin.create().routes(()->{
+    private Javalin app = Javalin.create((config->{
+        config.enableCorsForAllOrigins();
+//        config.addStaticFiles("/static", Location.CLASSPATH);
+    })).routes(()->{
 
         // Admin paths -------------------------------------------------------------------------------------------
 
         // app.get("/admin/reimbursement", reimbursementController::handleGetAllReimbursements);
         path("admin",()->{
-            before(authController::authorizeAdminToken);
+//            before(authController::authorizeAdminToken);
             path("reimbursement",()->{
                 get(reimbursementController::handleGetAllReimbursements);
                 post(reimbursementController::handleCreate);
@@ -61,7 +65,7 @@ public class JavalinApp {
         // Employee paths --------------------------------------------------------------------------------------
 
         path("employee",()->{
-            before(authController::authorizeEmployeeToken);
+//            before(authController::authorizeEmployeeToken);
             path("user",()->{
                 path("{id}",()->{
                     get(userController::handleGetOne);
@@ -70,18 +74,23 @@ public class JavalinApp {
             });
 
             path("reimbursement",()->{
+                get(reimbursementController::handleGetAllReimbursements);
                 post(reimbursementController::handleCreate);
                 path("status",()->{
 
                     get(reimbursementController::handleGetAllReimbursementByStatus);
+<<<<<<< HEAD
+=======
                 });
                 path("{id}",()->{
                     get(reimbursementController::handleGetAllReimbursements);
 
+>>>>>>> origin/main
                     path("{id}", () ->{
                         get(reimbursementController::handleGetAllReimbursementByStatusAndId);
                     });
                 });
+
                 path("{id}",()->{
                     get(reimbursementController::handleGetOne);
                     put(reimbursementController::handleUpdate);
@@ -104,8 +113,8 @@ public class JavalinApp {
         });
         before("*",logger::logRequest);
     }).exception(NumberFormatException.class, appExceptionHandler::handleNumberFormatException);
-
     public void start(int port){
         app.start(port);
-        }
+    }
+
 }

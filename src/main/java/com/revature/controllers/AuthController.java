@@ -1,6 +1,7 @@
 package com.revature.controllers;
 
 import com.revature.model.User;
+import com.revature.services.AuthService;
 import com.revature.services.UserServices;
 import com.revature.util.LoggingSingletonUtil;
 import io.javalin.http.Context;
@@ -10,6 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class AuthController {
     private final UserServices userService = new UserServices();
+//    private final AuthService authService = new AuthService();
     LoggingSingletonUtil logger = LoggingSingletonUtil.getLogger();
     private ObjectMapper mapper = new ObjectMapper();
 
@@ -31,7 +33,7 @@ public class AuthController {
         if(user==null){
             throw new UnauthorizedResponse("Incorrect username or password");
         } else {
-            /* simpleToken = user.getRole()+"-TOKEN"; // Employee-token or Admin-token
+            /*simpleToken = user.getRole()+"-TOKEN"; // Employee-token or Admin-token
             ctx.header("Authorization", simpleToken);
             ctx.status(200);*/
 

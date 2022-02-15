@@ -188,6 +188,21 @@ INFO - 2022-02-10T18:01:08.632 - PUT request made to: /admin/reimbursement/9
 INFO - 2022-02-10T18:04:28.366 - GET request made to: /admin/reimbursement/9
 INFO - 2022-02-10T18:13:33.004 - GET request made to: /admin/reimbursement/users/9
 INFO - 2022-02-10T18:13:47.083 - GET request made to: /admin/reimbursement/users/5
+<<<<<<< HEAD
+INFO - 2022-02-13T02:58:34.135 - GET request made to: /
+INFO - 2022-02-13T02:59:03.584 - GET request made to: /users
+INFO - 2022-02-13T02:59:36.617 - GET request made to: /users
+INFO - 2022-02-13T03:00:15.618 - GET request made to: /users
+INFO - 2022-02-13T03:00:23.288 - GET request made to: /users
+INFO - 2022-02-13T03:00:45.528 - GET request made to: /users
+INFO - 2022-02-13T03:01:33.591 - GET request made to: /employee/users
+INFO - 2022-02-13T03:03:15.913 - GET request made to: /employee/users
+INFO - 2022-02-13T03:03:48.377 - GET request made to: /employee/user
+INFO - 2022-02-13T03:04:09.705 - GET request made to: /employee/reimbursement
+INFO - 2022-02-13T03:05:13.825 - GET request made to: /admin/users
+INFO - 2022-02-13T03:05:39.940 - GET request made to: /employee/users
+INFO - 2022-02-13T03:06:15.590 - GET request made to: /admin/users
+=======
 INFO - 2022-02-11T09:37:54.083 - POST request made to: /employee/reimbursement
 INFO - 2022-02-11T09:40:31.959 - GET request made to: /employee/reimbursement/5
 INFO - 2022-02-11T09:43:33.480 - GET request made to: /employee/reimbursement/users/2
@@ -213,3 +228,109 @@ INFO - 2022-02-12T17:37:00.647 - GET request made to: /verify
 INFO - 2022-02-12T17:41:50.139 - GET request made to: /logout
 INFO - 2022-02-12T17:42:05.792 - GET request made to: /logout
 INFO - 2022-02-12T17:42:10.610 - GET request made to: /verify
+>>>>>>> origin/main
+INFO - 2022-02-14T20:34:17.893 - GET request made to: /admin
+INFO - 2022-02-14T20:34:36.308 - GET request made to: /admin
+INFO - 2022-02-14T20:34:50.869 - GET request made to: /admin/reimbursemenet
+INFO - 2022-02-14T20:35:17.967 - GET request made to: /admin/reimbursement
+INFO - 2022-02-14T20:45:12.588 - GET request made to: /users
+INFO - 2022-02-14T20:45:38.546 - GET request made to: /admin/users
+INFO - 2022-02-14T20:45:43.894 - GET request made to: /admin/users
+INFO - 2022-02-14T20:46:28.860 - GET request made to: /admin/users
+INFO - 2022-02-14T20:47:53.128 - GET request made to: /admin/users/1
+INFO - 2022-02-14T20:48:31.825 - GET request made to: /admin/users/1
+INFO - 2022-02-14T21:37:43.548 - GET request made to: /admin/users/
+INFO - 2022-02-14T21:37:51.619 - GET request made to: /admin/users
+INFO - 2022-02-14T21:38:00.544 - GET request made to: /admin/users/1
+INFO - 2022-02-14T21:38:11.150 - GET request made to: /admin/users/2
+INFO - 2022-02-14T21:54:28.756 - GET request made to: /admin/users/2
+INFO - 2022-02-14T21:54:35.661 - GET request made to: /admin/users/1
+INFO - 2022-02-14T22:19:07.188 - GET request made to: /admin/users/1
+INFO - 2022-02-14T22:29:32.200 - GET request made to: /admin/users
+INFO - 2022-02-14T22:30:21.790 - GET request made to: /admin/users/3
+INFO - 2022-02-14T23:35:38.406 - GET request made to: /admin/users
+INFO - 2022-02-14T23:35:42.875 - GET request made to: /admin/users
+INFO - 2022-02-14T23:36:13.177 - OPTIONS request made to: /admin/users
+INFO - 2022-02-14T23:36:35.975 - GET request made to: /admin/users
+INFO - 2022-02-14T23:36:39.600 - GET request made to: /admin/users
+INFO - 2022-02-14T23:36:57.045 - GET request made to: /admin/users
+INFO - 2022-02-14T23:37:10.041 - OPTIONS request made to: /admin/users
+INFO - 2022-02-14T23:37:23.557 - GET request made to: /admin/users
+INFO - 2022-02-14T23:37:42.460 - GET request made to: /admin/users
+INFO - 2022-02-15T00:34:30.191 - GET request made to: /admin/users
+INFO - 2022-02-15T06:16:52.052 - GET request made to: /admin/users
+INFO - 2022-02-15T06:18:45.644 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:18:47.799 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:18:49.037 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:18:50.330 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:19:13.744 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:19:51.465 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:19:53.502 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:20:22.944 - GET request made to: /admin/users
+INFO - 2022-02-15T06:21:04.895 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:21:15.777 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:21:23.938 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:21:25.877 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:22:59.043 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:23:00.235 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:23:00.853 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:23:02.899 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:23:33.144 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:23:36.056 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:27:15.147 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:27:46.833 - GET request made to: /admin/users
+INFO - 2022-02-15T06:27:51.042 - GET request made to: /admin/users
+INFO - 2022-02-15T06:27:58.228 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:28:07.549 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:28:08.379 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:31:18.785 - POST request made to: /login
+INFO - 2022-02-15T06:31:18.785 - nullAttemped login
+INFO - 2022-02-15T06:31:47.226 - POST request made to: /login
+INFO - 2022-02-15T06:31:47.226 - nullAttemped login
+INFO - 2022-02-15T06:32:24.998 - POST request made to: /login
+INFO - 2022-02-15T06:32:24.998 - nullAttemped login
+INFO - 2022-02-15T06:33:20.995 - POST request made to: /login
+INFO - 2022-02-15T06:33:20.995 - nullAttemped login
+INFO - 2022-02-15T06:36:55.669 - POST request made to: /login
+INFO - 2022-02-15T06:36:55.670 - nullAttemped login
+INFO - 2022-02-15T06:37:06.399 - POST request made to: /login
+INFO - 2022-02-15T06:37:06.399 - nullAttemped login
+INFO - 2022-02-15T06:37:15.753 - POST request made to: /login
+INFO - 2022-02-15T06:37:15.753 - nullAttemped login
+INFO - 2022-02-15T06:40:23.670 - POST request made to: /login
+INFO - 2022-02-15T06:40:23.670 - nullAttemped login
+INFO - 2022-02-15T06:40:34.953 - POST request made to: /login
+INFO - 2022-02-15T06:40:34.953 - nullAttemped login
+INFO - 2022-02-15T06:44:02.510 - GET request made to: /users
+INFO - 2022-02-15T06:45:59.275 - GET request made to: /admin/users
+INFO - 2022-02-15T06:46:10.440 - GET request made to: /admin/users
+INFO - 2022-02-15T06:46:11.292 - GET request made to: /favicon.ico
+INFO - 2022-02-15T06:46:51.649 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:46:58.496 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T06:47:10.390 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T07:06:23.930 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T07:06:24.791 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T07:10:19.496 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T07:11:42.372 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T07:20:57.680 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T07:23:39.942 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T07:27:29.239 - OPTIONS request made to: /admin/users
+INFO - 2022-02-15T09:46:01.536 - GET request made to: /admin/users
+INFO - 2022-02-15T10:32:50.388 - GET request made to: /admin/users
+INFO - 2022-02-15T10:33:41.474 - GET request made to: /admin/users
+INFO - 2022-02-15T10:33:51.456 - GET request made to: /admin/users
+INFO - 2022-02-15T10:34:56.078 - GET request made to: /admin/users
+INFO - 2022-02-15T10:35:02.453 - GET request made to: /admin/users
+INFO - 2022-02-15T10:35:19.483 - GET request made to: /admin/users
+INFO - 2022-02-15T10:35:42.937 - GET request made to: /admin/users
+INFO - 2022-02-15T10:36:26.472 - GET request made to: /admin/users
+INFO - 2022-02-15T10:37:28.048 - GET request made to: /admin/users
+INFO - 2022-02-15T10:37:30.010 - GET request made to: /admin/users
+INFO - 2022-02-15T10:37:30.717 - GET request made to: /admin/users
+INFO - 2022-02-15T10:37:56.667 - GET request made to: /admin/users
+INFO - 2022-02-15T10:38:14.673 - GET request made to: /admin/users
+INFO - 2022-02-15T10:38:15.553 - GET request made to: /admin/users
+INFO - 2022-02-15T10:41:00.759 - GET request made to: /admin/users
+INFO - 2022-02-15T10:44:38.660 - GET request made to: /
+INFO - 2022-02-15T10:44:50.170 - GET request made to: /admin/users
+INFO - 2022-02-15T10:44:56.313 - GET request made to: /admin/users
