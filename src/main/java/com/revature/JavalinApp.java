@@ -20,7 +20,7 @@ public class JavalinApp {
 
     private Javalin app = Javalin.create((config->{
         config.enableCorsForAllOrigins();
-//        config.addStaticFiles("/static", Location.CLASSPATH);
+        config.addStaticFiles("/static", Location.CLASSPATH);
     })).routes(()->{
 
         // Admin paths -------------------------------------------------------------------------------------------

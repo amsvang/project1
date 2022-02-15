@@ -7,27 +7,8 @@ const password = document.getElementById('password').value;
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-// const formData = new FormData(this);
-
-//     const url='app url';
-// fetch(url, {
-//     method:'POST',
-//     headers: {
-//         'Authorization':'ADMIN-TOKEN'
-//     }
-      
 
 
-
-
-
-// 	if (username.value === '') {
-// 		showError(username, 'username is required');
-// 	} else {
-// 		showSuccess(usernam);
-// 	}
-// 	console.log(username.value);
-// });
 
 
 let admin = 'admin';
