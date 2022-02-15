@@ -35,5 +35,4 @@ public class UserServices {
         return userDao.getUserByUsernameAndPassword(username,pass);
     }
 
-
 }

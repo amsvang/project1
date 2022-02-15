@@ -23,7 +23,7 @@ public class AuthController {
         String password = ctx.formParam("password");
 
         logger.setWriteToFile(true);
-        logger.info(username + "Attemped login");
+        logger.info(username + "Attempted login");
         logger.setWriteToFile(false);
 
         // fulfill the request
@@ -49,7 +49,7 @@ public class AuthController {
             }
         }
     }
-    // Check session (who person is) ----------------------------------------------------------------------------------
+    // Check session (Is person Admin or Employee) ----------------------------------------------------------------------------------
 
     public void authorizeAdminToken(Context ctx){
         String authHeader = ctx.header("Authorization");
