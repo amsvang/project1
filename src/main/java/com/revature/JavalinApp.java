@@ -23,7 +23,7 @@ public class JavalinApp {
 
         // app.get("/admin/reimbursement", reimbursementController::handleGetAllReimbursements);
         path("admin",()->{
-            before(authController::authorizeAdminToken);
+//            before(authController::authorizeAdminToken);
             path("reimbursement",()->{
                 get(reimbursementController::handleGetAllReimbursements);
                 post(reimbursementController::handleCreate);
@@ -61,7 +61,7 @@ public class JavalinApp {
         // Employee paths --------------------------------------------------------------------------------------
 
         path("employee",()->{
-            before(authController::authorizeEmployeeToken);
+//            before(authController::authorizeEmployeeToken);
             path("user",()->{
                 path("{id}",()->{
                     get(userController::handleGetOne);
@@ -70,18 +70,16 @@ public class JavalinApp {
             });
 
             path("reimbursement",()->{
+                get(reimbursementController::handleGetAllReimbursements);
                 post(reimbursementController::handleCreate);
                 path("status",()->{
 
                     get(reimbursementController::handleGetAllReimbursementByStatus);
-                });
-                path("{id}",()->{
-                    get(reimbursementController::handleGetAllReimbursements);
-
                     path("{id}", () ->{
                         get(reimbursementController::handleGetAllReimbursementByStatusAndId);
                     });
                 });
+
                 path("{id}",()->{
                     get(reimbursementController::handleGetOne);
                     put(reimbursementController::handleUpdate);
@@ -104,5 +102,8 @@ public class JavalinApp {
         });
         before("*",logger::logRequest);
     }).exception(NumberFormatException.class, appExceptionHandler::handleNumberFormatException);
+    public void start(int port){
+        app.start(port);
+    }
 
 }

@@ -16,34 +16,24 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
 		/>
-		<title>REV ERS</title>
+		<title>Revature ERS</title>
 	</head>
 	<body>
-		<!-- <h1>hello</h1>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsum
-			commodi laboriosam nulla, in aut quam nesciunt recusandae quasi
-			voluptatem.
-		</p>
-		<button>hi</button> -->
-
 		<div class="container">
-			<div class="row main-login-container">
-				<div class="four columns image-container">
-					<img
-						src="https://drive.google.com/uc?id=14Gprnv522_AWaxv940Zw3T5s_PywMiZl"
-						alt=""
-					/>
-				</div>
-				<div class="eight columns login-form-container">
-					<form>
+			<div class="row">
+				<div class="four columns">image placeholder</div>
+				<!-- div for login -->
+				<div class="eight columns">
+					<form class="login-form" id="login-form">
 						<h2>Login</h2>
-						<label>username</label>
-						<input type="text" required />
-						<label>password</label>
-						<input type="password" required />
+						<label for="username">username</label>
+						<input type="text" name="username" id="username" />
+						<div><small>error message here</small></div>
+						<label for="password">password</label>
+						<input type="password" name="password" id="password" />
+						<div><small>error message here</small></div>
 						<div class="button-div">
-							<button class="button-primary">login</button>
+							<button class="button-primary" id="login-button">login</button>
 						</div>
 					</form>
 				</div>

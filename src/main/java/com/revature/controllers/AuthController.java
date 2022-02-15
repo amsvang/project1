@@ -33,7 +33,7 @@ public class AuthController {
         if(user==null){
             throw new UnauthorizedResponse("Incorrect username or password");
         } else {
-            /* simpleToken = user.getRole()+"-TOKEN"; // Employee-token or Admin-token
+            /*simpleToken = user.getRole()+"-TOKEN"; // Employee-token or Admin-token
             ctx.header("Authorization", simpleToken);
             ctx.status(200);*/
 

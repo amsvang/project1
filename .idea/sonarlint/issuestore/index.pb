@@ -9,3 +9,17 @@ n
 >src/main/java/com/revature/services/ReimbursementServices.java,e\5\e5a3fd760550ace67a69566db5d035eefc4374e5
 c
 3src/main/java/com/revature/model/Reimbursement.java,3\8\380d4ab9b0c36a7e814b5d701c2a3f6be1b2af9b
+h
+8src/main/java/com/revature/model/ReimbursementInput.java,c\7\c720f941cbe2da8c0412150db178e62bb616c9bb
+j
+:src/main/java/com/revature/controllers/UserController.java,3\3\33768bacf3381e61332680f8bd1e89d9a381ca67
+s
+Csrc/main/java/com/revature/controllers/ReimbursementController.java,7\3\73ecbb020ebb4dcd170394b7f1aa4e6ebca894fb
+_
+/src/main/java/com/revature/model/UserRoles.java,c\7\c7666df1bf8a391329edf5be927b5fecddb946d4
+C
+FrontEnd/index.html,6\f\6f63d2c668e4cc8b22cd9f693f219a3419433556
+F
+FrontEnd/employee.html,9\a\9abd2fe2efb4b8058f983193e70b0f5879eecd6d
+C
+FrontEnd/admin.html,6\7\670a0db066830009366fb92f12ac77d615fda488
