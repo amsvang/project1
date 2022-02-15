@@ -64,7 +64,9 @@ public class UserDaoImpl implements UserDao{
                 user.setEmail(email);
 
                 String userRole = rs.getString("user_type");
+
                 users.add(user);
+
             }
         } catch (SQLException e) {
             e.printStackTrace();
