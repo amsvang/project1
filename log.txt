@@ -334,3 +334,12 @@ INFO - 2022-02-15T10:41:00.759 - GET request made to: /admin/users
 INFO - 2022-02-15T10:44:38.660 - GET request made to: /
 INFO - 2022-02-15T10:44:50.170 - GET request made to: /admin/users
 INFO - 2022-02-15T10:44:56.313 - GET request made to: /admin/users
+INFO - 2022-02-15T11:12:39.013 - GET request made to: /
+INFO - 2022-02-15T11:12:48.814 - GET request made to: /admin/users
+INFO - 2022-02-15T11:13:01.448 - GET request made to: /admin/users/2
+INFO - 2022-02-15T11:13:33.930 - GET request made to: /login
+INFO - 2022-02-15T11:14:36.979 - GET request made to: /
+INFO - 2022-02-15T11:14:43.806 - GET request made to: /login
+INFO - 2022-02-15T11:14:51.084 - GET request made to: /admin/users
+INFO - 2022-02-15T11:26:30.399 - GET request made to: /admin/users
+INFO - 2022-02-15T11:31:42.105 - GET request made to: /admin/users
