@@ -897,3 +897,5 @@ INFO - 2022-02-16T08:07:08.076 - GET request made to: /styles.css
 INFO - 2022-02-16T08:07:08.078 - GET request made to: /employee.js
 INFO - 2022-02-16T08:07:16.606 - GET request made to: /employee/reimbursement/status/5
 >>>>>>> origin/main
+INFO - 2022-02-16T09:31:15.362 - GET request made to: /admin/users
+INFO - 2022-02-16T09:33:19.211 - GET request made to: /admin/users

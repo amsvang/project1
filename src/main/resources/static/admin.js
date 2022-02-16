@@ -1,37 +1,40 @@
-let dataContainer = document.getElementById('data-container');
-
-getUserData = (data) => {
-	for (user of data) {
-		let userList = document.createElement('li');
-
-		userList.innerHTML = `
-		
-        <h3>${user.firstName} ${user.lastName}</h3>
-		<h5> user id: ${user.userId}</h5>
-		<h5> ${user.email}</h5>
-        `;
-
-		dataContainer.append(userList);
-	}
-};
-
 const url = 'http://localhost:8080/';
+const table = document.getElementById('table');
+const tbody = document.getElementById('tbody');
 
 let apiUrl = `${url}admin/users`;
-
 let button = document.getElementById('user-btn');
 
-// button.addEventListener('click', () => {
-// 	console.log('clicked');
-// 	fetch('https://randomuser.me/api/')
-// 		.then((res) => res.json())
-// 		.then((data) => console.log(data));
-// });
-
+// clcik event to grab get all user data--------------------------------
 button.addEventListener('click', () => {
+	let userDiv = document.getElementById('userDiv');
+
 	console.log('clicked');
 	fetch(apiUrl)
 		.then((res) => res.json())
 		// .then((data) => console.log(data));
 		.then((data) => getUserData(data));
 });
+
+// function to dynamically create table row elemnts in table------------
+getUserData = (data) => {
+	for (user of data) {
+		let tr = document.createElement('tr');
+		tr.innerHTML = `
+	
+		<td>
+		${user.userId}
+		</td>
+			<td>
+			${user.firstName}
+			</td>
+			<td>
+			${user.lastName}
+			</td>
+			<td><button>update</button></td>
+        `;
+		tbody.append(tr);
+	}
+};
+
+//button on each row, when clicked will bring up modal with options to
