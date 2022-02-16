@@ -69,9 +69,8 @@ public class AuthController {
 
     }
     public void authorizeEmployeeToken(Context ctx){
-        System.out.println("printing string" + ctx);
         String employeeIdTemp = ctx.req.getSession().getAttribute("id").toString();
-        System.out.println(employeeIdTemp);
+
         int employeeId = Integer.parseInt(employeeIdTemp);
 
         User user = userService.getById(employeeId);

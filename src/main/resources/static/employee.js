@@ -2,8 +2,9 @@ const url = 'http://localhost:8080/';
 
 
 let dataContainer = document.getElementById('data-tbody');
-
 let viewPendingReimbursementsBtn = document.getElementById('view-pending-reimbursements');
+
+//----------------------------------------------------------------------------------------------------------
 
 viewPendingReimbursementsBtn.addEventListener('click', () => {
 	let apiUrl = `${url}employee/reimbursement/status`;
@@ -16,17 +17,15 @@ viewPendingReimbursementsBtn.addEventListener('click', () => {
 		.then((data) => getReimbursementData(data));
 });
 
+//----------------------------------------------------------------------------------------------------------
+
 getReimbursementData = (data) => {
 	dataContainer.innerHTML = "";
 	for (let reimbursement of data) {
 		let reimbursementTable = document.createElement('tr');
 
 		reimbursementTable.innerHTML = `
-
-
-
         <td>${reimbursement.reimbursementAmount}</td>
-
 
         `;
 
