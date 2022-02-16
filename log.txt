@@ -966,6 +966,13 @@ INFO - 2022-02-16T08:43:32.958 - GET request made to: /styles.css
 INFO - 2022-02-16T08:43:32.963 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
 =======
 >>>>>>> origin/main
+<<<<<<< HEAD
 >>>>>>> origin/main
 INFO - 2022-02-16T09:09:59.595 - POST request made to: /login
 INFO - 2022-02-16T09:09:59.632 - iellesmere4 Attempted login
+=======
+INFO - 2022-02-16T09:31:15.362 - GET request made to: /admin/users
+INFO - 2022-02-16T09:33:19.211 - GET request made to: /admin/users
+>>>>>>> origin/main
+INFO - 2022-02-16T10:09:49.540 - POST request made to: /login
+INFO - 2022-02-16T10:09:49.557 - iellesmere4 Attempted login
