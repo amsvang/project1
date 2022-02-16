@@ -5,14 +5,13 @@ import com.revature.services.AuthService;
 import com.revature.services.UserServices;
 import com.revature.util.LoggingSingletonUtil;
 import io.javalin.http.Context;
-import io.javalin.http.ForbiddenResponse;
 import io.javalin.http.UnauthorizedResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.model.UserRoles;
 
 public class AuthController {
     private final UserServices userService = new UserServices();
-//    private final AuthService authService = new AuthService();
+    //private final AuthService authService = new AuthService();
     LoggingSingletonUtil logger = LoggingSingletonUtil.getLogger();
     private ObjectMapper mapper = new ObjectMapper();
 
@@ -26,7 +25,7 @@ public class AuthController {
         logger.setWriteToFile(true);
         logger.info(username + " Attempted login");
         logger.setWriteToFile(false);
-        System.out.println("PASS" + password);
+        //System.out.println("PASS" + password);
 
         // fulfill the request
         User user =  userService.getUserByUsernameAndPassword(username, password);
@@ -35,6 +34,8 @@ public class AuthController {
         if(user==null){
             throw new UnauthorizedResponse("Incorrect username or password");
         } else {
+
+            //Not using. This method checks if person is Employee or Admin
             /*simpleToken = user.getRole()+"-TOKEN"; // Employee-token or Admin-token
             ctx.header("Authorization", simpleToken);
             ctx.status(200);*/
@@ -55,10 +56,10 @@ public class AuthController {
 
     public void authorizeAdminToken(Context ctx){
 
-        String employeeIdTemp = ctx.req.getSession().getAttribute("id").toString();
-        int employeeId = Integer.parseInt(employeeIdTemp);
+        String adminIdTemp = ctx.req.getSession().getAttribute("id").toString();
+        int adminId = Integer.parseInt(adminIdTemp);
 
-        User user = userService.getById(employeeId);
+        User user = userService.getById(adminId);
 
         if (user.getRole().equals(UserRoles.ADMIN)) {
             return;
@@ -87,7 +88,8 @@ public class AuthController {
     public void verify(Context ctx) {
         ctx.header("Access-Control-Expose-Headers", "*");
 
-        System.out.println(ctx.req.getSession().getAttribute("id"));
+        // Testing if id outputs to console
+        //System.out.println(ctx.req.getSession().getAttribute("id"));
 
         if(ctx.req.getSession().getAttribute("id") == null) {
             ctx.status(400);
