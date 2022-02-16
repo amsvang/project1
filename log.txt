@@ -343,3 +343,395 @@ INFO - 2022-02-15T11:14:43.806 - GET request made to: /login
 INFO - 2022-02-15T11:14:51.084 - GET request made to: /admin/users
 INFO - 2022-02-15T11:26:30.399 - GET request made to: /admin/users
 INFO - 2022-02-15T11:31:42.105 - GET request made to: /admin/users
+INFO - 2022-02-15T17:59:34.946 - POST request made to: //login
+INFO - 2022-02-15T18:00:06.235 - POST request made to: //login
+INFO - 2022-02-15T18:02:55.313 - GET request made to: /
+INFO - 2022-02-15T18:03:03.012 - GET request made to: /static
+INFO - 2022-02-15T18:06:06.288 - GET request made to: /static/login.html
+INFO - 2022-02-15T18:06:12.968 - GET request made to: /resources/static/login.html
+INFO - 2022-02-15T18:06:18.770 - GET request made to: /static/login.html
+INFO - 2022-02-15T18:07:45.411 - GET request made to: /login.html
+INFO - 2022-02-15T18:07:45.462 - GET request made to: /styles.css
+INFO - 2022-02-15T18:07:45.463 - GET request made to: /script.js
+INFO - 2022-02-15T18:07:50.952 - GET request made to: /login.html
+INFO - 2022-02-15T18:07:50.981 - GET request made to: /styles.css
+INFO - 2022-02-15T18:07:50.981 - GET request made to: /script.js
+INFO - 2022-02-15T18:09:47.586 - GET request made to: /login.html
+INFO - 2022-02-15T18:09:47.642 - GET request made to: /styles.css
+INFO - 2022-02-15T18:09:47.643 - GET request made to: /script.js
+INFO - 2022-02-15T18:09:58.189 - GET request made to: /login.html
+INFO - 2022-02-15T18:09:58.234 - GET request made to: /styles.css
+INFO - 2022-02-15T18:09:58.234 - GET request made to: /styles.css - GET request made to: /script.js
+INFO - 2022-02-15T18:10:00.626 - GET request made to: /login.html
+INFO - 2022-02-15T18:10:00.644 - GET request made to: /styles.css
+INFO - 2022-02-15T18:10:00.645 - GET request made to: /script.js
+INFO - 2022-02-15T18:10:11.182 - GET request made to: /login.html
+INFO - 2022-02-15T18:10:11.215 - GET request made to: /styles.css
+INFO - 2022-02-15T18:10:11.216 - GET request made to: /login.js
+INFO - 2022-02-15T18:10:16.214 - POST request made to: //login
+INFO - 2022-02-15T18:10:36.299 - POST request made to: //login
+INFO - 2022-02-15T18:10:49.240 - POST request made to: //login
+INFO - 2022-02-15T18:10:51.230 - POST request made to: //login
+INFO - 2022-02-15T18:11:37.439 - POST request made to: //login
+INFO - 2022-02-15T18:12:10.568 - POST request made to: //login
+INFO - 2022-02-15T18:13:38.931 - GET request made to: /login.html
+INFO - 2022-02-15T18:13:38.962 - GET request made to: /styles.css
+INFO - 2022-02-15T18:13:38.965 - GET request made to: /login.js
+INFO - 2022-02-15T18:13:41.887 - GET request made to: /login.html
+INFO - 2022-02-15T18:13:41.908 - GET request made to: /styles.css
+INFO - 2022-02-15T18:13:41.908 - GET request made to: /login.js
+INFO - 2022-02-15T18:13:49.439 - POST request made to: /login2
+INFO - 2022-02-15T18:14:08.751 - GET request made to: /login.html
+INFO - 2022-02-15T18:14:08.786 - GET request made to: /styles.css
+INFO - 2022-02-15T18:14:08.787 - GET request made to: /login.js
+INFO - 2022-02-15T18:14:09.677 - GET request made to: /login.html
+INFO - 2022-02-15T18:14:09.697 - GET request made to: /styles.css
+INFO - 2022-02-15T18:14:14.391 - POST request made to: /login
+INFO - 2022-02-15T18:14:14.418 - 123Attempted login
+INFO - 2022-02-15T18:14:46.370 - POST request made to: /login
+INFO - 2022-02-15T18:14:46.372 - JAMESAttempted login
+INFO - 2022-02-15T18:15:04.671 - POST request made to: /login
+INFO - 2022-02-15T18:15:04.672 - JAMESAttempted login
+INFO - 2022-02-15T18:16:23.670 - POST request made to: /login
+INFO - 2022-02-15T18:16:23.670 - iellesmere4Attempted login
+INFO - 2022-02-15T18:16:30.570 - POST request made to: /login
+INFO - 2022-02-15T18:16:30.571 - iellesmere4Attempted login
+INFO - 2022-02-15T18:18:48.567 - POST request made to: /login
+INFO - 2022-02-15T18:18:48.584 - iellesmere4 Attempted login
+INFO - 2022-02-15T18:19:57.750 - GET request made to: /login.html
+INFO - 2022-02-15T18:19:57.778 - GET request made to: /styles.css
+INFO - 2022-02-15T18:19:57.781 - GET request made to: /login.js
+INFO - 2022-02-15T18:20:01.030 - POST request made to: /login
+INFO - 2022-02-15T18:20:01.031 - 123 Attempted login
+INFO - 2022-02-15T18:20:07.795 - GET request made to: /login.html
+INFO - 2022-02-15T18:20:07.823 - GET request made to: /styles.css
+INFO - 2022-02-15T18:20:07.824 - GET request made to: /login.js
+INFO - 2022-02-15T18:20:11.415 - POST request made to: /login
+INFO - 2022-02-15T18:20:11.437 - abc Attempted login
+INFO - 2022-02-15T18:20:31.166 - POST request made to: /login
+INFO - 2022-02-15T18:20:31.182 - abc Attempted login
+INFO - 2022-02-15T18:20:34.908 - GET request made to: /login.html
+INFO - 2022-02-15T18:20:34.944 - GET request made to: /styles.css
+INFO - 2022-02-15T18:20:34.944 - GET request made to: /login.js
+INFO - 2022-02-15T18:20:38.388 - POST request made to: /login
+INFO - 2022-02-15T18:20:38.389 - abc Attempted login
+INFO - 2022-02-15T18:21:47.369 - POST request made to: /login
+INFO - 2022-02-15T18:21:47.392 - abc Attempted login
+INFO - 2022-02-15T18:23:00.479 - POST request made to: /login
+INFO - 2022-02-15T18:23:00.495 - abc Attempted login
+INFO - 2022-02-15T18:23:11.288 - POST request made to: /login
+INFO - 2022-02-15T18:23:11.289 - JAMES Attempted login
+INFO - 2022-02-15T18:23:32.780 - POST request made to: /login
+INFO - 2022-02-15T18:23:32.792 - JAMES Attempted login
+INFO - 2022-02-15T18:23:50.238 - POST request made to: /login
+INFO - 2022-02-15T18:23:50.240 - iellesmere4 Attempted login
+INFO - 2022-02-15T18:25:39.042 - GET request made to: /login.html
+INFO - 2022-02-15T18:25:39.070 - GET request made to: /styles.css
+INFO - 2022-02-15T18:25:39.071 - GET request made to: /login.js
+INFO - 2022-02-15T18:25:55.100 - POST request made to: /login
+INFO - 2022-02-15T18:25:55.126 - JAMES Attempted login
+INFO - 2022-02-15T18:27:10.168 - POST request made to: /login
+INFO - 2022-02-15T18:27:10.169 - iellesmere4 Attempted login
+INFO - 2022-02-15T18:27:14.407 - POST request made to: /login
+INFO - 2022-02-15T18:27:14.408 - iellesmere4 Attempted login
+INFO - 2022-02-15T18:28:05.659 - GET request made to: /login.html
+INFO - 2022-02-15T18:28:05.706 - GET request made to: /styles.css
+INFO - 2022-02-15T18:28:05.708 - GET request made to: /login.js
+INFO - 2022-02-15T18:28:11.131 - GET request made to: /employee.html
+INFO - 2022-02-15T18:28:11.177 - GET request made to: /employee.js
+INFO - 2022-02-15T18:28:16.926 - GET request made to: /employee/reimbursement
+INFO - 2022-02-15T18:28:30.971 - GET request made to: /employee/reimbursement
+INFO - 2022-02-15T18:32:39.030 - POST request made to: /login
+INFO - 2022-02-15T18:32:39.050 - JAMES Attempted login
+INFO - 2022-02-15T18:33:21.776 - GET request made to: /login.html
+INFO - 2022-02-15T18:33:21.814 - GET request made to: /login.js
+INFO - 2022-02-15T18:33:21.814 - GET request made to: /login.js - GET request made to: /styles.css
+INFO - 2022-02-15T18:33:26.567 - POST request made to: /login
+INFO - 2022-02-15T18:33:26.591 - JAMES Attempted login
+INFO - 2022-02-15T18:34:08.683 - GET request made to: /login.html
+INFO - 2022-02-15T18:34:08.724 - GET request made to: /styles.css
+INFO - 2022-02-15T18:34:08.725 - GET request made to: /login.js
+INFO - 2022-02-15T18:34:13.366 - POST request made to: /login
+INFO - 2022-02-15T18:34:13.389 - JAMES Attempted login
+INFO - 2022-02-15T18:36:28.973 - POST request made to: /login
+INFO - 2022-02-15T18:36:28.973 - JAMES Attempted login
+INFO - 2022-02-15T18:36:46.169 - GET request made to: /employee.html
+INFO - 2022-02-15T18:36:46.234 - GET request made to: /employee.js
+INFO - 2022-02-15T19:06:06.067 - POST request made to: /login
+INFO - 2022-02-15T19:06:06.078 - iellesmere4 Attempted login
+INFO - 2022-02-15T19:06:14.375 - GET request made to: /employee.html
+INFO - 2022-02-15T19:06:14.438 - GET request made to: /employee.js
+INFO - 2022-02-15T19:06:15.382 - GET request made to: /employee.html
+INFO - 2022-02-15T19:06:15.413 - GET request made to: /employee.js
+INFO - 2022-02-15T19:09:45.257 - GET request made to: /employee.html
+INFO - 2022-02-15T19:09:45.285 - GET request made to: /employee.js
+INFO - 2022-02-15T19:10:08.221 - POST request made to: /login
+INFO - 2022-02-15T19:10:08.234 - iellesmere4 Attempted login
+INFO - 2022-02-15T19:11:37.927 - POST request made to: /login
+INFO - 2022-02-15T19:11:37.943 - iellesmere4 Attempted login
+INFO - 2022-02-15T19:11:44.228 - POST request made to: /login
+INFO - 2022-02-15T19:11:44.229 - iellesmere4 Attempted login
+INFO - 2022-02-15T19:13:14.349 - POST request made to: /login
+INFO - 2022-02-15T19:13:14.365 - iellesmere4 Attempted login
+INFO - 2022-02-15T19:13:18.913 - GET request made to: /employee/reimbursement
+INFO - 2022-02-15T19:15:40.302 - POST request made to: /login
+INFO - 2022-02-15T19:15:40.304 - iellesmere4 Attempted login
+INFO - 2022-02-15T19:27:25.757 - POST request made to: /login
+INFO - 2022-02-15T19:27:25.767 - iellesmere4 Attempted login
+INFO - 2022-02-15T19:27:33.963 - GET request made to: /employee/reimbursement
+INFO - 2022-02-15T19:35:04.685 - GET request made to: /login.html
+INFO - 2022-02-15T19:35:04.723 - GET request made to: /styles.css
+INFO - 2022-02-15T19:35:04.724 - GET request made to: /login.js
+INFO - 2022-02-15T19:35:23.860 - POST request made to: /login
+INFO - 2022-02-15T19:35:23.881 - glanders1 Attempted login
+INFO - 2022-02-15T19:36:33.249 - GET request made to: /login.html
+INFO - 2022-02-15T19:36:33.290 - GET request made to: /styles.css
+INFO - 2022-02-15T19:36:33.294 - GET request made to: /login.js
+INFO - 2022-02-15T19:36:44.783 - POST request made to: /login
+INFO - 2022-02-15T19:36:44.805 - glanders1 Attempted login
+INFO - 2022-02-15T19:36:54.317 - GET request made to: /employee/reimbursement
+INFO - 2022-02-15T19:37:07.724 - GET request made to: /employee.html
+INFO - 2022-02-15T19:37:07.741 - GET request made to: /employee.js
+INFO - 2022-02-15T19:37:09.287 - GET request made to: /employee/reimbursement/2
+INFO - 2022-02-15T19:49:41.729 - GET request made to: /employee.html
+INFO - 2022-02-15T19:49:41.754 - GET request made to: /employee.js
+INFO - 2022-02-15T19:53:42.967 - POST request made to: /login
+INFO - 2022-02-15T19:53:42.983 - glanders1 Attempted login
+INFO - 2022-02-15T19:53:50.975 - GET request made to: /employee/reimbursement/2
+INFO - 2022-02-15T19:53:58.720 - GET request made to: /employee.html
+INFO - 2022-02-15T19:53:58.747 - GET request made to: /employee.js
+INFO - 2022-02-15T19:54:01.074 - GET request made to: /employee/reimbursement/2
+INFO - 2022-02-15T19:54:02.765 - GET request made to: /employee/reimbursement/2/2
+INFO - 2022-02-15T19:54:04.961 - GET request made to: /login.html
+INFO - 2022-02-15T19:54:04.985 - GET request made to: /styles.css
+INFO - 2022-02-15T19:54:04.987 - GET request made to: /login.js
+INFO - 2022-02-15T19:54:30.940 - POST request made to: /login
+INFO - 2022-02-15T19:54:30.942 - glanders1 Attempted login
+INFO - 2022-02-15T19:54:35.691 - GET request made to: /employee/reimbursement/2/2/2
+INFO - 2022-02-15T19:55:40.167 - POST request made to: /login
+INFO - 2022-02-15T19:55:40.184 - glanders1 Attempted login
+INFO - 2022-02-15T19:55:46.151 - GET request made to: /employee.html
+INFO - 2022-02-15T19:55:46.181 - GET request made to: /employee.js
+INFO - 2022-02-15T19:55:50.514 - GET request made to: /employee/reimbursement/2
+INFO - 2022-02-15T19:57:11.871 - POST request made to: /login
+INFO - 2022-02-15T19:57:11.892 - glanders1 Attempted login
+INFO - 2022-02-15T19:57:16.268 - GET request made to: /employee/reimbursement/2/2
+INFO - 2022-02-15T19:57:59.623 - GET request made to: /employee.html
+INFO - 2022-02-15T19:57:59.663 - GET request made to: /employee.js
+INFO - 2022-02-15T19:58:12.566 - POST request made to: /login
+INFO - 2022-02-15T19:58:12.588 - glanders1 Attempted login
+INFO - 2022-02-15T19:58:16.138 - GET request made to: /employee/reimbursement/2/2
+INFO - 2022-02-15T19:59:00.329 - POST request made to: /login
+INFO - 2022-02-15T19:59:00.344 - glanders1 Attempted login
+INFO - 2022-02-15T19:59:03.980 - GET request made to: /employee/reimbursement/2/2/2
+INFO - 2022-02-15T19:59:44.362 - GET request made to: /employee.html
+INFO - 2022-02-15T19:59:44.397 - GET request made to: /employee.js
+INFO - 2022-02-15T19:59:46.810 - GET request made to: /employee/reimbursement/2
+INFO - 2022-02-15T19:59:52.308 - GET request made to: /employee/reimbursement/2/2
+INFO - 2022-02-15T19:59:54.068 - GET request made to: /employee/reimbursement/2/2/2
+INFO - 2022-02-15T19:59:55.272 - GET request made to: /employee/reimbursement/2/2/2/2
+INFO - 2022-02-15T20:00:42.147 - GET request made to: /employee.html
+INFO - 2022-02-15T20:00:42.187 - GET request made to: /employee.js
+INFO - 2022-02-15T20:01:00.804 - GET request made to: /employee.html
+INFO - 2022-02-15T20:01:00.847 - GET request made to: /employee.js
+INFO - 2022-02-15T20:01:13.946 - POST request made to: /login
+INFO - 2022-02-15T20:01:13.967 - glanders1 Attempted login
+INFO - 2022-02-15T20:01:20.351 - GET request made to: /employee/reimbursement/2
+INFO - 2022-02-15T20:06:58.473 - POST request made to: /login
+INFO - 2022-02-15T20:06:58.475 - JAMES Attempted login
+INFO - 2022-02-15T20:07:02.720 - GET request made to: /employee/reimbursement/3
+INFO - 2022-02-15T20:07:39.308 - POST request made to: /login
+INFO - 2022-02-15T20:07:39.309 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:07:42.796 - GET request made to: /employee/reimbursement/5
+INFO - 2022-02-15T20:08:45.702 - GET request made to: /employee/reimbursement/5
+INFO - 2022-02-15T20:09:04.432 - GET request made to: /employee/reimbursement/5
+INFO - 2022-02-15T20:16:52.184 - POST request made to: /login
+INFO - 2022-02-15T20:16:52.200 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:16:57.301 - GET request made to: /employee.html
+INFO - 2022-02-15T20:16:57.331 - GET request made to: /employee.js
+INFO - 2022-02-15T20:18:13.688 - POST request made to: /login
+INFO - 2022-02-15T20:18:13.712 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:18:15.450 - GET request made to: /employee.html
+INFO - 2022-02-15T20:18:15.480 - GET request made to: /employee.js
+INFO - 2022-02-15T20:21:54.911 - POST request made to: /login
+INFO - 2022-02-15T20:21:54.927 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:21:58.138 - GET request made to: /employee.html
+INFO - 2022-02-15T20:21:58.183 - GET request made to: /employee.js
+INFO - 2022-02-15T20:22:03.935 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:22:37.871 - POST request made to: /login
+INFO - 2022-02-15T20:22:37.887 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:22:42.437 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:23:57.855 - POST request made to: /login
+INFO - 2022-02-15T20:23:57.870 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:24:00.774 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:25:06.875 - POST request made to: /login
+INFO - 2022-02-15T20:25:06.891 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:25:10.760 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:25:23.590 - GET request made to: /employee.html
+INFO - 2022-02-15T20:25:23.634 - GET request made to: /employee.js
+INFO - 2022-02-15T20:25:30.669 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:27:17.228 - GET request made to: /employee.html
+INFO - 2022-02-15T20:27:17.268 - GET request made to: /employee.js
+INFO - 2022-02-15T20:27:39.753 - POST request made to: /login
+INFO - 2022-02-15T20:27:39.775 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:27:44.888 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:28:46.433 - GET request made to: /employee.html
+INFO - 2022-02-15T20:28:46.480 - GET request made to: /employee.js
+INFO - 2022-02-15T20:28:49.544 - POST request made to: /login
+INFO - 2022-02-15T20:28:49.562 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:28:52.620 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:32:07.339 - POST request made to: /login
+INFO - 2022-02-15T20:32:07.355 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:32:09.089 - GET request made to: /employee.html
+INFO - 2022-02-15T20:32:09.124 - GET request made to: /employee.js
+INFO - 2022-02-15T20:32:12.625 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:34:55.741 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:35:00.524 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:36:03.621 - GET request made to: /employee.html
+INFO - 2022-02-15T20:36:03.664 - GET request made to: /employee.js
+INFO - 2022-02-15T20:36:05.425 - POST request made to: /login
+INFO - 2022-02-15T20:36:05.447 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:36:09.215 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:36:11.191 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:36:12.646 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:36:14.371 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:40:02.948 - POST request made to: /login
+INFO - 2022-02-15T20:40:02.963 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:40:07.772 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:40:13.016 - GET request made to: /employee.html
+INFO - 2022-02-15T20:40:13.042 - GET request made to: /employee.js
+INFO - 2022-02-15T20:40:16.613 - POST request made to: /login
+INFO - 2022-02-15T20:40:16.615 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:40:20.434 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:42:57.057 - GET request made to: /employee.html
+INFO - 2022-02-15T20:42:57.090 - GET request made to: /employee.js
+INFO - 2022-02-15T20:42:59.432 - POST request made to: /login
+INFO - 2022-02-15T20:42:59.457 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:43:05.079 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:45:15.076 - POST request made to: /login
+INFO - 2022-02-15T20:45:15.085 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:45:24.970 - GET request made to: /employee.html
+INFO - 2022-02-15T20:45:24.997 - GET request made to: /employee.js
+INFO - 2022-02-15T20:45:27.827 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:46:56.713 - GET request made to: /employee.html
+INFO - 2022-02-15T20:46:56.748 - GET request made to: /employee.js
+INFO - 2022-02-15T20:47:02.016 - POST request made to: /login
+INFO - 2022-02-15T20:47:02.038 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:47:06.888 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:48:42.078 - GET request made to: /employee.html
+INFO - 2022-02-15T20:48:42.118 - GET request made to: /employee.js
+INFO - 2022-02-15T20:48:44.540 - POST request made to: /login
+INFO - 2022-02-15T20:48:44.565 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:48:48.814 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T20:53:29.468 - GET request made to: /employee.html
+INFO - 2022-02-15T20:53:29.505 - GET request made to: /employee.js
+INFO - 2022-02-15T20:53:31.710 - POST request made to: /login
+INFO - 2022-02-15T20:53:31.733 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:55:47.602 - GET request made to: /employee.html
+INFO - 2022-02-15T20:55:47.638 - GET request made to: /employee.js
+INFO - 2022-02-15T20:55:50.212 - POST request made to: /login
+INFO - 2022-02-15T20:55:50.237 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:58:24.037 - GET request made to: /login.html
+INFO - 2022-02-15T20:58:24.103 - GET request made to: /styles.css
+INFO - 2022-02-15T20:58:24.105 - GET request made to: /login.js
+INFO - 2022-02-15T20:58:50.425 - POST request made to: /login
+INFO - 2022-02-15T20:58:50.444 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:58:54.304 - POST request made to: /login
+INFO - 2022-02-15T20:58:54.305 - iellesmere4 Attempted login
+INFO - 2022-02-15T20:59:54.214 - GET request made to: /login.html
+INFO - 2022-02-15T20:59:54.248 - GET request made to: /styles.css
+INFO - 2022-02-15T20:59:54.250 - GET request made to: /login.js
+INFO - 2022-02-15T21:00:04.865 - POST request made to: /login
+INFO - 2022-02-15T21:00:04.888 - iellesmere4 Attempted login
+INFO - 2022-02-15T21:00:18.328 - GET request made to: /employee.html
+INFO - 2022-02-15T21:00:18.346 - GET request made to: /employee.js
+INFO - 2022-02-15T21:00:20.650 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:01:29.175 - GET request made to: /employee.html
+INFO - 2022-02-15T21:01:29.219 - GET request made to: /employee.js
+INFO - 2022-02-15T21:01:31.374 - POST request made to: /login
+INFO - 2022-02-15T21:01:31.391 - iellesmere4 Attempted login
+INFO - 2022-02-15T21:01:46.285 - GET request made to: /employee.html
+INFO - 2022-02-15T21:01:46.316 - GET request made to: /employee.js
+INFO - 2022-02-15T21:02:15.730 - GET request made to: /employee.html
+INFO - 2022-02-15T21:02:15.771 - GET request made to: /employee.js
+INFO - 2022-02-15T21:02:18.651 - POST request made to: /login
+INFO - 2022-02-15T21:02:18.668 - iellesmere4 Attempted login
+INFO - 2022-02-15T21:02:25.009 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:07:21.492 - GET request made to: /employee.html
+INFO - 2022-02-15T21:07:21.547 - GET request made to: /employee.js
+INFO - 2022-02-15T21:07:23.852 - GET request made to: /employee.html
+INFO - 2022-02-15T21:07:23.879 - GET request made to: /employee.js
+INFO - 2022-02-15T21:07:26.964 - POST request made to: /login
+INFO - 2022-02-15T21:07:26.988 - iellesmere4 Attempted login
+INFO - 2022-02-15T21:07:31.665 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:08:35.819 - GET request made to: /employee.html
+INFO - 2022-02-15T21:08:35.866 - GET request made to: /employee.js
+INFO - 2022-02-15T21:08:37.932 - POST request made to: /login
+INFO - 2022-02-15T21:08:37.953 - iellesmere4 Attempted login
+INFO - 2022-02-15T21:08:42.540 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:11:13.930 - POST request made to: /login
+INFO - 2022-02-15T21:11:13.952 - iellesmere4 Attempted login
+INFO - 2022-02-15T21:11:15.848 - GET request made to: /employee.html
+INFO - 2022-02-15T21:11:15.872 - GET request made to: /employee.js
+INFO - 2022-02-15T21:11:18.832 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:11:24.838 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:11:29.422 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:11:30.643 - GET request made to: /employee.html
+INFO - 2022-02-15T21:11:30.677 - GET request made to: /employee.js
+INFO - 2022-02-15T21:11:33.741 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:11:40.496 - GET request made to: /employee.html
+INFO - 2022-02-15T21:11:40.513 - GET request made to: /employee.js
+INFO - 2022-02-15T21:11:43.976 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:11:56.381 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:13:17.813 - GET request made to: /employee.html
+INFO - 2022-02-15T21:13:17.866 - GET request made to: /employee.js
+INFO - 2022-02-15T21:13:29.245 - POST request made to: /login
+INFO - 2022-02-15T21:13:29.267 - iellesmere4 Attempted login
+INFO - 2022-02-15T21:13:35.641 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:15:44.825 - POST request made to: /login
+INFO - 2022-02-15T21:15:44.841 - iellesmere4 Attempted login
+INFO - 2022-02-15T21:15:49.122 - GET request made to: /employee.html
+INFO - 2022-02-15T21:15:49.151 - GET request made to: /employee.js
+INFO - 2022-02-15T21:15:51.229 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:46:28.843 - POST request made to: /login
+INFO - 2022-02-15T21:46:28.843 - iellesmere4 Attempted login
+INFO - 2022-02-15T21:46:33.557 - GET request made to: /employee.html
+INFO - 2022-02-15T21:46:33.590 - GET request made to: /employee.js
+INFO - 2022-02-15T21:46:43.208 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:46:44.717 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:50:34.477 - GET request made to: /employee.html
+INFO - 2022-02-15T21:50:34.509 - GET request made to: /employee.css
+INFO - 2022-02-15T21:50:34.509 - GET request made to: /employee.js
+INFO - 2022-02-15T21:50:40.187 - POST request made to: /login
+INFO - 2022-02-15T21:50:40.215 - iellesmere4 Attempted login
+INFO - 2022-02-15T21:51:13.091 - GET request made to: /employee.html
+INFO - 2022-02-15T21:51:13.134 - GET request made to: /employee.css
+INFO - 2022-02-15T21:51:13.136 - GET request made to: /employee.js
+INFO - 2022-02-15T21:51:19.587 - GET request made to: /employee.html
+INFO - 2022-02-15T21:51:19.612 - GET request made to: /employee.css
+INFO - 2022-02-15T21:51:19.612 - GET request made to: /employee.css - GET request made to: /employee.js
+INFO - 2022-02-15T21:51:42.341 - GET request made to: /employee.html
+INFO - 2022-02-15T21:51:42.383 - GET request made to: /employee.jsINFO - 2022-02-15T21:51:42.383 - GET request made to: /employee.js - GET request made to: /employee.css
+
+INFO - 2022-02-15T21:51:46.695 - POST request made to: /login
+INFO - 2022-02-15T21:51:46.717 - iellesmere4 Attempted login
+INFO - 2022-02-15T21:51:49.894 - GET request made to: /employee.html
+INFO - 2022-02-15T21:51:49.926 - GET request made to: /employee.js
+INFO - 2022-02-15T21:51:49.926 - GET request made to: /employee.js - GET request made to: /employee.css
+INFO - 2022-02-15T21:51:52.568 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T21:52:31.951 - GET request made to: /login.html
+INFO - 2022-02-15T21:52:32.005 - GET request made to: /styles.css
+INFO - 2022-02-15T21:52:32.008 - GET request made to: /login.js
+INFO - 2022-02-15T21:52:35.347 - GET request made to: /login.html
+INFO - 2022-02-15T21:52:47.576 - POST request made to: /login
+INFO - 2022-02-15T21:52:47.595 - iellesmere4 Attempted login
+INFO - 2022-02-15T21:52:50.574 - GET request made to: /employee.html
+INFO - 2022-02-15T21:52:50.590 - GET request made to: /employee.js
+INFO - 2022-02-15T21:52:50.590 - GET request made to: /employee.js - GET request made to: /employee.css
+INFO - 2022-02-15T21:52:53.662 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-15T23:24:09.719 - GET request made to: /employee.html
+INFO - 2022-02-15T23:24:09.768 - GET request made to: /styles.css
+INFO - 2022-02-15T23:24:09.768 - GET request made to: /employee.js
+INFO - 2022-02-15T23:24:09.772 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-15T23:24:11.924 - POST request made to: /login
+INFO - 2022-02-15T23:24:11.951 - iellesmere4 Attempted login

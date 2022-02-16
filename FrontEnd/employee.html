@@ -5,19 +5,58 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
+				rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+				integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+				crossorigin="anonymous"
+				referrerpolicy="no-referrer"
 		/>
 		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+				rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
 		/>
+		<link rel="stylesheet" href="styles.css">
 		<title>Document</title>
 	</head>
 	<body>
-		<h1>I'm an Employee</h1>
+		<div class="header">
+			<div>
+				<h3>Hello</h3>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<h1>I'm an Employee</h1>
+			</div>
+			<div class="row">
+				<button id="add-reimbursement" class="btn">post reimbursement</button>
+				<button id="view-pending-reimbursements" class="btn">view Pending Reimbursements</button>
+				<button id="view-resolved-reimbursement"class="btn">View Resolved Reimbursements </button>
+			</div>
+			<div class="row data-container" id="data-container">
+				data table placeholder
+			</div>
+			<div class="row">
+				<div class="table-container">
+					<table class="u-full-width">
+						<thead>
+							<th>Id</th>
+							<th>Amount</th>
+							<th>Reimbursement Status</th>
+							<th>Reimbursement Type</th>
+						</thead>
+						<tbody id="data-tbody">
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="image">
+				<image src="images/undraw_digital_nomad_re_w8uy.svg"></image>
+			</div>
+		</div>
+	<script src="employee.js"></script>
 	</body>
 </html>

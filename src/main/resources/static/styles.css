@@ -1,3 +1,24 @@
 * {
 	box-sizing: border-box;
+	color: #434040;
 }
+
+.header {
+	background-color: #DAF7A6;
+	background-image: linear-gradient(to left, #daf7a6, #ffffff);
+	padding: 8px;
+	box-shadow: 2px 7px 4px #c5c5c5;
+	margin-bottom: 3rem;
+	padding: 70px;
+	text-align: center;
+}
+
+.btn {
+background-color: #ffc300 ;
+opacity: .8;
+color: #424040;
+border: 1px solid #e7e7e7;
+transition-duration: 0.4s;
+}
+
+.btn:hover {background-color: #ffe9a0;}
