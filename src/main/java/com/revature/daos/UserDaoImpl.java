@@ -134,7 +134,7 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public User getUserByUsernameAndPassword(String username, String password) {
-        String sql = "select * from project1.ers_users where ers_username = ? and ers_password = ?";
+        String sql = "select * from project1.ers_users where ers_username = ? and ers_password = ?;";
         try (Connection c = ConnectionUtil.getConnection();
              PreparedStatement ps = c.prepareStatement(sql)) {
 

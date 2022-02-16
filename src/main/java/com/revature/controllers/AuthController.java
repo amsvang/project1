@@ -8,6 +8,7 @@ import io.javalin.http.Context;
 import io.javalin.http.ForbiddenResponse;
 import io.javalin.http.UnauthorizedResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.revature.model.UserRoles;
 
 public class AuthController {
     private final UserServices userService = new UserServices();
@@ -23,8 +24,9 @@ public class AuthController {
         String password = ctx.formParam("password");
 
         logger.setWriteToFile(true);
-        logger.info(username + "Attempted login");
+        logger.info(username + " Attempted login");
         logger.setWriteToFile(false);
+        System.out.println("PASS" + password);
 
         // fulfill the request
         User user =  userService.getUserByUsernameAndPassword(username, password);
@@ -52,28 +54,32 @@ public class AuthController {
     // Check session (Is person Admin or Employee) ----------------------------------------------------------------------------------
 
     public void authorizeAdminToken(Context ctx){
-        String authHeader = ctx.header("Authorization");
 
-        if(authHeader!=null){
-            if(authHeader.equals("ADMIN-TOKEN")) {
-                return;
-            } else if (authHeader.equals("EMPLOYEE-TOKEN")){
-                throw new ForbiddenResponse("You are unable to access this feature");
-            }
+        String employeeIdTemp = ctx.req.getSession().getAttribute("id").toString();
+        int employeeId = Integer.parseInt(employeeIdTemp);
+
+        User user = userService.getById(employeeId);
+
+        if (user.getRole().equals(UserRoles.ADMIN)) {
+            return;
+        } else {
+            throw new UnauthorizedResponse("You are not authorized to perform this action.");
         }
-        throw new UnauthorizedResponse("Please login and try again");
+
     }
     public void authorizeEmployeeToken(Context ctx){
-        String authHeader = ctx.header("Authorization");{
 
-            if(authHeader!=null)
-                if(authHeader.equals("EMPLOYEE-TOKEN")) {
-                    return;
-                } else {
-                    throw new ForbiddenResponse("You are unable to access this feature");
-                }
+        String employeeIdTemp = ctx.req.getSession().getAttribute("id").toString();
+        int employeeId = Integer.parseInt(employeeIdTemp);
+
+        User user = userService.getById(employeeId);
+
+        if (user.getRole().equals(UserRoles.EMPLOYEE)) {
+            return;
+        } else {
+            throw new UnauthorizedResponse("You are not authorized to perform this action.");
         }
-        throw new UnauthorizedResponse("please login and try again");
+
     }
 
     // Check if the person is still logged on ---------------------------------------------------------------
