@@ -735,6 +735,22 @@ INFO - 2022-02-15T23:24:09.768 - GET request made to: /employee.js
 INFO - 2022-02-15T23:24:09.772 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
 INFO - 2022-02-15T23:24:11.924 - POST request made to: /login
 INFO - 2022-02-15T23:24:11.951 - iellesmere4 Attempted login
+<<<<<<< HEAD
+INFO - 2022-02-16T08:31:19.931 - GET request made to: /admin/users
+INFO - 2022-02-16T08:31:23.112 - GET request made to: /admin/users
+INFO - 2022-02-16T08:31:34.466 - GET request made to: /admin/users
+INFO - 2022-02-16T08:32:05.718 - GET request made to: /admin/users
+INFO - 2022-02-16T08:32:13.679 - GET request made to: /admin/users
+INFO - 2022-02-16T08:32:20.474 - GET request made to: /admin/users
+INFO - 2022-02-16T08:45:12.280 - GET request made to: /admin/users
+INFO - 2022-02-16T08:46:58.032 - GET request made to: /admin/users
+INFO - 2022-02-16T08:46:59.172 - GET request made to: /admin/users
+INFO - 2022-02-16T08:48:49.387 - GET request made to: /admin/users
+INFO - 2022-02-16T08:49:41.667 - GET request made to: /admin/users
+INFO - 2022-02-16T08:54:03.097 - GET request made to: /admin/users
+INFO - 2022-02-16T08:54:08.280 - GET request made to: /admin/users
+INFO - 2022-02-16T08:54:36.329 - GET request made to: /admin/users
+=======
 INFO - 2022-02-16T07:18:38.517 - POST request made to: /login
 INFO - 2022-02-16T07:18:38.538 - iellesmere4 Attempted login
 INFO - 2022-02-16T07:18:44.514 - GET request made to: /employee/reimbursement/status/5
@@ -880,6 +896,7 @@ INFO - 2022-02-16T08:07:08.020 - GET request made to: /employee.html
 INFO - 2022-02-16T08:07:08.076 - GET request made to: /styles.css
 INFO - 2022-02-16T08:07:08.078 - GET request made to: /employee.js
 INFO - 2022-02-16T08:07:16.606 - GET request made to: /employee/reimbursement/status/5
+<<<<<<< HEAD
 INFO - 2022-02-16T08:11:04.822 - POST request made to: /login
 INFO - 2022-02-16T08:11:04.850 - iellesmere4 Attempted login
 INFO - 2022-02-16T08:11:12.649 - GET request made to: /employee/reimbursement/status/5
@@ -947,3 +964,8 @@ INFO - 2022-02-16T08:43:32.906 - GET request made to: /login.html
 INFO - 2022-02-16T08:43:32.954 - GET request made to: /login.js
 INFO - 2022-02-16T08:43:32.958 - GET request made to: /styles.css
 INFO - 2022-02-16T08:43:32.963 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+=======
+>>>>>>> origin/main
+>>>>>>> origin/main
+INFO - 2022-02-16T09:09:59.595 - POST request made to: /login
+INFO - 2022-02-16T09:09:59.632 - iellesmere4 Attempted login

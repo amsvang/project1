@@ -1,0 +1,11 @@
+* {
+	box-sizing: border-box;
+}
+
+.main-div {
+	background-color: aqua;
+}
+
+.user-hidden {
+	display: none;
+}
