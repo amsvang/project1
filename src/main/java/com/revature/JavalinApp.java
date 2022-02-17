@@ -50,12 +50,13 @@ public class JavalinApp {
                     });
                 });
             });
+            // admin/users
             path("users",()->{
                 get(userController::handleGetAll);
+                post(userController::handleCreate);
                 put(userController::handleUpdate);
                 path("{id}",()->{
                     get(userController::handleGetOne);
-                    post(userController::handleCreate);
                     put(userController::handleUpdate);
                     delete(userController::handleDelete);
                 });

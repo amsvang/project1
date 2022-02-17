@@ -1,6 +1,4 @@
 
-\
-,src/main/java/com/revature/daos/UserDao.java,5\4\54a0dd0f0986c9e91923c6c522e50fa6aa0d3d07
 e
 5src/main/java/com/revature/daos/ReimbursementDAO.java,f\d\fd840fbf534e3d837be7fa3f37eb65faaa476403
 F
@@ -9,11 +7,3 @@ F
 0FrontEnd/images/undraw_digital_nomad_re_w8uy.svg,a\5\a5bbc8b72ca4b44022d16871926636e6a30be362
 d
 4src/main/java/com/revature/services/AuthService.java,7\7\77d4ed5c27db009104d82abff92c056656cf7748
-j
-:src/main/java/com/revature/controllers/AuthController.java,a\8\a8153fc9b9378d195da4555d7059b97a5d1d608f
-`
-0src/main/java/com/revature/daos/UserDaoImpl.java,c\d\cdcee3f2aed1de27ac5c266bc7048067adeeba0d
-Z
-*src/main/java/com/revature/JavalinApp.java,0\f\0f4db762d5fa73f0f522652f54250028944d0989
-c
-3src/main/java/com/revature/util/ConnectionUtil.java,8\f\8f9742be3e6170e843a3a3e659a612b0506c253e
