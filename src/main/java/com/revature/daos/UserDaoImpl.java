@@ -65,6 +65,7 @@ public class UserDaoImpl implements UserDao{
 
                 String userRole = rs.getString("user_type");
 
+
                 users.add(user);
 
             }
