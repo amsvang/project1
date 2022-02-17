@@ -13,7 +13,7 @@ public class UserDaoImpl implements UserDao{
     @Override
     public boolean createUser(User user) {
         String sql = "insert into project1.ers_users (ers_username, ers_password, user_first_name, " +
-                "user_last_name, user_email, user_type) values(?, ?, ?, ?, ?, ?)";
+                "user_last_name, user_email, user_type) values(?, ?, ?, ?, ?, ?::project1.ers_user_roles)";
 
         try (Connection c = ConnectionUtil.getConnection();
             PreparedStatement ps = c.prepareStatement(sql); ){

@@ -1,14 +1,14 @@
 const url = 'http://localhost:8080/';
 
-let dataContainer = document.getElementById('data-tbody');
+let dataTbody = document.getElementById('data-tbody');
 let viewPendingReimbursementsBtn = document.getElementById('view-pending-reimbursements');
 let viewResolvedReimbursementsBtn = document.getElementById('view-resolved-reimbursements');
 
 // Gets reimbursement data from server and display on web page in a table ----------------------------------------------
-
+//Shifted to top of page because view pending and approved reimbursements could not see it.
 
 getReimbursementData = (data) => {
-	dataContainer.innerHTML = "";
+	dataTbody.innerHTML = "";
 	for (let reimbursement of data) {
 		let reimbursementTable = document.createElement('tr');
 
@@ -19,7 +19,7 @@ getReimbursementData = (data) => {
         <td>${reimbursement.reimbursementType}</td>
         `;
 
-		dataContainer.append(reimbursementTable);
+		dataTbody.append(reimbursementTable);
 	}
 };
 
