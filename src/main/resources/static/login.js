@@ -1,7 +1,7 @@
 const baseURL = 'http://localhost:8080';
 const route = 'login'
-
 const form = document.getElementById('login-form');
+
 
 form.addEventListener('submit', (e) => {
     const URL = `${baseURL}/${route}`;
@@ -15,7 +15,8 @@ form.addEventListener('submit', (e) => {
     })
     .then(result => result.json())
     .then(data => {
-        localStorage.setItem('userObj', JSON.stringify(data));
+        localStorage.setItem('userObj', JSON.stringify(data)); // this stores our user object-
+        //in our local storage so we can get user reimbursement info for specific user id/status in employee.js
         //console.log("data", data);
     });
 
@@ -25,7 +26,6 @@ form.addEventListener('submit', (e) => {
 
 // let admin = 'admin';
 // let pw = 'password';
-
 // //get all users
 // //check username and password
 

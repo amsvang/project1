@@ -35,11 +35,12 @@ public class AuthController {
             throw new UnauthorizedResponse("Incorrect username or password");
         } else {
 
-            //Not using. This method checks if person is Employee or Admin
+            //Not using. This method checks if person is Employee or Admin (Manual way of saving appending token)
             /*simpleToken = user.getRole()+"-TOKEN"; // Employee-token or Admin-token
             ctx.header("Authorization", simpleToken);
             ctx.status(200);*/
 
+            //magically set attribute(id and email) in session data
             ctx.req.getSession().setAttribute("id", ""+user.getUserId());
             ctx.req.getSession().setAttribute("loggedIn", user.getEmail());
 
@@ -56,8 +57,8 @@ public class AuthController {
 
     public void authorizeAdminToken(Context ctx){
 
-        String adminIdTemp = ctx.req.getSession().getAttribute("id").toString();
-        int adminId = Integer.parseInt(adminIdTemp);
+        String adminIdTemp = ctx.req.getSession().getAttribute("id").toString(); //returns object so we convert to string
+        int adminId = Integer.parseInt(adminIdTemp); //parse string to int
 
         User user = userService.getById(adminId);
 
@@ -69,8 +70,8 @@ public class AuthController {
 
     }
     public void authorizeEmployeeToken(Context ctx){
-        String employeeIdTemp = ctx.req.getSession().getAttribute("id").toString();
 
+        String employeeIdTemp = ctx.req.getSession().getAttribute("id").toString();
         int employeeId = Integer.parseInt(employeeIdTemp);
 
         User user = userService.getById(employeeId);

@@ -1071,3 +1071,8 @@ INFO - 2022-02-16T16:18:05.290 - GET request made to: /employee/reimbursement/st
 INFO - 2022-02-16T16:19:57.327 - GET request made to: /employee/reimbursement/status/5
 INFO - 2022-02-16T16:20:03.086 - GET request made to: /employee/reimbursement/status/5
 INFO - 2022-02-16T16:20:06.784 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-17T09:58:03.692 - POST request made to: /admin/user
+INFO - 2022-02-17T09:58:29.817 - POST request made to: /admin/users
+INFO - 2022-02-17T09:59:35.511 - PUT request made to: /employee/user/3
+INFO - 2022-02-17T10:02:35.584 - PUT request made to: /admin/reimbursement/9
+INFO - 2022-02-17T10:05:46.933 - POST request made to: /admin/users
