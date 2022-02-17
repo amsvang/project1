@@ -1,13 +1,31 @@
 const url = 'http://localhost:8080/';
 
-
-let dataContainer = document.getElementById('data-container');
-
+let dataContainer = document.getElementById('data-tbody');
 let viewPendingReimbursementsBtn = document.getElementById('view-pending-reimbursements');
+let viewResolvedReimbursementsBtn = document.getElementById('view-resolved-reimbursements');
+
+getReimbursementData = (data) => {
+	dataContainer.innerHTML = "";
+	for (let reimbursement of data) {
+		let reimbursementTable = document.createElement('tr');
+
+		reimbursementTable.innerHTML = `
+		<td>${reimbursement.id}</td>
+        <td>${reimbursement.reimbursementAmount}</td>
+        <td>${reimbursement.reimbursementStatus}</td>
+        <td>${reimbursement.reimbursementType}</td>
+        `;
+
+		dataContainer.append(reimbursementTable);
+	}
+};
+
+// View pending reimbursements ----------------------------------------------------------------------------------------------------------
 
 viewPendingReimbursementsBtn.addEventListener('click', () => {
 	let apiUrl = `${url}employee/reimbursement/status`;
 	let userObj = JSON.parse(localStorage.getItem('userObj'));
+	console.log(userObj);
 	apiUrl = `${apiUrl}/${userObj.userId}?status=PENDING`;
 
     fetch(apiUrl)
@@ -15,30 +33,24 @@ viewPendingReimbursementsBtn.addEventListener('click', () => {
 		.then((data) => getReimbursementData(data));
 });
 
-getReimbursementData = (data) => {
-	dataContainer.innerHTML = "";
-	for (let reimbursement of data) {
-		let reimbursementList = document.createElement('table');
+viewResolvedReimbursementsBtn.addEventListener('click', () => {
+	let apiUrl = `${url}employee/reimbursement/status`;
+	let userObj = JSON.parse(localStorage.getItem('userObj'));
+	console.log(userObj);
+	apiUrl = `${apiUrl}/${userObj.userId}?status=APPROVED`;
 
-		reimbursementList.innerHTML = `
+    fetch(apiUrl)
+		.then((res) => res.json())
+		.then((data) => getReimbursementData(data));
+});
 
-		<tr>
-            <th>Id</th>
-            <th>Amount</th>
-            <th>Reimbursement Status</th>
-            <th>Reimbursement Type</th>
-        </tr>
-        <tr>
 
-        <td>${reimbursement.reimbursementAmount}</td>
-
-        </tr>
-        `;
-
-		dataContainer.append(reimbursementList);
-	}
-};
 //let viewReimbursement = document.getElementById('view-reimbursement');
+
+
+
+
+
 
 /*let dataContainer = document.getElementById('data-container');
 

@@ -46,7 +46,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'com.reibursement.ERSDriver'
+    mainClass = 'com.revature.Project1Driver'
 }
 
 jar {

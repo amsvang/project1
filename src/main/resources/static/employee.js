@@ -1,43 +1,57 @@
 const url = 'http://localhost:8080/';
 
-
-let dataContainer = document.getElementById('data-container');
-
+let dataTbody = document.getElementById('data-tbody');
 let viewPendingReimbursementsBtn = document.getElementById('view-pending-reimbursements');
+let viewResolvedReimbursementsBtn = document.getElementById('view-resolved-reimbursements');
+
+// Gets reimbursement data from server and display on web page in a table ----------------------------------------------
+//Shifted to top of page because view pending and approved reimbursements could not see it.
+
+getReimbursementData = (data) => {
+	dataTbody.innerHTML = "";
+	for (let reimbursement of data) {
+		let reimbursementTable = document.createElement('tr');
+
+		reimbursementTable.innerHTML = `
+		<td>${reimbursement.id}</td>
+        <td>${reimbursement.reimbursementAmount}</td>
+        <td>${reimbursement.reimbursementStatus}</td>
+        <td>${reimbursement.reimbursementType}</td>
+        `;
+
+		dataTbody.append(reimbursementTable);
+	}
+};
+
+// View pending reimbursements ----------------------------------------------------------------------------------------
 
 viewPendingReimbursementsBtn.addEventListener('click', () => {
 	let apiUrl = `${url}employee/reimbursement/status`;
 	let userObj = JSON.parse(localStorage.getItem('userObj'));
+	console.log(userObj);
 	apiUrl = `${apiUrl}/${userObj.userId}?status=PENDING`;
 
     fetch(apiUrl)
-		.then((res) => res.json())
+		.then((res) => res.json());
 		.then((data) => getReimbursementData(data));
 });
 
-getReimbursementData = (data) => {
-	dataContainer.innerHTML = "";
-	for (let reimbursement of data) {
-		let reimbursementList = document.createElement('table');
+// View approved reimbursements ---------------------------------------------------------------------------------------
 
-		reimbursementList.innerHTML = `
+viewResolvedReimbursementsBtn.addEventListener('click', () => {
+	let apiUrl = `${url}employee/reimbursement/status`;
+	let userObj = JSON.parse(localStorage.getItem('userObj'));
+	console.log(userObj);
+	apiUrl = `${apiUrl}/${userObj.userId}?status=APPROVED`;
 
-		<tr>
-            <th>Id</th>
-            <th>Amount</th>
-            <th>Reimbursement Status</th>
-            <th>Reimbursement Type</th>
-        </tr>
-        <tr>
+    fetch(apiUrl)
+		.then((res) => res.json());
+		.then((data) => getReimbursementData(data));
+});
 
-        <td>${reimbursement.reimbursementAmount}</td>
+//----------------------------------------------------------------------------------------------------------
 
-        </tr>
-        `;
 
-		dataContainer.append(reimbursementList);
-	}
-};
 //let viewReimbursement = document.getElementById('view-reimbursement');
 
 /*let dataContainer = document.getElementById('data-container');
