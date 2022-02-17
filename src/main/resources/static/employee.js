@@ -4,6 +4,9 @@ let dataContainer = document.getElementById('data-tbody');
 let viewPendingReimbursementsBtn = document.getElementById('view-pending-reimbursements');
 let viewResolvedReimbursementsBtn = document.getElementById('view-resolved-reimbursements');
 
+// Gets reimbursement data from server and display on web page in a table ----------------------------------------------
+
+
 getReimbursementData = (data) => {
 	dataContainer.innerHTML = "";
 	for (let reimbursement of data) {

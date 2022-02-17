@@ -15,7 +15,9 @@ form.addEventListener('submit', (e) => {
     })
     .then(result => result.json())
     .then(data => {
-        localStorage.setItem('userObj', JSON.stringify(data));
+        localStorage.setItem('userObj', JSON.stringify(data)); // this stores our user-
+        //object in our local storage to use when we need to go back and get user-
+        //reimbursement info for specific user id
         //console.log("data", data);
     });
 
@@ -25,7 +27,6 @@ form.addEventListener('submit', (e) => {
 
 // let admin = 'admin';
 // let pw = 'password';
-
 // //get all users
 // //check username and password
 
