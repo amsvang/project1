@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="admin.css">
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -23,25 +24,102 @@
 				<h1>I'm an Admin</h1>
 			</div>
 			<div class="row">
-				<button id="user-btn">get users</button>
-				<button>reimbursements</button>
+				<button class="user-btn" id="user-btn"><i class="fa-solid fa-user"></i> users</button>
+				<button class="rmb-btn" id="rmb-btn"><i class="fa-solid fa-file-invoice-dollar"></i> reimbursements</button>
 			</div>
-			<div class="row data-container" id="data-container">
-				data table placeholder
+			<div class="row update-user-options hide" id="update-user-options">
+<button class="create-user-btn" id="create-user-btn">create new user</button>
+<button>update new user</button>
+<button>delete new user</button>
+
+			</div>
+			
+				<hr/>
+				<div class="row user-options-div hide" id="user-options-div">
+					<form>
+							<div class="row">
+							
+							  <div class="six columns">
+								<label for="">username</label>
+								<input class="u-full-width" type="text" placeholder="username" id="">
+								</div>
+							  <div class="six columns">
+								<label for="">password</label>
+								<input class="u-full-width" type="text" placeholder="password" id="">
+							  </div>
+						
+							</div>
+							<div class="row">
+								
+								<div class="four columns">
+								  <label for="">First Name</label>
+								  <input class="u-full-width" type="text" placeholder="username" id="">
+								  </div>
+								<div class="four columns">
+								  <label for="">Last Name</label>
+								  <input class="u-full-width" type="text" placeholder="password" id="">
+								</div>
+								<div class="four columns">
+									<label for="">email</label>
+									<input class="u-full-width" type="email" placeholder="password" id="">
+								  </div>
+							</div>
+							<div class="row">
+
+								  <div class="three columns">
+									<label for="">role</label>
+									<input class="u-full-width" type="text" placeholder="password" id="">
+								  </div>
+							  
+							  </div>
+							  <div class="row">  <button><i class="fa-solid fa-user-plus"></i></button></div>
+							
+						</form>
+						<div class="row">
+							<div class="one-half column">
+								<form>
+									<label for=""><i class="fa-solid fa-user-xmark"></i> delete user</label>
+									<input type ='number'>
+									<button class="button-primary delete-btn" id="delete-btn" type="submit">submit</button>
+								</form>
+								</div>
+						</div>
+
+					</div>
+				
+					
+			<div class="row">
+				<div class="user-table-container">
+					<table class="data-table hide" id="data-table">
+						<thead>
+							<th>ID</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Email</th>
+						</thead>
+						<tbody id="user-tbody" class="user-tbody"></tbody>
+					</table>
+				</div>
 			</div>
 			<div class="row">
-				<div class="table-container">
-					<table class="u-full-width">
+				<div class="rmb-table-container" id="rmb-table-container">
+					<table class="rmb-table hide" id="rmb-table">
 						<thead>
-							<tr></tr>
-							<tr></tr>
-							<tr></tr>
-							<tr></tr>
+							<th>ID</th>
+							<th>Type</th>
+							<th>Status</th>
+							<th>Amount</th>
+							<th>Submitted</th>
+							<th>Resolved</th>
+							<th>description</th>
+							<th>receipt</th>
 						</thead>
+						<tbody id="rmb-tbody" class="rmb-tbody""></tbody>
 					</table>
 				</div>
 			</div>
 		</div>
+	</div>
 		<script src="admin.js"></script>
 	</body>
 </html>

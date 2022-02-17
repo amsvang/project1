@@ -1,22 +1,24 @@
 const url = 'http://localhost:8080/';
-const table = document.getElementById('table');
-const tbody = document.getElementById('tbody');
 
-let apiUrl = `${url}admin/users`;
-let button = document.getElementById('user-btn');
+let deletBtn = document.getElementById('delete-btn');
+const updateUserOptions = document.getElementById('update-user-options');
+const userOptionsDiv = document.getElementById('user-options-div');
+//USER-----------------------------------------------------------------
+const userTbody = document.getElementById('user-tbody');
+let dataTable = document.getElementById('data-table');
+let userBtn = document.getElementById('user-btn');
+let createUserBtn = document.getElementById('create-user-btn');
 
-// clcik event to grab get all user data--------------------------------
-button.addEventListener('click', () => {
-	let userDiv = document.getElementById('userDiv');
-
+// click event to grab get all user data
+userBtn.addEventListener('click', () => {
+	updateUserOptions.classList.remove('hide');
+	dataTable.classList.remove('hide');
 	console.log('clicked');
-	fetch(apiUrl)
+	fetch(`${url}admin/users`)
 		.then((res) => res.json())
-		// .then((data) => console.log(data));
 		.then((data) => getUserData(data));
 });
-
-// function to dynamically create table row elemnts in table------------
+// function to dynamically create table row elemnts in table---------------
 getUserData = (data) => {
 	for (user of data) {
 		let tr = document.createElement('tr');
@@ -31,10 +33,82 @@ getUserData = (data) => {
 			<td>
 			${user.lastName}
 			</td>
-			<td><button>update</button></td>
+			<td>
+			${user.email}
+			</td>
         `;
-		tbody.append(tr);
+
+		userTbody.append(tr);
+		// click the newly generated button
 	}
 };
 
-//button on each row, when clicked will bring up modal with options to
+//REIMBURSEMENTS-------------------------------------------------------
+const rmbTbody = document.getElementById('rmb-tbody');
+const rmbTable = document.getElementById('rmb-table');
+let rmbBtn = document.getElementById('rmb-btn');
+
+//click event to grab all rmb data
+rmbBtn.addEventListener('click', () => {
+	rmbTable.classList.remove('hide');
+	console.log('clicked');
+	fetch(`${url}admin/reimbursement`)
+		.then((res) => res.json())
+		.then((data) => getRmbData(data));
+});
+//show rmb data
+getRmbData = (data) => {
+	for (user of data) {
+		let tr = document.createElement('tr');
+		tr.innerHTML = `
+	
+		<td>
+		${user.userId}
+		</td>
+			<td>
+			${user.reimbursementType}
+			
+			</td>
+			<td>
+			${user.reimbursementStatus}
+			</td>
+			<td>
+			${user.reimbursementAmount}
+			</td>
+			<td>
+			${user.isReimbursementSubmitted}
+			</td>
+			<td>
+			${user.isReimbursementResolved}
+			</td>
+			<td>
+			${user.description}
+			</td>
+			<td>
+			${user.reimbursementReceipt}
+			</td>
+        `;
+
+		rmbTbody.append(tr);
+		// click the newly generated button
+	}
+};
+
+//FORM LOGIC
+
+//show user options
+createUserBtn.addEventListener('click', () => {
+	userOptionsDiv.classList.remove('hide');
+});
+
+//User
+//create user
+//update user
+//delete user
+deleteUser = (id) => {};
+//button on each row, when clicked will bring up modal with options to//
+
+//Reimbursement
+//create rmb
+//update rmb
+//delete rmb
