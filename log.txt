@@ -1132,3 +1132,45 @@ INFO - 2022-02-17T10:55:00.370 - GET request made to: /admin/users
 INFO - 2022-02-17T10:56:58.658 - GET request made to: /admin/users
 INFO - 2022-02-17T10:57:32.659 - GET request made to: /admin/users
 INFO - 2022-02-17T11:00:37.800 - GET request made to: /admin/reimbursement
+INFO - 2022-02-17T12:27:36.691 - GET request made to: /admin/reimbursement/
+INFO - 2022-02-17T12:34:43.849 - GET request made to: /admin/users
+INFO - 2022-02-17T12:58:12.100 - GET request made to: /admin/users
+INFO - 2022-02-17T12:58:15.438 - GET request made to: /admin/users
+INFO - 2022-02-17T12:58:17.648 - GET request made to: /admin/reimbursement
+INFO - 2022-02-17T13:04:39.274 - POST request made to: /admin/users
+INFO - 2022-02-17T13:04:45.083 - GET request made to: /admin/users
+INFO - 2022-02-17T13:05:49.543 - GET request made to: /admin/reimbursement
+INFO - 2022-02-17T13:08:22.796 - POST request made to: /login
+INFO - 2022-02-17T13:08:22.813 -  Attempted login
+INFO - 2022-02-17T13:08:24.999 - POST request made to: /login
+INFO - 2022-02-17T13:08:25 -  Attempted login
+INFO - 2022-02-17T13:08:26.439 - POST request made to: /login
+INFO - 2022-02-17T13:08:26.440 -  Attempted login
+INFO - 2022-02-17T13:09:05.451 - PUT request made to: /admin/users
+INFO - 2022-02-17T13:09:35.989 - POST request made to: /admin/users
+INFO - 2022-02-17T13:09:42.132 - GET request made to: /admin/users
+INFO - 2022-02-17T13:10:28.499 - DELETE request made to: /admin/users/7
+INFO - 2022-02-17T13:11:31.122 - GET request made to: /admin/users
+INFO - 2022-02-17T13:13:11.019 - PUT request made to: /admin/users/6
+INFO - 2022-02-17T13:15:05.800 - POST request made to: /admin/users
+INFO - 2022-02-17T13:19:33.213 - GET request made to: /admin/users
+INFO - 2022-02-17T13:20:02.069 - GET request made to: /admin/reimbursement
+INFO - 2022-02-17T13:20:11.214 - GET request made to: /admin/users
+INFO - 2022-02-17T13:20:37.598 - GET request made to: /admin/users
+INFO - 2022-02-17T13:21:03.547 - GET request made to: /admin/users
+INFO - 2022-02-17T13:21:36.033 - GET request made to: /admin/users
+INFO - 2022-02-17T13:22:22.238 - GET request made to: /admin/users
+INFO - 2022-02-17T13:24:23.721 - GET request made to: /admin/users
+INFO - 2022-02-17T13:25:08.291 - GET request made to: /admin/reimbursement
+INFO - 2022-02-17T13:27:15.233 - GET request made to: /admin/users
+INFO - 2022-02-17T13:30:12.340 - GET request made to: /admin/users
+INFO - 2022-02-17T14:00:22.680 - GET request made to: /admin/users
+INFO - 2022-02-17T14:00:48.146 - GET request made to: /admin/users
+INFO - 2022-02-17T14:01:30.239 - GET request made to: /admin/reimbursement
+INFO - 2022-02-17T14:02:24.728 - GET request made to: /admin/users
+INFO - 2022-02-17T14:02:25.807 - GET request made to: /admin/reimbursement
+INFO - 2022-02-17T14:02:29.654 - GET request made to: /admin/reimbursement
+INFO - 2022-02-17T14:02:42.567 - GET request made to: /admin/users
+INFO - 2022-02-17T14:02:45.721 - GET request made to: /admin/users
+INFO - 2022-02-17T14:02:58.645 - GET request made to: /admin/reimbursement
+INFO - 2022-02-17T14:04:58.288 - GET request made to: /admin/users
