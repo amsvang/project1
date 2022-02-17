@@ -20,7 +20,7 @@ getReimbursementData = (data) => {
 	}
 };
 
-// View pending reimbursements ----------------------------------------------------------------------------------------------------------
+// View pending reimbursements ----------------------------------------------------------------------------------------
 
 viewPendingReimbursementsBtn.addEventListener('click', () => {
 	let apiUrl = `${url}employee/reimbursement/status`;
@@ -29,9 +29,11 @@ viewPendingReimbursementsBtn.addEventListener('click', () => {
 	apiUrl = `${apiUrl}/${userObj.userId}?status=PENDING`;
 
     fetch(apiUrl)
-		.then((res) => res.json())
+		.then((res) => res.json());
 		.then((data) => getReimbursementData(data));
 });
+
+// View approved reimbursements ---------------------------------------------------------------------------------------
 
 viewResolvedReimbursementsBtn.addEventListener('click', () => {
 	let apiUrl = `${url}employee/reimbursement/status`;
@@ -40,7 +42,7 @@ viewResolvedReimbursementsBtn.addEventListener('click', () => {
 	apiUrl = `${apiUrl}/${userObj.userId}?status=APPROVED`;
 
     fetch(apiUrl)
-		.then((res) => res.json())
+		.then((res) => res.json());
 		.then((data) => getReimbursementData(data));
 });
 
