@@ -1062,3 +1062,12 @@ INFO - 2022-02-16T10:37:01.368 - GET request made to: /images/undraw_digital_nom
 INFO - 2022-02-16T10:37:08.308 - GET request made to: /employee/reimbursement/status/5
 INFO - 2022-02-16T10:37:18.340 - GET request made to: /employee/reimbursement/status/5
 INFO - 2022-02-16T10:37:20.908 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-16T16:17:52.262 - POST request made to: /login
+INFO - 2022-02-16T16:17:52.277 - iellesmere4 Attempted login
+INFO - 2022-02-16T16:17:55.576 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-16T16:17:58.737 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-16T16:18:02.606 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-16T16:18:05.290 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-16T16:19:57.327 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-16T16:20:03.086 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-16T16:20:06.784 - GET request made to: /employee/reimbursement/status/5

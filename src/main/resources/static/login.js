@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
     .then(result => result.json())
     .then(data => {
         localStorage.setItem('userObj', JSON.stringify(data));
-        console.log("data", data);
+        //console.log("data", data);
     });
 
 	e.preventDefault();
