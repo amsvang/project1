@@ -29,19 +29,19 @@ public class ReimbursementController {
         ctx.json(reimbursements);
     }
     public void handleGetAllReimbursementByStatus(Context ctx) {
-        ReimbursementInput reimbursementInput = ctx.bodyAsClass(ReimbursementInput.class);
-        List<Reimbursement> reimbursements = reimbursementService.getAllReimbursementsByStatus(reimbursementInput.getStatus());
+        ReimbursementInput reimbursementInput = ctx.bodyAsClass(ReimbursementInput.class); // get data from ctx body and converts to reimbursement input
+        List<Reimbursement> reimbursements = reimbursementService.getAllReimbursementsByStatus(reimbursementInput.getStatus()); // reads status
         ctx.json(reimbursements);
     }
 
     public void handleGetAllReimbursementByStatusAndId(Context ctx) {
-        String status = ctx.queryParam("status");
-        ReimbursementInput reimbursementInput = new ReimbursementInput();
-        reimbursementInput.setStatus(ReimbursementStatus.valueOf(status));
-        String idParam = ctx.pathParam("id");
+        String status = ctx.queryParam("status"); // get the status from URL
+        ReimbursementInput reimbursementInput = new ReimbursementInput(); // new
+        reimbursementInput.setStatus(ReimbursementStatus.valueOf(status)); // set status from reimbursement input
+        String idParam = ctx.pathParam("id"); //gets id from URL (flexible because it allows any id), also could have gotten from ctx session
         int inputId = Integer.parseInt(idParam);
         List<Reimbursement> reimbursements = reimbursementService.getAllReimbursementsByStatusAndId(reimbursementInput.getStatus(), inputId);
-        ctx.json(reimbursements);
+        ctx.json(reimbursements); //responding with data to client
     }
 
     public void handleGetAllReimbursementByUserId(Context ctx) {
