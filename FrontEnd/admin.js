@@ -1,19 +1,19 @@
 const url = 'http://localhost:8080/';
 
-let deletBtn = document.getElementById('delete-btn');
-const updateUserOptions = document.getElementById('update-user-options');
-const userOptionsDiv = document.getElementById('user-options-div');
 //USER-----------------------------------------------------------------
+const userActions = document.getElementById('user-actions');
+const userOptionsDiv = document.getElementById('user-options-div');
 const userTbody = document.getElementById('user-tbody');
-let dataTable = document.getElementById('data-table');
+let userTable = document.getElementById('user-table-container');
 let userBtn = document.getElementById('user-btn');
 let createUserBtn = document.getElementById('create-user-btn');
 
 // click event to grab get all user data
 userBtn.addEventListener('click', () => {
-	updateUserOptions.classList.remove('hide');
-	dataTable.classList.remove('hide');
+	userActions.classList.remove('hide');
+	userTable.classList.remove('hide');
 	console.log('clicked');
+	userTbody.innerHTML = '';
 	fetch(`${url}admin/users`)
 		.then((res) => res.json())
 		.then((data) => getUserData(data));
@@ -46,12 +46,16 @@ getUserData = (data) => {
 //REIMBURSEMENTS-------------------------------------------------------
 const rmbTbody = document.getElementById('rmb-tbody');
 const rmbTable = document.getElementById('rmb-table');
+const rmbDiv = document.getElementById('rmb-table-container');
+const rmbActions = document.getElementById('rmb-actions');
 let rmbBtn = document.getElementById('rmb-btn');
 
 //click event to grab all rmb data
 rmbBtn.addEventListener('click', () => {
-	rmbTable.classList.remove('hide');
+	rmbActions.classList.remove('hide');
+	rmbDiv.classList.remove('hide');
 	console.log('clicked');
+	rmbTbody.innerHTML = '';
 	fetch(`${url}admin/reimbursement`)
 		.then((res) => res.json())
 		.then((data) => getRmbData(data));
@@ -71,6 +75,8 @@ getRmbData = (data) => {
 			</td>
 			<td>
 			${user.reimbursementStatus}
+				
+
 			</td>
 			<td>
 			${user.reimbursementAmount}
@@ -94,7 +100,7 @@ getRmbData = (data) => {
 	}
 };
 
-//FORM LOGIC
+//FORM LOGIC-------------------------------------------
 
 //show user options
 createUserBtn.addEventListener('click', () => {
@@ -103,9 +109,49 @@ createUserBtn.addEventListener('click', () => {
 
 //User
 //create user
+
 //update user
+
+let addUserForm = document
+	.getElementById('user-form')
+	.addEventListener('submit', createUser);
+
+function createUser(e) {
+	e.preventDefault();
+	let username = document.getElementById('username').value;
+	let password = document.getElementById('password').value;
+	let firstname = document.getElementById('firstname').value;
+	let lastname = document.getElementById('lastname').value;
+	let email = document.getElementById('email').value;
+	let role = document.getElementById('role').value;
+
+	console.log(username, password, firstname, lastname, email, role);
+
+	let userObj = {
+		username,
+		password,
+		firstname,
+		lastname,
+		email,
+		role,
+	};
+
+	fetch(`${url}admin/users`, {
+		method: 'POST',
+		headers: {
+			Accept: 'application/json, text/plain, */*',
+			'Content-Type': 'application/json',
+		},
+
+		body: JSON.parse(JSON.stringify(userObj)),
+	})
+		.then((res) => res.json())
+		.then((data) => console.log(data))
+		.catch((err) => console.log(err));
+}
+
 //delete user
-deleteUser = (id) => {};
+// deleteUser = (id) => {};
 //button on each row, when clicked will bring up modal with options to//
 
 //Reimbursement
