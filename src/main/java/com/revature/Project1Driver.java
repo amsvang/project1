@@ -14,7 +14,7 @@ public class Project1Driver {
        service.addReimbursement(1, ReimbursementType.FOOD, ReimbursementStatus.PENDING,100.0,true, false, "food",true);*/
 
         JavalinApp app = new JavalinApp();
-        app.start(8080);
+        app.start(7000);
 
 
 

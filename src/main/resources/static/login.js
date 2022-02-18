@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:8080';
+const baseURL = 'http://35.236.13.105:7000';
 const route = 'login'
 const form = document.getElementById('login-form');
 
