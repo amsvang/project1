@@ -46,9 +46,9 @@
 			</div>
 
 
-			<div class="row data-container" id="data-container">
-				data table placeholder
-			</div>
+<!--			<div class="row data-container" id="data-container">-->
+<!--				data table placeholder-->
+<!--			</div>-->
 			<div class="row">
 				<div id='reimbursement-table-container' class="reimbursement-table-container hidden">
 					<table class="u-full-width">
@@ -68,6 +68,46 @@
 				</div>
 			</div>
 		</div>
+
+		<hr/>
+
+		<div class="reimbursement-form-container">
+			<form id="employee-form" class="hidden">
+				<div class="row">
+<!--					<div class="six columns">-->
+						<label for="exampleRecipientInput">Reimbursement Type</label>
+						<select class="u-full-width" id="exampleRecipientInput" required>
+							<option value="Option 0">PLEASE SELECT AN OPTION</option>
+							<option value="Option 1">FOOD</option>
+							<option value="Option 2">TRAVEL</option>
+							<option value="Option 3">LODGING</option>
+							<option value="Option 4">OTHER</option>
+						</select>
+<!--					</div>-->
+<!--					<div class="six columns">-->
+						<label for="">Reimbursement Amount</label>
+						<input class="u-full-width" type="text" placeholder="amount" id="">
+<!--					</div>-->
+
+				</div>
+
+				<button id="reimbursement-submit-btn" class="btn" type="submit">submit</button>
+
+			</form>
+<!--			<div class="row">-->
+<!--				<div class="one-half column">-->
+<!--					<form>-->
+<!--						<label for=""><i class="fa-solid fa-user-xmark"></i> delete user</label>-->
+<!--						<input type ='number'>-->
+<!--						-->
+<!--					</form>-->
+<!--				</div>-->
+<!--			</div>-->
+
+		</div>
+
+
+
 	<script src="employee.js"></script>
 	</body>
 </html>

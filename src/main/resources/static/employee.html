@@ -72,26 +72,25 @@
 		<hr/>
 
 		<div class="reimbursement-form-container">
-			<form id="form" class="hidden">
+			<form id="reimbursement-form" class="hidden">
 				<div class="row">
 <!--					<div class="six columns">-->
-						<label for="exampleRecipientInput">Reimbursement Type</label>
-						<select class="u-full-width" id="exampleRecipientInput" required>
+						<label for="reimbursement-type">Reimbursement Type</label>
+						<select class="u-full-width" id="reimbursement-type" name="reimbursementType" required>
 							<option value="Option 0">PLEASE SELECT AN OPTION</option>
-							<option value="Option 1">FOOD</option>
-							<option value="Option 2">TRAVEL</option>
-							<option value="Option 3">LODGING</option>
-							<option value="Option 4">OTHER</option>
+							<option value="FOOD">FOOD</option>
+							<option value="TRAVEL">TRAVEL</option>
+							<option value="LODGING">LODGING</option>
+							<option value="OTHER">OTHER</option>
 						</select>
 <!--					</div>-->
 <!--					<div class="six columns">-->
 						<label for="">Reimbursement Amount</label>
-						<input class="u-full-width" type="text" placeholder="amount" id="">
+						<input class="u-full-width" type="text" placeholder="amount" id="" name="reimbursementAmount">
 <!--					</div>-->
+						<button id="reimbursement-submit-btn" class="btn" type="submit">submit</button>
 
 				</div>
-
-				<button id="reimbursement-submit-btn" class="btn" type="submit">submit</button>
 
 			</form>
 <!--			<div class="row">-->
@@ -105,7 +104,6 @@
 <!--			</div>-->
 
 		</div>
-
 
 
 	<script src="employee.js"></script>
