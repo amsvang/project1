@@ -15,28 +15,44 @@
 				rel="stylesheet"
 				href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
 		/>
+		<link rel="stylesheet" href="employee.css">
 		<link rel="stylesheet" href="styles.css">
+
 		<title>Document</title>
 	</head>
+
+
 	<body>
+
 		<div class="header">
-				<h3>Hello</h3>
+			<h3>Hello</h3>
 		</div>
-		<div class="container">
+
+		<div class="container employee-container">
 			<div class="row">
 				<h1>I'm an Employee</h1>
 			</div>
+
 			<div class="row">
-				<button id="add-reimbursement" class="btn">post reimbursement</button>
-				<button id="view-pending-reimbursements" class="btn">view Pending Reimbursements</button>
-				<button id="view-resolved-reimbursement"class="btn">View Resolved Reimbursements </button>
+				<button id="view-account-info" class="btn">View Account Info</button>
+				<button id="view-reimbursements" class="btn">View Reimbursements</button>
+<!--				<button id="view-resolved-reimbursements"class="btn">View Resolved Reimbursements </button>-->
 			</div>
+			<div id="reimbursement-btn-container" class="hidden">
+				<button id="add-reimbursement" class="btn-reimb-hidden"> Post Reimbursement</button>
+				<button id="view-pending-reimbursements" class="btn-reimb-hidden"> View Pending Reimbursement</button>
+				<button id="view-approved-reimbursements"class="btn-reimb-hidden"> View Approved Reimbursement</button>
+				<button id="view-disapproved-reimbursements" class="btn-reimb-hidden"> View Disapproved Reimbursement</button>
+			</div>
+
+
 			<div class="row data-container" id="data-container">
 				data table placeholder
 			</div>
 			<div class="row">
-				<div class="table-container">
+				<div id='reimbursement-table-container' class="reimbursement-table-container hidden">
 					<table class="u-full-width">
+
 						<thead class="head-columns">
 							<th>Id</th>
 							<th>Amount</th>
