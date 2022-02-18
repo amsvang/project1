@@ -1,29 +1,29 @@
 package com.revature.model;
 
 public class Reimbursement {
-    private int reimbursementId;
-    private int user_id;
+    private int id;
+    private int userId;
     private ReimbursementType reimbursementType;
     private ReimbursementStatus reimbursementStatus;
     private double reimbursementAmount;
-    boolean isReimbusementSubmitted;
-    boolean isReimbusementResolved;
-    String description;
-    boolean reimbursmentReceipt;
+    private boolean isReimbursementSubmitted;
+    private boolean isReimbursementResolved;
+    private String description;
+    private boolean reimbursementReceipt;
 
 
     public Reimbursement() {
     }
 
-    public Reimbursement(int user_id, ReimbursementType reimbursementType, ReimbursementStatus reimbursementStatus, double reimbursementAmount, boolean isReimbusementSubmitted, boolean isReimbusementResolved, String description, boolean reimbursmentReceipt) {
+    /*public Reimbursement(int user_id, ReimbursementType reimbursementType, ReimbursementStatus reimbursementStatus, double reimbursementAmount, boolean isReimbusementSubmitted, boolean isReimbusementResolved, String description, boolean reimbursmentReceipt) {
         this.user_id = user_id;
         this.reimbursementType = reimbursementType;
         this.reimbursementStatus = reimbursementStatus;
         this.reimbursementAmount = reimbursementAmount;
-        this.isReimbusementSubmitted = isReimbusementSubmitted;
-        this.isReimbusementResolved = isReimbusementResolved;
+        this.isReimbursementSubmitted = isReimbusementSubmitted;
+        this.isReimbursementResolved = isReimbusementResolved;
         this.description = description;
-        this.reimbursmentReceipt = reimbursmentReceipt;
+        this.reimbursementReceipt = reimbursmentReceipt;
     }
 
     public Reimbursement(int reimbursementId, int user_id, ReimbursementType reimbursementType, ReimbursementStatus reimbursementStatus, double reimbursementAmount, boolean isReimbusementSubmitted, boolean isReimbusementResolved, String description, boolean reimbursmentReceipt) {
@@ -32,26 +32,26 @@ public class Reimbursement {
         this.reimbursementType = reimbursementType;
         this.reimbursementStatus = reimbursementStatus;
         this.reimbursementAmount = reimbursementAmount;
-        this.isReimbusementSubmitted = isReimbusementSubmitted;
-        this.isReimbusementResolved = isReimbusementResolved;
+        this.isReimbursementSubmitted = isReimbusementSubmitted;
+        this.isReimbursementResolved = isReimbusementResolved;
         this.description = description;
-        this.reimbursmentReceipt = reimbursmentReceipt;
+        this.reimbursementReceipt = reimbursmentReceipt;
+    }*/
+
+    public int getId() {
+        return id;
     }
 
-    public int getReimbursementId() {
-        return reimbursementId;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public void setReimbursementId(int reimbursementId) {
-        this.reimbursementId = reimbursementId;
+    public int getUserId() {
+        return userId;
     }
 
-    public int getUser_id() {
-        return user_id;
-    }
-
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public ReimbursementType getReimbursementType() {
@@ -79,20 +79,20 @@ public class Reimbursement {
         this.reimbursementAmount = reimbursementAmount;
     }
 
-    public boolean isReimbusementSubmitted() {
-        return isReimbusementSubmitted;
+    public boolean getIsReimbursementSubmitted() {
+        return isReimbursementSubmitted;
     }
 
-    public void setReimbusementSubmitted(boolean reimbusementSubmitted) {
-        isReimbusementSubmitted = reimbusementSubmitted;
+    public void setReimbursementSubmitted(boolean reimbursementSubmitted) {
+        isReimbursementSubmitted = reimbursementSubmitted;
     }
 
-    public boolean isReimbusementResolved() {
-        return isReimbusementResolved;
+    public boolean getIsReimbursementResolved() {
+        return isReimbursementResolved;
     }
 
-    public void setReimbusementResolved(boolean reimbusementResolved) {
-        isReimbusementResolved = reimbusementResolved;
+    public void setReimbursementResolved(boolean reimbursementResolved) {
+        isReimbursementResolved = reimbursementResolved;
     }
 
     public String getDescription() {
@@ -103,26 +103,26 @@ public class Reimbursement {
         this.description = description;
     }
 
-    public boolean ReimbursmentReceipt() {
-        return reimbursmentReceipt;
+    public boolean getReimbursementReceipt() {
+        return reimbursementReceipt;
     }
 
-    public void setReimbursmentReceipt(boolean reimbursmentReceipt) {
-        this.reimbursmentReceipt = reimbursmentReceipt;
+    public void setReimbursementReceipt(boolean reimbursementReceipt) {
+        this.reimbursementReceipt = reimbursementReceipt;
     }
 
-    @Override
+    /*@Override
     public String toString() {
         return "Reimbursement{" +
                 "reimbursementId=" + reimbursementId +
-                ", user_id=" + user_id +
+                ", user_id=" + userId +
                 ", reimbursementType=" + reimbursementType +
                 ", reimbursementStatus=" + reimbursementStatus +
                 ", reimbursementAmount=" + reimbursementAmount +
-                ", isReimbusementSubmitted=" + isReimbusementSubmitted +
-                ", isReimbusementResolved=" + isReimbusementResolved +
+                ", isReimbusementSubmitted=" + isReimbursementSubmitted +
+                ", isReimbusementResolved=" + isReimbursementResolved +
                 ", description='" + description + '\'' +
-                ", reimbursmentReceipt=" + reimbursmentReceipt +
+                ", reimbursmentReceipt=" + reimbursementReceipt +
                 '}';
-    }
+    }*/
 }

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="admin.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+		/>
+		<title>Admin</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h1>I'm an Admin</h1>
+			</div>
+			<div class="row">
+				<button class="user-btn" id="user-btn">
+					<i class="fa-solid fa-user"></i> users
+				</button>
+				<button class="rmb-btn" id="rmb-btn">
+					<i class="fa-solid fa-file-invoice-dollar"></i> reimbursements
+				</button>
+			</div>
+			<!-- button actions ----------------------------------------------------------------			 -->
+			<div class="row user-actions hide" id="user-actions">
+				<button class="create-user-btn" id="create-user-btn">
+					create new user
+				</button>
+				<button class="update-user-btn" id="update-user-btn">
+					update user
+				</button>
+				<button class="delete-user-btn" id="delete-user-btn">
+					view user by...
+				</button>
+			</div>
+			<div class="row rmb-actions hide" id="rmb-actions">
+				<button class="create-rmb-btn">create reimbursements</button>
+				<button class="update-rmb-btn">update reimbursements</button>
+				<button class="view-rmb-btn">view reimbursement by...</button>
+			</div>
+
+			<hr />
+			<!-- options buttons------------------------------------------------------------------ -->
+
+			<!-- create new user form	-->
+			<div class="row user-options-div hide" id="user-options-div">
+				<div class="row"><h4>Create a User</h4></div>
+				<form id="user-form" method="post">
+					<div class="row">
+						<div class="six columns">
+							<label for="username">Username</label>
+							<input
+								class="u-full-width"
+								type="text"
+								placeholder="RRoll"
+								id="username"
+							/>
+						</div>
+						<div class="six columns">
+							<label for="password">Password</label>
+							<input
+								class="u-full-width"
+								type="text"
+								placeholder="password"
+								id="password"
+							/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="four columns">
+							<label for="firstname">First Name</label>
+							<input
+								class="u-full-width"
+								type="text"
+								placeholder="Rick"
+								id="firstname"
+							/>
+						</div>
+						<div class="four columns">
+							<label for="lastname">Last Name</label>
+							<input
+								class="u-full-width"
+								type="text"
+								placeholder="Astley"
+								id="lastname"
+							/>
+						</div>
+						<div class="four columns">
+							<label for="email">email</label>
+							<input
+								class="u-full-width"
+								type="email"
+								placeholder="nevergonna@giveyouup.com"
+								id="email"
+							/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="three columns">
+							<label for="role">Role</label>
+							<select name="role" id="role">
+								<option value="ADMIN">ADMIN</option>
+								<option value="EMPLOYEE">EMPLOYEE</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<button class="button-primary" id="add-btn" type="submit">
+							submit
+						</button>
+					</div>
+				</form>
+				<!-- update user -->
+
+				<!-- delete form						 -->
+				<div class="row">
+					<div class="one-half column">
+						<form>
+							<label for=""
+								><i class="fa-solid fa-user-xmark"></i> delete user</label
+							>
+							<input type="number" />
+							<button
+								class="button-primary delete-btn"
+								id="delete-btn"
+								type="submit"
+							>
+								submit
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- user table ------------------------------------------->
+			<div class="row">
+				<div class="user-table-container hide" id="user-table-container">
+					<div class="user-table-title">
+						<h5>Users</h5>
+					</div>
+					<div class="user-table">
+						<table class="data-table u-full-width" id="data-table">
+							<thead>
+								<th>ID</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Email</th>
+							</thead>
+							<tbody id="user-tbody" class="user-tbody"></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- rmb table----------------------------------- -->
+			<div class="row">
+				<div class="rmb-table-container hide" id="rmb-table-container">
+					<div class="rmb-table-title"><h5>Reimbursements</h5></div>
+					<div class="rmb-div-hide">
+						<table class="rmb-table u-full-width" id="rmb-table">
+							<thead>
+								<th>ID</th>
+								<th>Type</th>
+								<th>Status</th>
+								<th>Amount</th>
+								<th>Submitted</th>
+								<th>Resolved</th>
+								<th>description</th>
+								<th>receipt</th>
+							</thead>
+							<tbody id="rmb-tbody" class="rmb-tbody"></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="admin.js"></script>
+	</body>
+</html>

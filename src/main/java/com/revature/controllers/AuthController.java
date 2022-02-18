@@ -1,15 +1,21 @@
 package com.revature.controllers;
 
 import com.revature.model.User;
+import com.revature.services.AuthService;
 import com.revature.services.UserServices;
 import com.revature.util.LoggingSingletonUtil;
 import io.javalin.http.Context;
-import io.javalin.http.ForbiddenResponse;
 import io.javalin.http.UnauthorizedResponse;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.revature.model.UserRoles;
 
 public class AuthController {
     private final UserServices userService = new UserServices();
+    //private final AuthService authService = new AuthService();
     LoggingSingletonUtil logger = LoggingSingletonUtil.getLogger();
+    private ObjectMapper mapper = new ObjectMapper();
+
+    // Validate user and set session data (respond to client with session info ---------------------------------------------
 
     public void authenticateLogin(Context ctx){
         // interpret request
@@ -17,8 +23,9 @@ public class AuthController {
         String password = ctx.formParam("password");
 
         logger.setWriteToFile(true);
-        logger.info(username + "attemped login");
+        logger.info(username + " Attempted login");
         logger.setWriteToFile(false);
+        //System.out.println("PASS" + password);
 
         // fulfill the request
         User user =  userService.getUserByUsernameAndPassword(username, password);
@@ -27,35 +34,82 @@ public class AuthController {
         if(user==null){
             throw new UnauthorizedResponse("Incorrect username or password");
         } else {
-            String simpleToken = user.getRole()+"-TOKEN"; // Employee-token or Admin-token
-            ctx.header("Authorization", simpleToken);
-            ctx.status(200);
-        }
-    }
-    public void authorizeAdminToken(Context ctx){
-        String authHeader = ctx.header("Authorization");
 
-        if(authHeader!=null){
-            if(authHeader.equals("ADMIN-TOKEN")) {
-                return;
-            } else if (authHeader.equals("EMPLOYEE-TOKEN")){
-                throw new ForbiddenResponse("You are unable to access this feature");
+            //Not using. This method checks if person is Employee or Admin (Manual way of saving appending token)
+            /*simpleToken = user.getRole()+"-TOKEN"; // Employee-token or Admin-token
+            ctx.header("Authorization", simpleToken);
+            ctx.status(200);*/
+
+            //magically sets attribute(id and email) in session data. not using email in this project.
+            ctx.req.getSession().setAttribute("id", ""+user.getUserId());
+            ctx.req.getSession().setAttribute("loggedIn", user.getEmail());
+
+            ctx.header("userId", ""+user.getUserId());
+            ctx.header("loggedIn", user.getEmail());
+            try {
+                ctx.result(mapper.writeValueAsString(user));
+            } catch (Exception e) {
+                ctx.status(500);
             }
         }
-        throw new UnauthorizedResponse("Please login and try again");
+    }
+    // Check session (Is person Admin or Employee) ----------------------------------------------------------------------------------
+
+    public void authorizeAdminToken(Context ctx){
+
+        String adminIdTemp = ctx.req.getSession().getAttribute("id").toString(); //returns object so we convert to string
+        int adminId = Integer.parseInt(adminIdTemp); //parse string to int
+
+        User user = userService.getById(adminId);
+
+        if (user.getRole().equals(UserRoles.ADMIN)) {
+            return;
+        } else {
+            throw new UnauthorizedResponse("You are not authorized to perform this action.");
+        }
+
     }
     public void authorizeEmployeeToken(Context ctx){
-        String authHeader = ctx.header("Authorization");{
 
-            if(authHeader!=null)
-                if(authHeader.equals("EMPLOYEE-TOKEN")) {
-                    return;
-                } else {
-                    throw new ForbiddenResponse("You are unable to access this feature");
-                }
+        String employeeIdTemp = ctx.req.getSession().getAttribute("id").toString();
+        int employeeId = Integer.parseInt(employeeIdTemp);
+
+        User user = userService.getById(employeeId);
+
+        if (user.getRole().equals(UserRoles.EMPLOYEE)) {
+            return;
+        } else {
+            throw new UnauthorizedResponse("You are not authorized to perform this action.");
         }
-        throw new UnauthorizedResponse("please login and try again");
+
     }
+
+    // Check if the person is still logged on ---------------------------------------------------------------
+
+    public void verify(Context ctx) {
+        ctx.header("Access-Control-Expose-Headers", "*");
+
+        // Testing if id outputs to console
+        //System.out.println(ctx.req.getSession().getAttribute("id"));
+
+        if(ctx.req.getSession().getAttribute("id") == null) {
+            ctx.status(400);
+            ctx.result("User not logged in");
+        }
+        else {
+            ctx.header("userId", ""+ctx.req.getSession().getAttribute("id"));
+            ctx.result("User was verified as logged in");
+        }
+    }
+
+    // Log user out ---------------------------------------------------------------------------------------
+
+    public void logout(Context ctx) {
+        ctx.req.getSession().invalidate();
+        ctx.status(200);
+        ctx.result("User logged out");
+    }
+
 
 
 }

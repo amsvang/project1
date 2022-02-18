@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
+.main-div {
+	background-color: aqua;
+}
+
+.hide {
+	display: none;
+}
+
+button:focus {
+	border-bottom: rgb(196, 82, 241) solid 3px;
+}

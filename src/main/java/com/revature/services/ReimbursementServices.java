@@ -3,23 +3,44 @@ package com.revature.services;
 import com.revature.daos.ReimbursementDAO;
 import com.revature.daos.ReimbursementDaoImpl;
 import com.revature.model.Reimbursement;
+import java.util.List;
 import com.revature.model.ReimbursementStatus;
 import com.revature.model.ReimbursementType;
 
+import java.util.List;
+
 public class ReimbursementServices {
 
-   private ReimbursementDAO rd = new ReimbursementDaoImpl();
 
+    private ReimbursementDAO reimbursementDao = new ReimbursementDaoImpl();
 
+    public boolean createReimbursement(Reimbursement reimbursement)
+    {return reimbursementDao.createReimbursement(reimbursement);}
 
-    public boolean addReimbursement(int userId, ReimbursementType rt, ReimbursementStatus rs, double ra, boolean rsub, boolean rr, String des, boolean rrecp) {
+    public List<Reimbursement> getAllReimbursements()
+    {return reimbursementDao.getAllReimbursements();}
 
-        Reimbursement reimb = new Reimbursement(userId, rt, rs, ra, rsub, rr, des, rrecp);
+    public List<Reimbursement> getAllReimbursementsByStatus(ReimbursementStatus status)
+    {return reimbursementDao.getReimbursementsByStatus(status);}
 
-       return rd.addReimbursement(reimb);
+    public List<Reimbursement> getAllReimbursementsByStatusAndId(ReimbursementStatus status, int inputId)
+    {return reimbursementDao.getReimbursementsByStatusAndId(status, inputId);}
+
+    public List<Reimbursement> getAllReimbursementsByUserId(int inputUserId)
+    {return reimbursementDao.getReimbursementsByUserId(inputUserId);}
+
+    public Reimbursement getReimbursementById(int id) {
+        return reimbursementDao.getReimbursementById(id);
     }
-    //user get reimbursement all by userId
-    //update reimbursement status (admin only)
-    //
+
+    public boolean updateReimbursement(Reimbursement reimbursement) {
+        return reimbursementDao.updateReimbursement(reimbursement);
+    }
+
+    public boolean deleteReimbursement(int id) {
+        return reimbursementDao.deleteReimbursement(id);
+    }
+
+
 
 }
