@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
     .then(data => {
         localStorage.setItem('userObj', JSON.stringify(data)); // this stores our user object-
         //in our local storage so we can get user reimbursement info for specific user id/status in employee.js
-        //console.log("data", data);
+        console.log("data", data);
     });
 
 	e.preventDefault();

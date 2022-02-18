@@ -1,5 +1,5 @@
 const baseURL = 'http://localhost:8080';
-const route = 'login'
+const route = 'login';
 
 const form = document.getElementById('login-form');
 
