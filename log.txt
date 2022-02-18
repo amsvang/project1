@@ -2409,3 +2409,5 @@ INFO - 2022-02-18T12:42:06.025 - GET request made to: /employee.css
 INFO - 2022-02-18T12:42:06.026 - GET request made to: /styles.css
 INFO - 2022-02-18T12:42:06.028 - GET request made to: /employee.js
 INFO - 2022-02-18T12:42:14.769 - POST request made to: /employee/reimbursement
+INFO - 2022-02-18T14:44:06.664 - POST request made to: /login
+INFO - 2022-02-18T14:44:06.678 - iellesmere4 Attempted login

@@ -38,7 +38,7 @@ getReimbursementData = (data) => {
 	}
 };
 
-viewReimbursementsBtn.addEventListener('click', () => {
+    viewReimbursementsBtn.addEventListener('click', () => {
     reimbursementBtnContainer.classList.remove("hidden");
 });
 
