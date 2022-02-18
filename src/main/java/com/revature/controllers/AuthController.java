@@ -40,7 +40,7 @@ public class AuthController {
             ctx.header("Authorization", simpleToken);
             ctx.status(200);*/
 
-            //magically set attribute(id and email) in session data
+            //magically sets attribute(id and email) in session data. not using email in this project.
             ctx.req.getSession().setAttribute("id", ""+user.getUserId());
             ctx.req.getSession().setAttribute("loggedIn", user.getEmail());
 
