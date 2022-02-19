@@ -1,7 +1,7 @@
-const baseURL = 'http://35.236.13.105:7000'';
+const baseURL = 'http://35.236.13.105:7000';
 const route = 'employee';
 
-
+console.log("LOAD");
 let dataTbody = document.getElementById('data-tbody');
 let viewAccountInfoBtn = document.getElementById('view-account-info');
 let viewReimbursementsBtn = document.getElementById('view-reimbursements');
@@ -39,10 +39,11 @@ getReimbursementData = (data) => {
 };
 
     viewReimbursementsBtn.addEventListener('click', () => {
+    console.log("CLICK");
     reimbursementBtnContainer.classList.remove("hidden");
 });
 
-/-----------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------------
 
 form.addEventListener('submit', (e) => {
     const URL = `${baseURL}/${route}/reimbursement`;
@@ -60,7 +61,6 @@ form.addEventListener('submit', (e) => {
         reimbursementStatus: "PENDING",
         isReimbursementSubmitted: true,
         isReimbursementResolved: false,
-        description: "Meal/Lunch",
         reimbursementReceipt: true
     }
 
