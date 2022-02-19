@@ -11,5 +11,12 @@
 }
 
 button:focus {
-	border-bottom: rgb(196, 82, 241) solid 3px;
+	border-bottom: red solid 3px;
+}
+
+img {
+	border-radius: 50%;
+	object-fit: cover;
+	height: 70px;
+	width: 70px;
 }
