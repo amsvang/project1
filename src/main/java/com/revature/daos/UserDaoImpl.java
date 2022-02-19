@@ -7,6 +7,7 @@ import com.revature.util.ConnectionUtil;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import com.revature.util.LoggingSingletonUtil;
 
 public class UserDaoImpl implements UserDao{
 
@@ -31,6 +32,7 @@ public class UserDaoImpl implements UserDao{
             }
         }
         catch(SQLException e){
+
             e.printStackTrace();
         }
         return false;
@@ -135,9 +137,14 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public User getUserByUsernameAndPassword(String username, String password) {
+        LoggingSingletonUtil logger = LoggingSingletonUtil.getLogger();
         String sql = "select * from project1.ers_users where ers_username = ? and ers_password = ?;";
         try (Connection c = ConnectionUtil.getConnection();
              PreparedStatement ps = c.prepareStatement(sql)) {
+
+            logger.setWriteToFile(true);
+            logger.debug("CONNECTED");
+            logger.setWriteToFile(false);
 
             ps.setString(1, username);
             ps.setString(2, password);
@@ -160,6 +167,9 @@ public class UserDaoImpl implements UserDao{
 
         } catch (SQLException e) {
             e.printStackTrace();
+            logger.setWriteToFile(true);
+            logger.debug("FAILED");
+            logger.setWriteToFile(false);
         }
         return null;
     }
