@@ -64,16 +64,17 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
             ps.setBoolean(8, reimbursement.getReimbursementReceipt());
             ps.setInt(9, reimbursement.getId());
 
-            System.out.println(reimbursement.getUserId());
-            System.out.println(reimbursement.getReimbursementType().name());
-            System.out.println(reimbursement.getReimbursementStatus().name());
-            System.out.println(reimbursement.getReimbursementAmount());
-            System.out.println(reimbursement.getIsReimbursementResolved());
-            System.out.println(reimbursement.getIsReimbursementSubmitted());
-            System.out.println(reimbursement.getDescription());
-            System.out.println(reimbursement.getReimbursementReceipt());
 
-
+              //TEST
+//            System.out.println(reimbursement.getUserId());
+//            System.out.println(reimbursement.getReimbursementType().name());
+//            System.out.println(reimbursement.getReimbursementStatus().name());
+//            System.out.println(reimbursement.getReimbursementAmount());
+//            System.out.println(reimbursement.getIsReimbursementResolved());
+//            System.out.println(reimbursement.getIsReimbursementSubmitted());
+//            System.out.println(reimbursement.getDescription());
+//            System.out.println(reimbursement.getReimbursementReceipt());
+//
 
             int rowsAffected = ps.executeUpdate();
 
@@ -104,8 +105,6 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
             e.printStackTrace();
         }
         return false;
-
-
 
     }
     //*************************************************************

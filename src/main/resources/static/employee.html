@@ -30,13 +30,12 @@
 
 		<div class="container employee-container">
 			<div class="row">
-				<h1>I'm an Employee</h1>
+				<h1>I'm an Employee TEST</h1>
 			</div>
 
 			<div class="row">
 				<button id="view-account-info" class="btn">View Account Info</button>
 				<button id="view-reimbursements" class="btn">View Reimbursements</button>
-<!--				<button id="view-resolved-reimbursements"class="btn">View Resolved Reimbursements </button>-->
 			</div>
 			<div id="reimbursement-btn-container" class="hidden">
 				<button id="add-reimbursement" class="btn-reimb-hidden"> Post Reimbursement</button>
@@ -46,9 +45,6 @@
 			</div>
 
 
-<!--			<div class="row data-container" id="data-container">-->
-<!--				data table placeholder-->
-<!--			</div>-->
 			<div class="row">
 				<div id='reimbursement-table-container' class="reimbursement-table-container hidden">
 					<table class="u-full-width">
@@ -74,7 +70,7 @@
 		<div class="reimbursement-form-container">
 			<form id="reimbursement-form" class="hidden">
 				<div class="row">
-<!--					<div class="six columns">-->
+
 						<label for="reimbursement-type">Reimbursement Type</label>
 						<select class="u-full-width" id="reimbursement-type" name="reimbursementType">
 							<option value="Option 0">PLEASE SELECT AN OPTION</option>
@@ -83,28 +79,22 @@
 							<option value="LODGING">LODGING</option>
 							<option value="OTHER">OTHER</option>
 						</select>
-<!--					</div>-->
-<!--					<div class="six columns">-->
-						<label for="">Reimbursement Amount</label>
-						<input class="u-full-width" type="text" placeholder="amount" id="" name="reimbursementAmount">
-<!--					</div>-->
-						<button id="reimbursement-submit-btn" class="btn" type="submit">submit</button>
+
+
+						<label for="reimbursement-amount">Reimbursement Amount</label>
+						<input class="u-full-width" type="text" placeholder="amount" id="reimbursement-amount" name="reimbursementAmount">
+
+
+						<label for="reimbursement-desc">Description</label>
+						<textarea rows="4" cols="50" placeholder="description here" id="reimbursement-desc" name="description">TEST</textarea>
+
+					<button id="reimbursement-submit-btn" class="btn" type="submit">submit</button>
 
 				</div>
 
 			</form>
-<!--			<div class="row">-->
-<!--				<div class="one-half column">-->
-<!--					<form>-->
-<!--						<label for=""><i class="fa-solid fa-user-xmark"></i> delete user</label>-->
-<!--						<input type ='number'>-->
-<!--						-->
-<!--					</form>-->
-<!--				</div>-->
-<!--			</div>-->
 
 		</div>
-
 
 	<script src="employee.js"></script>
 	</body>
