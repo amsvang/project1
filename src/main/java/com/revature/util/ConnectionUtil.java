@@ -19,11 +19,12 @@ public class ConnectionUtil {
         String username = System.getenv("DB_USER");
         String password = System.getenv("DB_PASS");
 
-        logger.setWriteToFile(true);
-        logger.debug("TEST1: " + url);
-        logger.debug("TEST2: " + username);
-        logger.debug("TEST3: " + password);
-        logger.setWriteToFile(false);
+          //TEST
+//        logger.setWriteToFile(true);
+//        logger.debug("TEST1: " + url);
+//        logger.debug("TEST2: " + username);
+//        logger.debug("TEST3: " + password);
+//        logger.setWriteToFile(false);
         return DriverManager.getConnection(url ,username, password);
 
 ////Niko DB

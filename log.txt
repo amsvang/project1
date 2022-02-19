@@ -2485,3 +2485,633 @@ INFO - 2022-02-19T10:34:05.113 - GET request made to: /employee.html
 INFO - 2022-02-19T10:34:05.161 - GET request made to: /employee.css
 INFO - 2022-02-19T10:34:05.161 - GET request made to: /employee.js
 INFO - 2022-02-19T10:34:05.166 - GET request made to: /styles.css
+INFO - 2022-02-19T10:59:30.690 - GET request made to: /login.html
+INFO - 2022-02-19T10:59:30.750 - GET request made to: /styles.css
+INFO - 2022-02-19T10:59:30.751 - GET request made to: /login.js
+INFO - 2022-02-19T10:59:30.758 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T10:59:34.443 - GET request made to: /employee.html
+INFO - 2022-02-19T10:59:34.488 - GET request made to: /styles.css
+INFO - 2022-02-19T10:59:34.488 - GET request made to: /styles.css - GET request made to: /employee.css
+INFO - 2022-02-19T11:00:08.428 - GET request made to: /employee.html
+INFO - 2022-02-19T11:00:08.463 - GET request made to: /employee.css
+INFO - 2022-02-19T11:00:08.464 - GET request made to: /styles.css
+INFO - 2022-02-19T11:00:08.466 - GET request made to: /employee.js
+INFO - 2022-02-19T11:01:31.325 - GET request made to: /login.html
+INFO - 2022-02-19T11:01:31.368 - GET request made to: /styles.css
+INFO - 2022-02-19T11:01:31.369 - GET request made to: /login.js
+INFO - 2022-02-19T11:01:31.371 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T11:01:39.251 - GET request made to: /employee.html
+INFO - 2022-02-19T11:01:39.274 - GET request made to: /employee.css
+INFO - 2022-02-19T11:01:39.274 - GET request made to: /styles.css
+INFO - 2022-02-19T11:01:39.274 - GET request made to: /styles.css - GET request made to: /employee.js
+INFO - 2022-02-19T11:01:48.200 - POST request made to: /login
+INFO - 2022-02-19T11:01:48.228 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:01:48.255 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:01:48.256 - TEST2: postgres
+DEBUG - 2022-02-19T11:01:48.256 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:01:49.568 - CONNECTED
+INFO - 2022-02-19T11:01:52.323 - GET request made to: /employee.html
+INFO - 2022-02-19T11:01:52.352 - GET request made to: /styles.css
+INFO - 2022-02-19T11:01:52.352 - GET request made to: /styles.css - GET request made to: /employee.css
+INFO - 2022-02-19T11:01:52.353 - GET request made to: /employee.js
+INFO - 2022-02-19T11:01:56.782 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:01:56.792 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:01:56.792 - TEST2: postgres
+DEBUG - 2022-02-19T11:01:56.792 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:02:00.339 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:02:00.340 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:02:00.340 - TEST2: postgres
+DEBUG - 2022-02-19T11:02:00.340 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:02:01.311 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:02:01.312 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:02:01.312 - TEST2: postgres
+DEBUG - 2022-02-19T11:02:01.312 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:04:32.743 - POST request made to: /login
+INFO - 2022-02-19T11:04:32.759 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:04:32.768 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:04:32.768 - TEST2: postgres
+DEBUG - 2022-02-19T11:04:32.768 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:04:33.984 - CONNECTED
+INFO - 2022-02-19T11:04:36.078 - GET request made to: /employee.html
+INFO - 2022-02-19T11:04:36.109 - GET request made to: /employee.css
+INFO - 2022-02-19T11:04:36.109 - GET request made to: /styles.css
+INFO - 2022-02-19T11:04:36.110 - GET request made to: /employee.js
+INFO - 2022-02-19T11:04:38.547 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:04:38.553 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:04:38.553 - TEST2: postgres
+DEBUG - 2022-02-19T11:04:38.553 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:04:44.186 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:04:44.187 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:04:44.188 - TEST2: postgres
+DEBUG - 2022-02-19T11:04:44.188 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:04:46.747 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:04:46.748 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:04:46.748 - TEST2: postgres
+DEBUG - 2022-02-19T11:04:46.748 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:04:47.828 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:04:47.829 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:04:47.829 - TEST2: postgres
+DEBUG - 2022-02-19T11:04:47.829 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:04:52.065 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:04:52.066 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:04:52.066 - TEST2: postgres
+DEBUG - 2022-02-19T11:04:52.066 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:05:44.137 - POST request made to: /login
+INFO - 2022-02-19T11:05:44.152 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:05:44.164 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:05:44.164 - TEST2: postgres
+DEBUG - 2022-02-19T11:05:44.164 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:05:45.303 - CONNECTED
+INFO - 2022-02-19T11:05:48.103 - GET request made to: /employee.html
+INFO - 2022-02-19T11:05:48.138 - GET request made to: /employee.css
+INFO - 2022-02-19T11:05:48.138 - GET request made to: /styles.css
+INFO - 2022-02-19T11:05:48.138 - GET request made to: /employee.js
+INFO - 2022-02-19T11:05:50.828 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:05:50.833 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:05:50.833 - TEST2: postgres
+DEBUG - 2022-02-19T11:05:50.833 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:05:53.150 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:05:53.151 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:05:53.151 - TEST2: postgres
+DEBUG - 2022-02-19T11:05:53.151 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:05:54.937 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:05:54.937 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:05:54.937 - TEST2: postgres
+DEBUG - 2022-02-19T11:05:54.937 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:05:58.927 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:05:58.928 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:05:58.928 - TEST2: postgres
+DEBUG - 2022-02-19T11:05:58.928 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:06:00.628 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:06:00.629 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:06:00.629 - TEST2: postgres
+DEBUG - 2022-02-19T11:06:00.629 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:07:24.957 - GET request made to: /employee.html
+INFO - 2022-02-19T11:07:25.035 - GET request made to: /employee.css
+INFO - 2022-02-19T11:07:25.037 - GET request made to: /styles.css
+INFO - 2022-02-19T11:07:25.042 - GET request made to: /employee.js
+INFO - 2022-02-19T11:07:26.905 - POST request made to: /login
+INFO - 2022-02-19T11:07:26.931 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:07:26.941 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:07:26.941 - TEST2: postgres
+DEBUG - 2022-02-19T11:07:26.941 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:07:28.103 - CONNECTED
+INFO - 2022-02-19T11:07:31.702 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:07:31.707 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:07:31.708 - TEST2: postgres
+DEBUG - 2022-02-19T11:07:31.708 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:07:39.320 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:07:39.320 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:07:39.320 - TEST2: postgres
+DEBUG - 2022-02-19T11:07:39.320 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:09:04.979 - POST request made to: /login
+INFO - 2022-02-19T11:09:04.997 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:09:05.013 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:09:05.013 - TEST2: postgres
+DEBUG - 2022-02-19T11:09:05.013 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:09:06.684 - CONNECTED
+INFO - 2022-02-19T11:09:09.029 - GET request made to: /employee.html
+INFO - 2022-02-19T11:09:09.060 - GET request made to: /employee.css
+INFO - 2022-02-19T11:09:09.061 - GET request made to: /employee.js
+INFO - 2022-02-19T11:09:09.061 - GET request made to: /styles.css
+INFO - 2022-02-19T11:09:11.148 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:09:11.154 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:09:11.154 - TEST2: postgres
+DEBUG - 2022-02-19T11:09:11.155 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:09:20.114 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:09:20.114 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:09:20.115 - TEST2: postgres
+DEBUG - 2022-02-19T11:09:20.115 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:09:22.589 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:09:22.589 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:09:22.590 - TEST2: postgres
+DEBUG - 2022-02-19T11:09:22.590 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:09:26.187 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:09:26.188 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:09:26.188 - TEST2: postgres
+DEBUG - 2022-02-19T11:09:26.188 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:09:29.120 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:09:29.121 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:09:29.121 - TEST2: postgres
+DEBUG - 2022-02-19T11:09:29.121 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:09:31.050 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:09:31.050 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:09:31.050 - TEST2: postgres
+DEBUG - 2022-02-19T11:09:31.050 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:10:00.710 - POST request made to: /login
+INFO - 2022-02-19T11:10:00.725 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:10:00.737 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:10:00.737 - TEST2: postgres
+DEBUG - 2022-02-19T11:10:00.737 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:10:01.943 - CONNECTED
+INFO - 2022-02-19T11:10:04.719 - GET request made to: /employee.html
+INFO - 2022-02-19T11:10:04.753 - GET request made to: /employee.css
+INFO - 2022-02-19T11:10:04.754 - GET request made to: /styles.css
+INFO - 2022-02-19T11:10:04.755 - GET request made to: /employee.js
+INFO - 2022-02-19T11:10:06.450 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:10:06.455 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:10:06.455 - TEST2: postgres
+DEBUG - 2022-02-19T11:10:06.455 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:10:13.563 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:10:13.564 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:10:13.564 - TEST2: postgres
+DEBUG - 2022-02-19T11:10:13.564 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:10:15.550 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:10:15.550 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:10:15.551 - TEST2: postgres
+DEBUG - 2022-02-19T11:10:15.551 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:10:16.616 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:10:16.617 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:10:16.617 - TEST2: postgres
+DEBUG - 2022-02-19T11:10:16.617 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:10:18.388 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:10:18.389 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:10:18.389 - TEST2: postgres
+DEBUG - 2022-02-19T11:10:18.389 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:10:19.385 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:10:19.386 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:10:19.386 - TEST2: postgres
+DEBUG - 2022-02-19T11:10:19.386 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:11:24.496 - POST request made to: /login
+INFO - 2022-02-19T11:11:24.510 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:11:24.520 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:11:24.520 - TEST2: postgres
+DEBUG - 2022-02-19T11:11:24.520 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:11:25.720 - CONNECTED
+INFO - 2022-02-19T11:11:27.395 - GET request made to: /employee.html
+INFO - 2022-02-19T11:11:27.523 - GET request made to: /employee.css
+INFO - 2022-02-19T11:11:27.525 - GET request made to: /styles.css
+INFO - 2022-02-19T11:11:27.527 - GET request made to: /employee.js
+INFO - 2022-02-19T11:11:30.205 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:11:30.210 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:11:30.210 - TEST2: postgres
+DEBUG - 2022-02-19T11:11:30.211 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:11:31.575 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:11:31.575 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:11:31.576 - TEST2: postgres
+DEBUG - 2022-02-19T11:11:31.576 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:11:34.620 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:11:34.621 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:11:34.621 - TEST2: postgres
+DEBUG - 2022-02-19T11:11:34.621 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:11:36.436 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:11:36.437 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:11:36.437 - TEST2: postgres
+DEBUG - 2022-02-19T11:11:36.437 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:12:05.984 - POST request made to: /login
+INFO - 2022-02-19T11:12:06 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:12:06.015 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:12:06.015 - TEST2: postgres
+DEBUG - 2022-02-19T11:12:06.015 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:12:07.158 - CONNECTED
+INFO - 2022-02-19T11:12:11.312 - GET request made to: /employee.html
+INFO - 2022-02-19T11:12:11.342 - GET request made to: /employee.css
+INFO - 2022-02-19T11:12:11.343 - GET request made to: /styles.css
+INFO - 2022-02-19T11:12:11.344 - GET request made to: /employee.js
+INFO - 2022-02-19T11:12:14.230 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:12:14.235 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:12:14.235 - TEST2: postgres
+DEBUG - 2022-02-19T11:12:14.235 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:12:19.157 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:12:19.158 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:12:19.158 - TEST2: postgres
+DEBUG - 2022-02-19T11:12:19.158 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:12:20.816 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:12:20.816 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:12:20.817 - TEST2: postgres
+DEBUG - 2022-02-19T11:12:20.817 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:13:40.366 - POST request made to: /login
+INFO - 2022-02-19T11:13:40.382 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:13:40.397 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:13:40.398 - TEST2: postgres
+DEBUG - 2022-02-19T11:13:40.398 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:13:41.594 - CONNECTED
+INFO - 2022-02-19T11:13:42.203 - GET request made to: /employee.html
+INFO - 2022-02-19T11:13:42.274 - GET request made to: /employee.css
+INFO - 2022-02-19T11:13:42.275 - GET request made to: /styles.css
+INFO - 2022-02-19T11:13:42.282 - GET request made to: /employee.js
+INFO - 2022-02-19T11:13:44.324 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:13:44.329 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:13:44.330 - TEST2: postgres
+DEBUG - 2022-02-19T11:13:44.330 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:14:06.865 - POST request made to: /login
+INFO - 2022-02-19T11:14:06.881 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:14:06.881 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:14:06.881 - TEST2: postgres
+DEBUG - 2022-02-19T11:14:06.881 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:14:08.048 - CONNECTED
+INFO - 2022-02-19T11:14:10.456 - GET request made to: /employee.html
+INFO - 2022-02-19T11:14:10.484 - GET request made to: /employee.css
+INFO - 2022-02-19T11:14:10.486 - GET request made to: /employee.js
+INFO - 2022-02-19T11:14:10.486 - GET request made to: /styles.css
+INFO - 2022-02-19T11:14:13.911 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:14:13.917 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:14:13.918 - TEST2: postgres
+DEBUG - 2022-02-19T11:14:13.918 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:16:41.951 - POST request made to: /login
+INFO - 2022-02-19T11:16:41.963 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:16:41.972 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:16:41.972 - TEST2: postgres
+DEBUG - 2022-02-19T11:16:41.972 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:16:43.070 - CONNECTED
+INFO - 2022-02-19T11:16:45.253 - GET request made to: /employee.html
+INFO - 2022-02-19T11:16:45.301 - GET request made to: /employee.css
+INFO - 2022-02-19T11:16:45.301 - GET request made to: /styles.css
+INFO - 2022-02-19T11:16:45.304 - GET request made to: /employee.js
+INFO - 2022-02-19T11:16:46.707 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:16:46.712 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:16:46.712 - TEST2: postgres
+DEBUG - 2022-02-19T11:16:46.713 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:16:50.022 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:16:50.023 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:16:50.023 - TEST2: postgres
+DEBUG - 2022-02-19T11:16:50.023 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:18:09.424 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:18:09.425 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:18:09.425 - TEST2: postgres
+DEBUG - 2022-02-19T11:18:09.425 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:18:10.750 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:18:10.750 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:18:10.750 - TEST2: postgres
+DEBUG - 2022-02-19T11:18:10.750 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:18:11.793 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:18:11.793 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:18:11.793 - TEST2: postgres
+DEBUG - 2022-02-19T11:18:11.793 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:18:13.291 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:18:13.292 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:18:13.292 - TEST2: postgres
+DEBUG - 2022-02-19T11:18:13.292 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:18:24.793 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:18:24.793 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:18:24.793 - TEST2: postgres
+DEBUG - 2022-02-19T11:18:24.793 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:18:25.991 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:18:25.992 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:18:25.992 - TEST2: postgres
+DEBUG - 2022-02-19T11:18:25.992 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:18:26.682 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:18:26.682 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:18:26.683 - TEST2: postgres
+DEBUG - 2022-02-19T11:18:26.683 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:18:27.281 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:18:27.282 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:18:27.282 - TEST2: postgres
+DEBUG - 2022-02-19T11:18:27.283 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:18:28.794 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:18:28.794 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:18:28.795 - TEST2: postgres
+DEBUG - 2022-02-19T11:18:28.795 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:18:29.770 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:18:29.771 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:18:29.771 - TEST2: postgres
+DEBUG - 2022-02-19T11:18:29.772 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:19:28.493 - POST request made to: /login
+INFO - 2022-02-19T11:19:28.503 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:19:28.514 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:19:28.514 - TEST2: postgres
+DEBUG - 2022-02-19T11:19:28.514 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:19:29.620 - CONNECTED
+INFO - 2022-02-19T11:19:34.240 - GET request made to: /employee.html
+INFO - 2022-02-19T11:19:34.270 - GET request made to: /employee.css
+INFO - 2022-02-19T11:19:34.270 - GET request made to: /styles.css
+INFO - 2022-02-19T11:19:34.271 - GET request made to: /employee.js
+INFO - 2022-02-19T11:19:37.391 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:19:37.397 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:19:37.398 - TEST2: postgres
+DEBUG - 2022-02-19T11:19:37.398 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:21:45.149 - POST request made to: /login
+INFO - 2022-02-19T11:21:45.163 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:21:45.175 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:21:45.175 - TEST2: postgres
+DEBUG - 2022-02-19T11:21:45.175 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:21:46.295 - CONNECTED
+INFO - 2022-02-19T11:21:47.783 - GET request made to: /employee.html
+INFO - 2022-02-19T11:21:47.811 - GET request made to: /employee.css
+INFO - 2022-02-19T11:21:47.812 - GET request made to: /styles.css
+INFO - 2022-02-19T11:21:47.812 - GET request made to: /styles.css - GET request made to: /employee.js
+INFO - 2022-02-19T11:21:49.436 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:21:49.441 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:21:49.442 - TEST2: postgres
+DEBUG - 2022-02-19T11:21:49.442 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:21:50.931 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:21:50.932 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:21:50.932 - TEST2: postgres
+DEBUG - 2022-02-19T11:21:50.932 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:22:48.117 - POST request made to: /login
+INFO - 2022-02-19T11:22:48.128 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:22:48.138 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:22:48.138 - TEST2: postgres
+DEBUG - 2022-02-19T11:22:48.138 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:22:49.265 - CONNECTED
+INFO - 2022-02-19T11:22:51.054 - GET request made to: /employee.html
+INFO - 2022-02-19T11:22:51.086 - GET request made to: /employee.css
+INFO - 2022-02-19T11:22:51.087 - GET request made to: /styles.css
+INFO - 2022-02-19T11:22:51.088 - GET request made to: /employee.js
+INFO - 2022-02-19T11:22:53.410 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:22:53.416 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:22:53.416 - TEST2: postgres
+DEBUG - 2022-02-19T11:22:53.417 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:22:54.651 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:22:54.652 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:22:54.652 - TEST2: postgres
+DEBUG - 2022-02-19T11:22:54.652 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:23:47.431 - POST request made to: /login
+INFO - 2022-02-19T11:23:47.447 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:23:47.460 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:23:47.460 - TEST2: postgres
+DEBUG - 2022-02-19T11:23:47.460 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:23:48.675 - CONNECTED
+INFO - 2022-02-19T11:23:50.699 - GET request made to: /employee.html
+INFO - 2022-02-19T11:23:50.738 - GET request made to: /styles.css
+INFO - 2022-02-19T11:23:50.738 - GET request made to: /styles.css - GET request made to: /employee.css
+INFO - 2022-02-19T11:23:50.739 - GET request made to: /employee.js
+INFO - 2022-02-19T11:23:52.520 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:23:52.528 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:23:52.528 - TEST2: postgres
+DEBUG - 2022-02-19T11:23:52.528 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:23:59.105 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:23:59.105 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:23:59.106 - TEST2: postgres
+DEBUG - 2022-02-19T11:23:59.106 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:25:28.297 - GET request made to: /login.html
+INFO -  - GET request made to: /styles.css
+INFO -  - GET request made to: /styles.css2022-02-19T11:25:28.359 - GET request made to: /login.js
+INFO - 2022-02-19T11:25:28.359 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T11:25:31.667 - GET request made to: /employee.html
+INFO - 2022-02-19T11:25:31.689 - GET request made to: /employee.js
+INFO - 2022-02-19T11:25:31.689 - GET request made to: /styles.css
+INFO - 2022-02-19T11:25:31.690 - GET request made to: /employee.css
+INFO - 2022-02-19T11:25:34.051 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:25:34.076 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:25:34.076 - TEST2: postgres
+DEBUG - 2022-02-19T11:25:34.076 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:25:36.133 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:25:36.134 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:25:36.134 - TEST2: postgres
+DEBUG - 2022-02-19T11:25:36.134 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:25:39.276 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:25:39.276 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:25:39.276 - TEST2: postgres
+DEBUG - 2022-02-19T11:25:39.276 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:25:40.750 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:25:40.751 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:25:40.751 - TEST2: postgres
+DEBUG - 2022-02-19T11:25:40.751 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:34:18.737 - POST request made to: /login
+INFO - 2022-02-19T11:34:18.752 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:34:18.752 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:34:18.752 - TEST2: postgres
+DEBUG - 2022-02-19T11:34:18.752 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:34:19.902 - CONNECTED
+INFO - 2022-02-19T11:36:18.017 - POST request made to: /login
+INFO - 2022-02-19T11:36:18.025 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:36:18.037 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:36:18.037 - TEST2: postgres
+DEBUG - 2022-02-19T11:36:18.037 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:36:19.262 - CONNECTED
+INFO - 2022-02-19T11:36:32.037 - GET request made to: /login.html
+INFO - 2022-02-19T11:36:32.072 - GET request made to: /styles.css
+INFO - 2022-02-19T11:36:32.072 - GET request made to: /login.js
+INFO - 2022-02-19T11:36:32.075 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T11:36:40.770 - POST request made to: /login
+INFO - 2022-02-19T11:36:40.794 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:36:40.807 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:36:40.809 - TEST2: postgres
+DEBUG - 2022-02-19T11:36:40.809 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:36:41.965 - CONNECTED
+INFO - 2022-02-19T11:37:16.397 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:37:16.403 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:37:16.403 - TEST2: postgres
+DEBUG - 2022-02-19T11:37:16.403 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:38:40.069 - GET request made to: /login.html
+INFO - 2022-02-19T11:38:40.141 - GET request made to: /styles.css
+INFO - 2022-02-19T11:38:40.141 - GET request made to: /styles.css2022-02-19T11:38:40.141 - GET request made to: /login.js
+INFO - 2022-02-19T11:38:40.145 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T11:39:28.942 - POST request made to: /login
+INFO - 2022-02-19T11:39:28.962 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:39:28.972 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:39:28.972 - TEST2: postgres
+DEBUG - 2022-02-19T11:39:28.972 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:39:30.123 - CONNECTED
+INFO - 2022-02-19T11:39:53.346 - GET request made to: /login.html
+INFO - 2022-02-19T11:39:53.422 - GET request made to: /styles.css
+INFO - 2022-02-19T11:39:53.427 - GET request made to: /login.js
+INFO - 2022-02-19T11:39:53.429 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T11:41:41.499 - GET request made to: /login.html
+INFO - 2022-02-19T11:41:41.537 - GET request made to: /login.js
+INFO - 2022-02-19T11:41:41.537 - GET request made to: /styles.css
+INFO - 2022-02-19T11:41:41.543 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T11:41:50.671 - POST request made to: /login
+INFO - 2022-02-19T11:41:50.695 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:41:50.706 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:41:50.706 - TEST2: postgres
+DEBUG - 2022-02-19T11:41:50.706 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:41:51.892 - CONNECTED
+INFO - 2022-02-19T11:41:52.067 - GET request made to: /employee.html
+INFO - 2022-02-19T11:41:52.096 - GET request made to: /employee.css
+INFO - 2022-02-19T11:41:52.096 - GET request made to: /styles.css
+INFO - 2022-02-19T11:41:52.100 - GET request made to: /employee.js
+INFO - 2022-02-19T11:41:54.999 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:41:55.005 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:41:55.005 - TEST2: postgres
+DEBUG - 2022-02-19T11:41:55.006 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:41:59.530 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:41:59.530 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:41:59.530 - TEST2: postgres
+DEBUG - 2022-02-19T11:41:59.531 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:42:00.692 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:42:00.692 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:42:00.692 - TEST2: postgres
+DEBUG - 2022-02-19T11:42:00.693 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:44:05.039 - GET request made to: /login.html
+INFO - 2022-02-19T11:44:05.088 - GET request made to: /styles.css
+INFO - 2022-02-19T11:44:05.091 - GET request made to: /login.js
+INFO - 2022-02-19T11:44:05.095 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T11:44:07.587 - POST request made to: /login
+INFO - 2022-02-19T11:44:07.588 -  Attempted login
+DEBUG - 2022-02-19T11:44:07.589 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:44:07.589 - TEST2: postgres
+DEBUG - 2022-02-19T11:44:07.589 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:44:08.154 - CONNECTED
+INFO - 2022-02-19T11:44:11.629 - POST request made to: /login
+INFO - 2022-02-19T11:44:11.630 - asdfasd Attempted login
+DEBUG - 2022-02-19T11:44:11.631 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:44:11.631 - TEST2: postgres
+DEBUG - 2022-02-19T11:44:11.631 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:44:12.197 - CONNECTED
+INFO - 2022-02-19T11:44:20.127 - GET request made to: /login.html
+INFO - 2022-02-19T11:44:20.228 - GET request made to: /styles.css
+INFO - 2022-02-19T11:44:20.234 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T11:44:25.254 - POST request made to: /login
+INFO - 2022-02-19T11:44:25.268 - dsagadsfg Attempted login
+DEBUG - 2022-02-19T11:44:25.285 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:44:25.285 - TEST2: postgres
+DEBUG - 2022-02-19T11:44:25.285 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:44:26.445 - CONNECTED
+INFO - 2022-02-19T11:44:27.671 - POST request made to: /login
+INFO - 2022-02-19T11:44:27.672 - dsagadsfg Attempted login
+DEBUG - 2022-02-19T11:44:27.672 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:44:27.673 - TEST2: postgres
+DEBUG - 2022-02-19T11:44:27.673 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:44:28.260 - CONNECTED
+INFO - 2022-02-19T11:45:44.967 - POST request made to: /login
+INFO - 2022-02-19T11:45:44.982 - dsagadsfg Attempted login
+DEBUG - 2022-02-19T11:45:44.982 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:45:44.982 - TEST2: postgres
+DEBUG - 2022-02-19T11:45:44.982 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:45:46.069 - CONNECTED
+INFO - 2022-02-19T11:45:49.539 - POST request made to: /login
+INFO - 2022-02-19T11:45:49.540 - dsagadsfg Attempted login
+DEBUG - 2022-02-19T11:45:49.540 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:45:49.540 - TEST2: postgres
+DEBUG - 2022-02-19T11:45:49.540 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:45:50.134 - CONNECTED
+INFO - 2022-02-19T11:46:55.677 - GET request made to: /login.html
+INFO - 2022-02-19T11:46:55.717 - GET request made to: /styles.css
+INFO - 2022-02-19T11:46:55.718 - GET request made to: /login.js
+INFO - 2022-02-19T11:46:55.720 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T11:46:59.663 - POST request made to: /login
+INFO - 2022-02-19T11:46:59.683 - asdf Attempted login
+DEBUG - 2022-02-19T11:46:59.695 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:46:59.696 - TEST2: postgres
+DEBUG - 2022-02-19T11:46:59.696 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:47:00.804 - CONNECTED
+INFO - 2022-02-19T11:48:21.416 - POST request made to: /login
+INFO - 2022-02-19T11:48:21.427 - asdf Attempted login
+DEBUG - 2022-02-19T11:48:21.436 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:48:21.436 - TEST2: postgres
+DEBUG - 2022-02-19T11:48:21.436 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:48:22.526 - CONNECTED
+INFO - 2022-02-19T11:48:27.571 - GET request made to: /login.html
+INFO - 2022-02-19T11:48:27.612 - GET request made to: /styles.css
+INFO - 2022-02-19T11:48:27.615 - GET request made to: /login.js
+INFO - 2022-02-19T11:48:27.618 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T11:48:31.357 - POST request made to: /login
+INFO - 2022-02-19T11:48:31.368 - asdf Attempted login
+DEBUG - 2022-02-19T11:48:31.377 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:48:31.378 - TEST2: postgres
+DEBUG - 2022-02-19T11:48:31.379 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:48:32.476 - CONNECTED
+INFO - 2022-02-19T11:48:39 - POST request made to: /login
+INFO - 2022-02-19T11:48:39 - asdf Attempted login
+DEBUG - 2022-02-19T11:48:39 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:48:39.001 - TEST2: postgres
+DEBUG - 2022-02-19T11:48:39.001 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:48:39.586 - CONNECTED
+INFO - 2022-02-19T11:51:40.544 - GET request made to: /login.html
+INFO - INFO - 2022-02-19T11:51:40.580 - 2022-02-19T11:51:40.580GET request made to: /login.js - GET request made to: /styles.cssINFO - INFO - 2022-02-19T11:51:40.580 - 2022-02-19T11:51:40.580GET request made to: /login.js - GET request made to: /styles.css
+
+INFO - 2022-02-19T11:51:40.588 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T11:51:43.734 - GET request made to: /login.html
+INFO - 2022-02-19T11:51:43.765 - GET request made to: /login.js
+INFO - 2022-02-19T11:51:43.768 - GET request made to: /styles.css
+INFO - 2022-02-19T11:51:43.772 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
+INFO - 2022-02-19T11:52:47.898 - GET request made to: /login.html
+INFO - 2022-02-19T11:52:47.933 - GET request made to: /styles.css
+INFO - 2022-02-19T11:52:47.933 - GET request made to: /login.js
+INFO - 2022-02-19T11:52:47.939 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T11:53:28.317 - POST request made to: /login
+INFO - 2022-02-19T11:53:28.331 - fquinsee0 Attempted login
+DEBUG - 2022-02-19T11:53:28.374 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:53:28.375 - TEST2: postgres
+DEBUG - 2022-02-19T11:53:28.378 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:53:29.555 - CONNECTED
+INFO - 2022-02-19T11:53:29.721 - GET request made to: /admin.html
+INFO - 2022-02-19T11:53:29.744 - GET request made to: /admin.js
+INFO - 2022-02-19T11:53:54.111 - GET request made to: /login.html
+INFO - 2022-02-19T11:53:54.144 - GET request made to: /styles.css
+INFO - 2022-02-19T11:53:54.144 - GET request made to: /login.js
+INFO - 2022-02-19T11:53:54.153 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T11:54:00.416 - POST request made to: /login
+INFO - 2022-02-19T11:54:00.417 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T11:54:00.417 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:54:00.417 - TEST2: postgres
+DEBUG - 2022-02-19T11:54:00.417 - TEST3: Tx07!!!mydb
+DEBUG - 2022-02-19T11:54:01.127 - CONNECTED
+INFO - 2022-02-19T11:54:01.203 - GET request made to: /employee.html
+INFO - 2022-02-19T11:54:01.237 - GET request made to: /employee.css
+INFO - 2022-02-19T11:54:01.245 - GET request made to: /styles.css
+INFO - 2022-02-19T11:54:01.246 - GET request made to: /employee.js
+INFO - 2022-02-19T11:54:03.277 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:54:03.280 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:54:03.280 - TEST2: postgres
+DEBUG - 2022-02-19T11:54:03.280 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T11:54:04.308 - GET request made to: /employee/reimbursement/status/5
+DEBUG - 2022-02-19T11:54:04.308 - TEST1: jdbc:postgresql://34.67.25.246:5432/postgres
+DEBUG - 2022-02-19T11:54:04.308 - TEST2: postgres
+DEBUG - 2022-02-19T11:54:04.308 - TEST3: Tx07!!!mydb
+INFO - 2022-02-19T12:04:00.421 - GET request made to: /login.html
+INFO - 2022-02-19T12:04:00.479 - GET request made to: /styles.css
+INFO - 2022-02-19T12:04:00.482 - GET request made to: /login.js
+INFO - 2022-02-19T12:04:00.486 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T12:04:44.695 - GET request made to: /login.html
+INFO - 2022-02-19T12:04:44.728 - GET request made to: /styles.css
+INFO - 2022-02-19T12:04:44.729 - GET request made to: /login.js
+INFO - 2022-02-19T12:04:44.736 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T12:05:49.336 - GET request made to: /login.html
+INFO - 2022-02-19T12:05:49.374 - GET request made to: /styles.css
+INFO - 2022-02-19T12:05:49.374 - GET request made to: /styles.css - GET request made to: /login.js
+INFO - 2022-02-19T12:05:49.377 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T12:06:15.765 - GET request made to: /login.html
+INFO - 2022-02-19T12:06:15.799 - GET request made to: /login.css - GET request made to: /styles.css
+INFO - 2022-02-19T12:06:15.799 - GET request made to: /login.css - GET request made to: /styles.css
+INFO - 2022-02-19T12:06:15.802 - GET request made to: /login.js
+INFO - 2022-02-19T12:06:15.806 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T12:06:16.953 - GET request made to: /login.html
+INFO - 2022-02-19T12:06:16.993 - GET request made to: /styles.css
+INFO -  - GET request made to: /login.css
+INFO -  - GET request made to: /login.css2022-02-19T12:06:16.994 - GET request made to: /login.js
+INFO - 2022-02-19T12:06:16.995 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T12:09:04.394 - POST request made to: /login
+INFO - 2022-02-19T12:09:04.406 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T12:09:05.703 - CONNECTED
+INFO - 2022-02-19T12:09:05.879 - GET request made to: /employee.html
+INFO - 2022-02-19T12:09:05.963 - GET request made to: /employee.css
+INFO - 2022-02-19T12:09:05.964 - GET request made to: /styles.css
+INFO - 2022-02-19T12:09:05.975 - GET request made to: /employee.js
+INFO - 2022-02-19T12:09:11.441 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T12:09:14.368 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T12:09:16.487 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T12:09:48.650 - POST request made to: /employee/reimbursement
+INFO - 2022-02-19T12:10:04.927 - GET request made to: /employee/reimbursement/status/5

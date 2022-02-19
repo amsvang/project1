@@ -1,11 +1,11 @@
-const baseURL = 'http://35.236.13.105:7000';
+const baseURL = 'http://localhost:7000';
 const route = 'employee';
 
 console.log("LOAD");
 let dataTbody = document.getElementById('data-tbody');
 let viewAccountInfoBtn = document.getElementById('view-account-info');
 let viewReimbursementsBtn = document.getElementById('view-reimbursements');
-let addReimbursementsBtn = document.getElementById('add-reimbursement');
+let postReimbursementsBtn = document.getElementById('post-reimbursement');
 let viewPendingReimbursementsBtn = document.getElementById('view-pending-reimbursements');
 let viewApprovedReimbursementsBtn = document.getElementById('view-approved-reimbursements');
 let viewDisapprovedReimbursementsBtn = document.getElementById('view-disapproved-reimbursements');
@@ -39,7 +39,6 @@ getReimbursementData = (data) => {
 };
 
     viewReimbursementsBtn.addEventListener('click', () => {
-    console.log("CLICK");
     reimbursementBtnContainer.classList.remove("hidden");
 });
 
@@ -118,8 +117,9 @@ viewDisapprovedReimbursementsBtn.addEventListener('click', () => {
         .then((data) => getReimbursementData(data));
 });
 
-addReimbursementsBtn.addEventListener('click', () => {
+postReimbursementsBtn.addEventListener('click', () => {
     form.classList.remove('hidden');
+    reimbursementTableContainer.classList.add("hidden");
 
 });
 
