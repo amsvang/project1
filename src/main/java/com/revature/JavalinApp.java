@@ -27,7 +27,7 @@ public class JavalinApp {
 
         // app.get("/admin/reimbursement", reimbursementController::handleGetAllReimbursements);
         path("admin",()->{
-            before(authController::authorizeAdminToken);
+           // before(authController::authorizeAdminToken);
             path("reimbursement",()->{
                 get(reimbursementController::handleGetAllReimbursements);
                 post(reimbursementController::handleCreate);
