@@ -4679,3 +4679,82 @@ INFO - 2022-02-20T15:07:00.979 - GET request made to: /admin.html
 INFO - 2022-02-20T15:07:00.979 - GET request made to: /admin.html2022-02-20T15:07:00.979 - GET request made to: /images/yellow-desk.jpg
 INFO - 2022-02-20T15:07:01.002 - GET request made to: /admin.css
 INFO - 2022-02-20T15:07:01.003 - GET request made to: /admin.js
+INFO - 2022-02-20T15:08:30.794 - GET request made to: /admin.html
+INFO - 2022-02-20T15:08:30.855 - GET request made to: /admin.css
+INFO - 2022-02-20T15:08:30.857 - GET request made to: /admin.js
+INFO - 2022-02-20T15:08:45.670 - GET request made to: /login.html
+INFO - 2022-02-20T15:08:45.702 - GET request made to: /styles.css
+INFO - 2022-02-20T15:08:45.705 - GET request made to: /login.css
+INFO - 2022-02-20T15:08:45.709 - GET request made to: /login.js
+INFO - 2022-02-20T15:08:46.077 - GET request made to: /images/yellow-desk.jpg
+INFO - 2022-02-20T15:08:46.082 - GET request made to: /admin.html
+INFO - 2022-02-20T15:08:46.101 - GET request made to: /admin.js
+INFO - 2022-02-20T15:08:46.101 - GET request made to: /admin.js - GET request made to: /admin.css
+INFO - 2022-02-20T15:08:55.917 - GET request made to: /employee.html
+INFO - 2022-02-20T15:08:55.981 - GET request made to: /employee.js
+INFO - 2022-02-20T15:08:55.981 - GET request made to: /employee.js2022-02-20T15:08:55.981 - GET request made to: /styles.css
+INFO - 2022-02-20T15:08:55.981 - GET request made to: /employee.css
+INFO - 2022-02-20T15:08:59.918 - GET request made to: /login.html
+INFO - 2022-02-20T15:08:59.969 - GET request made to: /styles.css
+INFO - 2022-02-20T15:08:59.971 - GET request made to: /login.css
+INFO - 2022-02-20T15:08:59.975 - GET request made to: /login.js
+INFO - 2022-02-20T15:09:00.001 - GET request made to: /admin.html
+INFO - 2022-02-20T15:09:00.028 - GET request made to: /admin.css
+INFO - 2022-02-20T15:09:00.028 - GET request made to: /admin.css2022-02-20T15:09:00.028 - GET request made to: /admin.js
+INFO - 2022-02-20T15:09:13.731 - GET request made to: /login.html
+INFO - 2022-02-20T15:09:13.801 - GET request made to: /login.js
+INFO - 2022-02-20T15:09:13.801 - GET request made to: /login.js - GET request made to: /styles.css - GET request made to: /login.css
+INFO - 2022-02-20T15:09:13.801 - GET request made to: /login.js - GET request made to: /styles.css
+INFO - 2022-02-20T15:09:13.813 - GET request made to: /images/yellow-desk.jpg
+INFO - 2022-02-20T15:09:13.818 - GET request made to: /admin.html
+INFO - 2022-02-20T15:09:13.846 - GET request made to: /admin.css
+INFO - 2022-02-20T15:09:13.846 - GET request made to: /admin.js
+INFO - 2022-02-20T15:09:39.750 - GET request made to: /login.html
+INFO - 2022-02-20T15:09:39.811 - GET request made to: /styles.css
+INFO - 2022-02-20T15:09:39.812 - GET request made to: /login.css
+INFO - 2022-02-20T15:09:39.816 - GET request made to: /login.js
+INFO - 2022-02-20T15:09:39.854 - GET request made to: /images/yellow-desk.jpg
+INFO - 2022-02-20T15:09:39.866 - GET request made to: /admin.html
+INFO - 2022-02-20T15:09:39.887 - GET request made to: /admin.css
+INFO - 2022-02-20T15:09:39.887 - GET request made to: /admin.js
+INFO - 2022-02-20T15:09:44.715 - GET request made to: /login.html
+INFO - 2022-02-20T15:09:44.763 - GET request made to: /styles.css
+INFO - 2022-02-20T15:09:44.764 - GET request made to: /login.css
+INFO - 2022-02-20T15:09:44.764 - GET request made to: /login.js
+INFO - 2022-02-20T15:09:44.789 - GET request made to: /admin.html
+INFO - 2022-02-20T15:09:44.817 - GET request made to: /admin.js
+INFO - 2022-02-20T15:09:44.818 - GET request made to: /admin.css
+INFO - 2022-02-20T15:11:16.364 - GET request made to: /login.html
+INFO - 2022-02-20T15:11:16.404 - GET request made to: /styles.css
+INFO - 2022-02-20T15:11:16.407 - GET request made to: /login.css
+INFO - 2022-02-20T15:11:16.407 - GET request made to: /login.js
+INFO - 2022-02-20T15:11:16.429 - GET request made to: /images/yellow-desk.jpg
+INFO - 2022-02-20T15:11:16.429 - GET request made to: /images/yellow-desk.jpg - GET request made to: /admin.html
+INFO - 2022-02-20T15:11:16.457 - GET request made to: /admin.css
+INFO - 2022-02-20T15:11:16.458 - GET request made to: /admin.js
+INFO - 2022-02-20T15:11:19.542 - GET request made to: /admin/users
+INFO - 2022-02-20T15:11:51.934 - GET request made to: /login.html
+INFO - 2022-02-20T15:11:52.026 - GET request made to: /styles.css
+INFO - 2022-02-20T15:11:52.030 - GET request made to: /login.js
+INFO - 2022-02-20T15:11:52.030 - GET request made to: /login.js - GET request made to: /login.css
+INFO - 2022-02-20T15:11:52.059 - GET request made to: /admin.html
+INFO - 2022-02-20T15:11:52.061 - GET request made to: /images/yellow-desk.jpg
+INFO - 2022-02-20T15:11:52.111 - GET request made to: /admin.js
+INFO - 2022-02-20T15:11:52.111 - GET request made to: /admin.js - GET request made to: /admin.css
+INFO - 2022-02-20T15:12:22.954 - GET request made to: /login.html
+INFO - 2022-02-20T15:12:22.999 - GET request made to: /styles.css
+INFO - 2022-02-20T15:12:23 - GET request made to: /login.css
+INFO - 2022-02-20T15:12:23.001 - GET request made to: /login.js
+INFO - 2022-02-20T15:12:23.132 - GET request made to: /images/yellow-desk.jpg
+INFO - 2022-02-20T15:12:37.689 - POST request made to: /login
+INFO - 2022-02-20T15:12:37.701 - iellesmere4 Attempted login
+DEBUG - 2022-02-20T15:12:39.008 - CONNECTED
+INFO - 2022-02-20T15:12:39.159 - GET request made to: /employee.html
+INFO - 2022-02-20T15:12:39.187 - GET request made to: /employee.css
+INFO - 2022-02-20T15:12:39.188 - GET request made to: /styles.css
+INFO - 2022-02-20T15:12:39.189 - GET request made to: /employee.js
+INFO - 2022-02-20T15:12:39.214 - GET request made to: /images/ERS.png
+INFO - 2022-02-20T15:12:45.587 - GET request made to: /employee/user/5
+INFO - 2022-02-20T15:12:55.119 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-20T15:12:55.876 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-20T15:12:56.780 - GET request made to: /employee/reimbursement/status/5
