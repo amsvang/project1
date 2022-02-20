@@ -20,42 +20,25 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="row">
-				<h1>Hello Manager</h1>
+			<div class="button-container">
+				<div class="row">
+					<h1>Hello Manager</h1>
+				</div>
+				<div class="row">
+					<button class="user-btn" id="user-btn">
+						<i class="fa-solid fa-user"></i> users
+					</button>
+					<button class="rmb-btn" id="rmb-btn">
+						<i class="fa-solid fa-file-invoice-dollar"></i> reimbursements
+					</button>
+				</div>
 			</div>
-			<div class="row">
-				<button class="user-btn" id="user-btn">
-					<i class="fa-solid fa-user"></i> users
-				</button>
-				<button class="rmb-btn" id="rmb-btn">
-					<i class="fa-solid fa-file-invoice-dollar"></i> reimbursements
-				</button>
-			</div>
+
 			<!-- button actions --------------------------------------------------------------------->
 			<!-- hidden options buttons will show when user or reimbursement button is clicked------->
 
-			<!-- user button actions -->
-			<div class="row user-actions hide" id="user-actions">
-				<button class="create-user-btn" id="create-user-btn">
-					create new user
-				</button>
-				<button class="update-user-btn" id="update-user-btn">
-					update user
-				</button>
-				<button class="delete-user-btn" id="delete-user-btn">
-					view user by...
-				</button>
-			</div>
 			<!-- rmb button options -->
 			<div class="row rmb-actions hide" id="rmb-actions">
-				<div class="three columns rmb-search-div">
-					<input
-						class="u-full-width"
-						type="text"
-						placeholder="search reimbursement"
-						id="filter"
-					/>
-				</div>
 				<div class="three columns">
 					<button
 						class="button-primary u-full-width update-rmb-btn"
@@ -68,150 +51,9 @@
 
 			<hr />
 			<!-- forms will show once button actions have been clicked------------------------------->
-			<!-- create new user form---------------------------------------------------------------->
-			<div class="row create-user-form-div hide" id="create-user-form-div">
-				<div class="row"><h5>Create a User</h5></div>
-				<form id="create-user-form">
-					<div class="row">
-						<div class="six columns">
-							<label for="username" name="username">Username</label>
-							<input
-								class="u-full-width"
-								name="ers_username"
-								type="text"
-								placeholder="RRoll"
-								id="username"
-							/>
-						</div>
-						<div class="six columns">
-							<label for="password">Password</label>
-							<input
-								class="u-full-width"
-								name="ers_password"
-								type="text"
-								placeholder="password"
-								id="password"
-							/>
-						</div>
-					</div>
-					<div class="row">
-						<div class="four columns">
-							<label for="firstname">First Name</label>
-							<input
-								class="u-full-width"
-								name="user_first_name"
-								type="text"
-								placeholder="Rick"
-								id="firstname"
-							/>
-						</div>
-						<div class="four columns">
-							<label for="lastname">Last Name</label>
-							<input
-								class="u-full-width"
-								name="user_last_name"
-								type="text"
-								placeholder="Astley"
-								id="lastname"
-							/>
-						</div>
-						<div class="four columns">
-							<label for="email">email</label>
-							<input
-								class="u-full-width"
-								name="user_email"
-								type="email"
-								placeholder="nevergonna@giveyouup.com"
-								id="email"
-							/>
-						</div>
-					</div>
-					<div class="row">
-						<div class="three columns">
-							<label for="role">Role</label>
-							<select name="user_type" id="role">
-								<option value="ADMIN">ADMIN</option>
-								<option value="EMPLOYEE">EMPLOYEE</option>
-							</select>
-						</div>
-					</div>
-					<div class="row">
-						<button
-							class="button-primary create-user-btn"
-							id="add-btn"
-							type="submit"
-						>
-							submit
-						</button>
-					</div>
-				</form>
 
-				<!-- update user ------------------------------------------------------------>
-				<!-- delete form------------------------------------------------------------>
-				<div class="row">
-					<div class="one-half column">
-						<form id="delete-user-form">
-							<label for="delete-user">delete user</label>
-							<input type="number" id="delete-user" />
-							<button
-								class="button-primary delete-btn"
-								id="delete-btn"
-								type="submit"
-							>
-								delete
-							</button>
-						</form>
-					</div>
-				</div>
-			</div>
 			<!-- forms for reimbursement------------------------------------------------------ -->
-			<!-- create reimbursement------------------------------------------------------------>
-			<div class="create-rmb-form-div hide" id="create-rmb-form-div">
-				<h5>Create reimbursement</h5>
-				<form id="create-rmb-form">
-					<div class="row">
-						<div class="four columns">
-							<label for="username">User Id</label>
-							<input type="number" placeholder="001" id="username" />
-						</div>
-						<div class="three columns">
-							<label for="rmbType">Reimbursement Type</label>
-							<select name="rmbType" id="rmbType">
-								<option value="FOOD">FOOD</option>
-								<option value="LODGING">LODGING</option>
-								<option value="TRAVEL">TRAVEL</option>
-								<option value="OTHER">OTHER</option>
-							</select>
-						</div>
-						<div class="three columns">
-							<label for="rmbType">Reimbursement Status</label>
-							<select name="statusType" id="statusType">
-								<option value="PENDING">PENDING</option>
-								<option value="APPROVED">APPROVED</option>
-								<option value="DISAPPROVED">NOT APPROVED</option>
-							</select>
-						</div>
-					</div>
-					<div class="row">
-						<div class="four columns">
-							<label for="firstname">Amount</label>
-							<input type="number" placeholder="$500.00" id="firstname" />
-						</div>
-						<div class="eight columns">
-							<label for="description">Description</label>
-							<textarea
-								class="u-full-width"
-								placeholder="please add a description of your reimbursment"
-							></textarea>
-						</div>
-					</div>
-					<div class="row">
-						<button class="button-primary" id="add-rmb-btn" type="submit">
-							submit
-						</button>
-					</div>
-				</form>
-			</div>
+
 			<!-- update reimbursement -->
 			<div class="update-rmb-form-div hide" id="update-rmb-form-div">
 				<h5>Update Reimbursement</h5>
@@ -262,12 +104,23 @@
 			</div>
 			<!-- user table ---------------------------------------------------->
 			<div class="row">
-				<div class="user-table-container hide" id="user-table-container">
+				<div class="user-table-container" id="user-table-container">
 					<div class="user-table-title">
 						<h5>Users</h5>
+
+						<button id="user-toggle"><i class="fa-solid fa-plus"></i></button>
 					</div>
-					<div class="user-table">
-						<table class="data-table u-full-width" id="data-table">
+					<div class="user-table" id="user-table">
+						<input
+							class="u-full-width"
+							type="text"
+							placeholder="search user"
+							id="user-filter"
+						/>
+						<table
+							class="user-data-table hide u-full-width"
+							id="user-data-table"
+						>
 							<thead>
 								<th></th>
 								<th>ID</th>
@@ -282,10 +135,20 @@
 			</div>
 			<!-- rmb table--------------------------------------------->
 			<div class="row">
-				<div class="rmb-table-container hide" id="rmb-table-container">
-					<div class="rmb-table-title"><h5>Reimbursements</h5></div>
-					<div class="rmb-div-hide">
-						<table class="rmb-table u-full-width" id="rmb-table">
+				<div class="rmb-table-container" id="rmb-table-container">
+					<div class="rmb-table-title">
+						<h5>Reimbursements</h5>
+
+						<button id="rmb-toggle"><i class="fa-solid fa-plus"></i></button>
+					</div>
+					<div class="rmb-table" id="rmb-table">
+						<input
+							class="u-full-width"
+							type="text"
+							placeholder=" search reimbursement"
+							id="rmb-filter"
+						/>
+						<table class="rmb-data-table hide u-full-width" id="rmb-data-table">
 							<thead>
 								<th></th>
 								<th>ID</th>
