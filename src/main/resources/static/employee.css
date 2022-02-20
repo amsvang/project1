@@ -15,3 +15,9 @@
     display: none;
 }
 
+img {
+	border-radius: 50%;
+	object-fit: cover;
+	height: 70px;
+	width: 70px;
+}

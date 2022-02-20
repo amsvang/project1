@@ -3,7 +3,7 @@
 	color: #434040;
 }
 
-.header {
+/*.header {
 	background-color: #daf7A6;
 	background-image: linear-gradient(to left, #daf7a6, #ffffff);
 	border-radius: 10px;
@@ -14,19 +14,21 @@
 	text-align: center;
 }
 
+
+.u-full-width {
+    width: 50%;
+
+}*/
+
+.btn:hover {
+    background-color: #ffe9a0;
+}
+
+
 .btn {
     background-color: #ffc300 ;
     opacity: .8;
     color: #424040;
     border: 1px solid #e7e7e7;
     transition-duration: 0.4s;
-}
-
-.btn:hover {
-    background-color: #ffe9a0;
-}
-
-.u-full-width {
-    width: 50%;
-
 }
