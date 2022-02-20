@@ -1,3 +1,31 @@
 * {
 	box-sizing: border-box;
 }
+
+body {
+	background: url('./images/yellow-desk.jpg') no-repeat;
+	background-size: cover;
+}
+
+form {
+	margin: 10px;
+}
+
+.login-div {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
+	background: white;
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.7),
+		rgba(255, 255, 255, 0.3)
+	);
+	border-radius: 10px;
+	width: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+}

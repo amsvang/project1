@@ -15,36 +15,27 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
 		/>
-		<link rel="stylesheet" href="styles.css">
-		<link rel="stylesheet" href="login.css">
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="login.css" />
 		<title>Revature ERS</title>
 	</head>
 	<body>
-		<div class="header">
-			<h3>Hello</h3>
-		</div>
 		<div class="container">
-			<div class="row">
-				<div class="login-image">
-					<image src="images/undraw_authentication_re_svpt.svg"></image>
-				</div>
-				<!-- div for login -->
-				<div class="eight columns">
-					<form class="login-form" id="login-form">
-						<h2>Login</h2>
-						<label for="username">username</label>
-						<input type="text" name="username" id="username" />
-						<div><small>error message here</small></div>
-						<label for="password">password</label>
-						<input type="password" name="password" id="password" />
-						<div><small>error message here</small></div>
-						<div class="button-div">
-							<button type ='submit' class="btn" id="login-button">login</button>
-						</div>
-					</form>
-				</div>
+			<div class="login-div">
+				<form class="login-form" id="login-form">
+					<h4>Please login</h4>
+					<label for="username">username</label>
+					<input type="text" name="username" id="username" />
+					<label for="password">password</label>
+					<input type="password" name="password" id="password" />
+
+					<div class="button-div">
+						<button type="submit" class="btn" id="login-button">login</button>
+					</div>
+				</form>
 			</div>
 		</div>
+
 		<script src="login.js"></script>
 	</body>
 </html>
