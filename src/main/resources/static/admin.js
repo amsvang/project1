@@ -1,155 +1,99 @@
 const url = 'http://localhost:7000/';
-const userActions = document.getElementById('user-actions');
-const createUserFormDiv = document.getElementById('create-user-form-div');
 const userTbody = document.getElementById('user-tbody');
-let userTable = document.getElementById('user-table-container');
-let userBtn = document.getElementById('user-btn');
-let createUserForm = document.getElementById('create-user-form');
-const rmbTbody = document.getElementById('rmb-tbody');
+const userTableContainer = document.getElementById('user-table-container');
+const userTable = document.getElementById('user-table');
+const userDataTable = document.getElementById('user-data-table');
 const rmbTable = document.getElementById('rmb-table');
-const rmbDiv = document.getElementById('rmb-table-container');
+const rmbDataTable = document.getElementById('rmb-data-table');
+const userBtn = document.getElementById('user-btn');
+const rmbTbody = document.getElementById('rmb-tbody');
+const rmbTableContainer = document.getElementById('rmb-table-container');
 const rmbActions = document.getElementById('rmb-actions');
-let rmbBtn = document.getElementById('rmb-btn');
-let updateRmbBtn = document.getElementById('update-rmb-btn');
-let updateRmbFormDiv = document.getElementById('update-rmb-form-div');
-
+const rmbBtn = document.getElementById('rmb-btn');
+const updateRmbBtn = document.getElementById('update-rmb-btn');
+const updateRmbFormDiv = document.getElementById('update-rmb-form-div');
+// div buttons
+const userToggleBtn = document.getElementById('user-toggle');
+const rmbToggleBtn = document.getElementById('rmb-toggle');
+const userItems = [];
 const rmbItems = [];
 
 //USER-----------------------------------------------------------------
 
-// click event to grab get all user data
+// click button to grab user data
 userBtn.addEventListener('click', () => {
-	// userActions.classList.remove('hide');
-	userTable.classList.remove('hide');
-	console.log('clicked');
+	console.log('user button clicked');
+	userDataTable.classList.remove('hide');
 	userTbody.innerHTML = '';
 	fetch(`${url}admin/users`)
 		.then((res) => res.json())
 		.then((data) => getUserData(data));
 });
-// function to dynamically create table row elemnts in table---------------
+// add db data to user table---------------
 getUserData = (data) => {
 	for (user of data) {
 		let tr = document.createElement('tr');
+		userItems.push(tr);
 
 		tr.innerHTML = `
-		<td>    <img src="https://randomuser.me/portraits/men/${user.userId}.jpg"></td>
 		<td>
-		100${user.userId}
+			<img src="https://randomuser.me/portraits/men/${user.userId}.jpg">
 		</td>
-			<td>
+		<td>
+			100${user.userId}
+		</td>
+		<td>
 			${user.firstName}
-			</td>
-			<td>
+		</td>
+		<td>
 			${user.lastName}
-			</td>
-			<td>
+		</td>
+		<td>
 			${user.email}
-			</td>
+		</td>
         `;
 
 		userTbody.append(tr);
-		// click the newly generated button
 	}
 };
 
-//user actions row-------------------------
-//show user options
-let createUserBtn = document.getElementById('create-user-btn');
-createUserBtn.addEventListener('click', () => {
-	console.log('ive been clicked');
-	// createUserFormDiv.classList.remove('hide');
-});
+//user data search filter
 
-//create user
+const userFilter = document.getElementById('user-filter');
+userFilter.addEventListener('input', (e) => filterUserData(e.target.value));
 
-createUserForm.addEventListener('submit', (e) => {
-	e.preventDefault();
-	const formData = new FormData(createUserForm);
-	let postData = {};
-	console.log('SUBMIT', formData);
-	console.log(createUserForm);
-
-	//convert formData from object to JSON object that the back end will accept
-	formData.forEach((value, key) => (postData[key] = value));
-	// let userObj = JSON.parse(localStorage.getItem('userObj'));
-
-	postData = {
-		...postData,
-		username,
-		password,
-		firstName,
-		lastName,
-		email,
-		role,
-	};
-
-	console.log(postData);
-
-	fetch(`${url}admin/users`, {
-		method: 'POST',
-		body: JSON.stringify(postData),
-		// credentials: 'include',
-	}).then((res) => console.log(res.status));
-});
-
-// function createUser(e) {
-// 	e.preventDefault();
-// let username = document.getElementById('username').value;
-// let password = document.getElementById('password').value;
-// let firstname = document.getElementById('firstname').value;
-// let lastname = document.getElementById('lastname').value;
-// let email = document.getElementById('email').value;
-// // let role = document.getElementById('role').value;
-
-// console.log(username, password, firstname, lastname, email);
-
-// let userObj = {
-// 	username,
-// 	password,
-// 	firstname,
-// 	lastname,
-// 	email,
-// 	// role,
-// };
-
-// fetch(`${url}admin/users`, {
-// 	method: 'POST',
-// 	headers: {
-// 		Accept: 'application/json, text/plain, */*',
-// 		'Content-Type': 'application/json',
-// 	},
-
-// 	body: JSON.stringify(userObj),
-// 	body: JSON.parse(JSON.stringify(userObj)),
-// })
-// 	.then((res) => res.json())
-// 	.then((data) => console.log(data))
-// 	.catch((err) => console.log(err));
-// }
+const filterUserData = (searchTerm) => {
+	userItems.forEach((item) => {
+		if (item.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
+			item.classList.remove('hide');
+		} else {
+			item.classList.add('hide');
+		}
+	});
+};
 
 //REIMBURSEMENTS-------------------------------------------------------
 
-//click event to grab all rmb data
+//click to rmb button to grab rmb data
 rmbBtn.addEventListener('click', () => {
 	rmbActions.classList.remove('hide');
-	rmbDiv.classList.remove('hide');
+	rmbDataTable.classList.remove('hide');
 	console.log('clicked');
 	rmbTbody.innerHTML = '';
 	fetch(`${url}admin/reimbursement`)
 		.then((res) => res.json())
 		.then((data) => getRmbData(data));
 });
-//show rmb data
+//add rmb data to rmb table
 getRmbData = (data) => {
 	for (user of data) {
 		let tr = document.createElement('tr');
-
 		rmbItems.push(tr);
+
 		tr.innerHTML = `
-	<td>    <img src="https://randomuser.me/portraits/men/${user.userId}.jpg"></td>
+	<td><img src="https://randomuser.me/portraits/men/${user.userId}.jpg"></td>
 		<td>
-		100${user.userId}
+		100${user.userId}u
 		</td>
 			<td>
 			${user.reimbursementType}
@@ -178,13 +122,14 @@ getRmbData = (data) => {
         `;
 
 		rmbTbody.append(tr);
-		// click the newly generated button
 	}
 };
-const filter = document.getElementById('filter');
-filter.addEventListener('input', (e) => filterData(e.target.value));
 
-const filterData = (searchTerm) => {
+//rmb data search filter
+const rmbFilter = document.getElementById('rmb-filter');
+rmbFilter.addEventListener('input', (e) => filterRmbData(e.target.value));
+
+const filterRmbData = (searchTerm) => {
 	rmbItems.forEach((item) => {
 		if (item.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
 			item.classList.remove('hide');
@@ -194,11 +139,18 @@ const filterData = (searchTerm) => {
 	});
 };
 
+const rmbStatusFilter = document.getElementById('status');
+
+//update rmb
+
 updateRmbBtn.addEventListener('click', () => {
 	updateRmbFormDiv.classList.remove('hide');
 });
-// create rmb
-// update rmb
-// delete rmb
 
-//FORM LOGIC-------------------------------------------
+//Button function-------------------------------------------
+userToggleBtn.addEventListener('click', () => {
+	userTable.classList.toggle('hide');
+});
+rmbToggleBtn.addEventListener('click', () => {
+	rmbTable.classList.toggle('hide');
+});
