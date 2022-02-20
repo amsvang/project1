@@ -1,7 +1,8 @@
 const baseURL = 'http://localhost:7000';
 const route = 'employee';
 
-console.log("LOAD");
+const form = document.getElementById('reimbursement-form');
+const logoutBtn = document.getElementById('logout');
 let dataTbody = document.getElementById('data-tbody');
 let viewAccountInfoBtn = document.getElementById('view-account-info');
 let viewReimbursementsBtn = document.getElementById('view-reimbursements');
@@ -11,11 +12,12 @@ let viewApprovedReimbursementsBtn = document.getElementById('view-approved-reimb
 let viewDisapprovedReimbursementsBtn = document.getElementById('view-disapproved-reimbursements');
 let reimbursementBtnContainer = document.getElementById('reimbursement-btn-container');
 let reimbursementTableContainer = document.getElementById('reimbursement-table-container');
-const form = document.getElementById('reimbursement-form');
 let submitBtn = document.getElementById('reimbursement-submit-btn');
+let userTableContainer = document.getElementById('user-table-container');
+let userDataTbody = document.getElementById('user-data-tbody');
 
 
-// Gets reimbursement data from server and display on web page in a table ----------------------------------------------
+// Gets reimbursement data from server and display on web page in a table --------------------------------------
 //Shifted to top of page because view pending and approved reimbursements could not see it.
 
 getReimbursementData = (data) => {
@@ -38,25 +40,62 @@ getReimbursementData = (data) => {
 	}
 };
 
+// User Info ---------------------------------------------------------------------------------------------------
+
+getUserData = (data) => {
+    console.log("DATA", data);
+	userDataTbody.innerHTML = ""; //clear data
+	userTableContainer.classList.remove("hidden");
+	reimbursementBtnContainer.classList.add("hidden");
+	reimbursementTableContainer.classList.add("hidden");
+    form.classList.add("hidden");
+
+	for (let user of data) {
+		let userTable = document.createElement('tr');
+
+		userTable.innerHTML = `
+		<td>${user.userId}</td>
+		<td>${user.username}</td>
+        <td>${user.firstName}</td>
+        <td>${user.lastName}</td>
+        <td>${user.email}</td>
+        <td>${user.role}</td>
+        `;
+
+		userDataTbody.append(userTable);
+	}
+};
+
+//------------------------------------------------------------------------------------------------------------
+
     viewReimbursementsBtn.addEventListener('click', () => {
     reimbursementBtnContainer.classList.remove("hidden");
+    userTableContainer.classList.add("hidden");
 });
 
-// -----------------------------------------------------------------------------------------------------------------
+    postReimbursementsBtn.addEventListener('click', () => {
+    form.classList.remove('hidden');
+    reimbursementTableContainer.classList.add("hidden");
+
+});
+
+
+// ------------------------------------------------------------------------------------------------------------
 
 form.addEventListener('submit', (e) => {
     const URL = `${baseURL}/${route}/reimbursement`;
     const formData = new FormData(form); // create form data object from form element/page
-    let postData = {};
+    let postData = {}; // declaring postData
+    document.getElementById("reimbursement-form").reset(); //clears out the form
     console.log("SUBMIT", formData);
     console.log(form);
 
     // Convert formData object to JSON object that back end will accept
-    formData.forEach((value, key) => postData[key] = value);
-     let userObj = JSON.parse(localStorage.getItem('userObj'));
+    formData.forEach((value, key) => postData[key] = value); // select/option key value pairs
+    let userObj = JSON.parse(localStorage.getItem('userObj'));
     postData = {
-        ...postData, //copying existing post data key values pairs ex. type and amount
-        userId: userObj.userId,
+        ...postData, //copying existing post data key values pairs ex. type and amount and desc
+        userId: userObj.userId, //get the id
         reimbursementStatus: "PENDING",
         isReimbursementSubmitted: true,
         isReimbursementResolved: false,
@@ -76,8 +115,19 @@ form.addEventListener('submit', (e) => {
 
 });
 
+// View user account info ------------------------------------------------------------------------------------
 
-// View pending reimbursements ----------------------------------------------------------------------------------------
+viewAccountInfoBtn.addEventListener('click', () => {
+    let userObj = JSON.parse(localStorage.getItem('userObj'));
+    let URL = `${baseURL}/employee/user/${userObj.userId}`;
+
+    fetch(URL)
+        .then((result) => result.json()) // convert payload(user obj) into json object
+        .then((user) => getUserData([user]));
+})
+
+
+// View pending reimbursements -------------------------------------------------------------------------------
 
 viewPendingReimbursementsBtn.addEventListener('click', () => {
     let apiUrl = `${baseURL}/employee/reimbursement/status`;
@@ -90,7 +140,7 @@ viewPendingReimbursementsBtn.addEventListener('click', () => {
         .then((data) => getReimbursementData(data));
 });
 
-// View approved reimbursements ---------------------------------------------------------------------------------------
+// View approved reimbursements ----------------------------------------------------------------------------
 
 viewApprovedReimbursementsBtn.addEventListener('click', () => {
     let apiUrl = `${baseURL}/employee/reimbursement/status`;
@@ -117,49 +167,20 @@ viewDisapprovedReimbursementsBtn.addEventListener('click', () => {
         .then((data) => getReimbursementData(data));
 });
 
-postReimbursementsBtn.addEventListener('click', () => {
-    form.classList.remove('hidden');
-    reimbursementTableContainer.classList.add("hidden");
 
-});
+//------------------------------------------------------------------------------------------------------------
 
-
-
-//let viewReimbursement = document.getElementById('view-reimbursement');
-
-/*let dataContainer = document.getElementById('data-container');
-
-getUserData = (data) => {
-	for (user of data) {
-		let userList = document.createElement('li');
-
-		userList.innerHTML = `
-		
-        <h3>${user.firstName} ${user.lastName}</h3>
-		<h5> user id: ${user.userId}</h5>
-		<h5> ${user.email}</h5>
-        `;
-
-		dataContainer.append(userList);
-	}
-};
+logoutBtn.addEventListener('click', () => {
+    let URL = `${baseURL}/logout`;
+    let userObj = JSON.parse(localStorage.getItem('userObj'));
+    fetch(URL)
+        .then(() => {
+        localStorage.removeItem('userObj');
+        location.replace("http://localhost:7000/login.html");
+        })
+})
 
 
 
 
 
-// button.addEventListener('click', () => {
-// 	console.log('clicked');
-// 	fetch('https://randomuser.me/api/')
-// 		.then((res) => res.json())
-// 		.then((data) => console.log(data));
-// });
-
-button.addEventListener('click', () => {
-	console.log('clicked');
-	fetch(apiUrl)
-		.then((res) => res.json())
-		// .then((data) => console.log(data));
-		.then((data) => getUserData(data));
-});
-*/
