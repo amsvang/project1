@@ -1,3 +1,12 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fdf86d;
+	background-image: linear-gradient(315deg, #fdf86d 0%, #bddcf1 74%);
+}
+
 .employee-container .hidden {
 	display: none;
 }
