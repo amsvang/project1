@@ -1,11 +1,11 @@
-const baseURL = 'http://localhost:8080';
+const baseURL = 'http://localhost:7000';
 const route = 'employee';
 
-
+console.log("LOAD");
 let dataTbody = document.getElementById('data-tbody');
 let viewAccountInfoBtn = document.getElementById('view-account-info');
 let viewReimbursementsBtn = document.getElementById('view-reimbursements');
-let addReimbursementsBtn = document.getElementById('add-reimbursement');
+let postReimbursementsBtn = document.getElementById('post-reimbursement');
 let viewPendingReimbursementsBtn = document.getElementById('view-pending-reimbursements');
 let viewApprovedReimbursementsBtn = document.getElementById('view-approved-reimbursements');
 let viewDisapprovedReimbursementsBtn = document.getElementById('view-disapproved-reimbursements');
@@ -38,29 +38,29 @@ getReimbursementData = (data) => {
 	}
 };
 
-viewReimbursementsBtn.addEventListener('click', () => {
+    viewReimbursementsBtn.addEventListener('click', () => {
     reimbursementBtnContainer.classList.remove("hidden");
 });
 
-/-----------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------------
 
 form.addEventListener('submit', (e) => {
     const URL = `${baseURL}/${route}/reimbursement`;
     const formData = new FormData(form); // create form data object from form element/page
     let postData = {};
+    document.getElementById("reimbursement-form").reset();
     console.log("SUBMIT", formData);
     console.log(form);
 
     // Convert formData object to JSON object that back end will accept
     formData.forEach((value, key) => postData[key] = value);
-     let userObj = JSON.parse(localStorage.getItem('userObj'));
+    let userObj = JSON.parse(localStorage.getItem('userObj'));
     postData = {
         ...postData, //copying existing post data key values pairs ex. type and amount
         userId: userObj.userId,
         reimbursementStatus: "PENDING",
         isReimbursementSubmitted: true,
         isReimbursementResolved: false,
-        description: "Meal/Lunch",
         reimbursementReceipt: true
     }
 
@@ -118,8 +118,9 @@ viewDisapprovedReimbursementsBtn.addEventListener('click', () => {
         .then((data) => getReimbursementData(data));
 });
 
-addReimbursementsBtn.addEventListener('click', () => {
+postReimbursementsBtn.addEventListener('click', () => {
     form.classList.remove('hidden');
+    reimbursementTableContainer.classList.add("hidden");
 
 });
 

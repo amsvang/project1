@@ -83,15 +83,44 @@
 
 
 							<label for="reimbursement-desc">Description</label>
-							<textarea rows="4" cols="50" placeholder="description here" id="reimbursement-desc" name="description">TEST</textarea>
+							<textarea rows="4" cols="50" placeholder="description here" id="reimbursement-desc" name="description"></textarea>
 
 							<button id="reimbursement-submit-btn" class="btn" type="submit">submit</button>
 
 						</div>
 
 					</form>
-				</div>
+					<div>
+						<div id='user-table-container' class="user-table-container hidden">
+							<table class="u-full-width">
 
+								<thead class="user-head-columns">
+								<th>Id</th>
+								<th>Username</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Email</th>
+								<th>User Type</th>
+								</thead>
+								<tbody id="user-data-tbody">
+								<tr>
+									<td></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+
+
+
+					</div>
+
+
+				</div>
+				<div>
+					<button id="logout" class="btn" type="submit">logout</button>
+				</div>
 
 			</div>
 		</div>
