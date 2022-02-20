@@ -14,6 +14,7 @@ const rmbActions = document.getElementById('rmb-actions');
 const rmbBtn = document.getElementById('rmb-btn');
 const updateRmbBtn = document.getElementById('update-rmb-btn');
 const updateRmbFormDiv = document.getElementById('update-rmb-form-div');
+const submitRmbForm = document.getElementById('add-rmb-btn');
 const updateRmbForm = document.getElementById('update-rmb-form');
 // div buttons
 const userToggleBtn = document.getElementById('user-toggle');
@@ -30,11 +31,10 @@ const rmbItems = [];
 const a = 'DIS';
 
 //form
-updateRmbForm.addEventListener('submit', (e) => {
+submitRmbForm.addEventListener('submit', (e) => {
 	const URL = `${url}/${route}/reimbursement`;
 	const formData = new FormData(updateRmbForm); // create form data object from form element/page
 	let postData = {}; // declaring postData
-	e.preventDefault();
 
 	updateRmbForm.reset(); //clears out the form
 	console.log('SUBMIT', formData);
@@ -56,10 +56,12 @@ updateRmbForm.addEventListener('submit', (e) => {
 	console.log(postData);
 
 	fetch(URL, {
-		method: 'post',
+		method: 'put',
 		body: JSON.stringify(postData),
 		credentials: 'include',
 	}).then((result) => console.log(result.status)); //result.status tells you 201 successful or 400 error
+
+	e.preventDefault();
 });
 
 //USER-------------------------------------------------------------

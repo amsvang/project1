@@ -40,11 +40,7 @@ table img {
 
 .user-table-container {
 	background-color: transparent;
-	background: linear-gradient(
-		to right bottom,
-		rgba(255, 255, 255, 0.7),
-		rgba(255, 255, 255, 0.3)
-	);
+
 	border: 1px solid #9fa4a8;
 	border-radius: 10px;
 	margin: 10px;
@@ -118,10 +114,11 @@ table img {
 }
 
 .container {
+	background: transparent;
 	background: linear-gradient(
 		to right bottom,
-		rgba(255, 255, 255, 0.7),
-		rgba(255, 255, 255, 0.3)
+		rgba(255, 255, 255, 0.3),
+		rgba(255, 255, 255, 0.7)
 	);
 	position: absolute;
 	top: 50px;
