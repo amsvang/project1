@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+.main-div {
+	background-color: aqua;
+}
+
+.hide {
+	display: none;
+}
+
+button:focus {
+	border-bottom: red solid 3px;
+}
+
+img {
+	border-radius: 50%;
+	object-fit: cover;
+	height: 70px;
+	width: 70px;
+}

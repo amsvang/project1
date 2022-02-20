@@ -1,4 +1,8 @@
-.gradle*
-build/*
+# Default ignored files
+/shelf/
+/workspace.xml
 .idea*
+.gradle/*
+build/*
 .idea/sonarlint/issuestore/index.pb
+log.txt
