@@ -1,9 +1,0 @@
-{
-    "userId": 2,
-    "username": "AmyV",
-    "password": null,
-    "firstName": "Amy",
-    "lastName": "Vang",
-    "email": "amyv@mail.com",
-    "role": "ADMIN"
-}
