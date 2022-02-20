@@ -3,6 +3,13 @@ const route = 'login'
 const form = document.getElementById('login-form');
 
 
+let userObj = JSON.parse(localStorage.getItem('userObj'));
+if(userObj && userObj.role == "EMPLOYEE") {
+    location.replace(`${baseURL}/employee.html`);
+} else if (userObj && userObj.role == "ADMIN") {
+    location.replace(`${baseURL}/admin.html`)
+}
+
 form.addEventListener('submit', (e) => {
 	e.preventDefault(); // stops form form submitting
 

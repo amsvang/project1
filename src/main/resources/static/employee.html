@@ -25,12 +25,12 @@
 	<body>
 
 		<div class="header">
-			<h3>Hello</h3>
+			<h3>Header Space</h3>
 		</div>
 
 		<div class="container employee-container">
-			<div class="row">
-				<h1>I'm an Employee</h1>
+			<div id="welcome-user" class="row">
+				<h1 id="h1-welcome-user">I'm an Employee</h1>
 			</div>
 
 			<div class="row">
@@ -51,15 +51,15 @@
 					<table class="u-full-width">
 
 						<thead class="head-columns">
-						<th>Id</th>
-						<th>Amount</th>
-						<th>Reimbursement Status</th>
-						<th>Reimbursement Type</th>
+							<th>Id</th>
+							<th>Amount</th>
+							<th>Reimbursement Status</th>
+							<th>Reimbursement Type</th>
 						</thead>
 						<tbody id="data-tbody">
-						<tr>
-							<td></td>
-						</tr>
+							<tr>
+								<td></td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
@@ -85,38 +85,35 @@
 							<label for="reimbursement-desc">Description</label>
 							<textarea rows="4" cols="50" placeholder="description here" id="reimbursement-desc" name="description"></textarea>
 
-							<button id="reimbursement-submit-btn" class="btn" type="submit">submit</button>
+							<div>
+								<button id="reimbursement-submit-btn" class="btn" type="submit">submit</button>
+							</div>
 
 						</div>
 
 					</form>
 					<div>
 						<div id='user-table-container' class="user-table-container hidden">
+
 							<table class="u-full-width">
 
 								<thead class="user-head-columns">
-								<th>Id</th>
-								<th>Username</th>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Email</th>
-								<th>User Type</th>
+									<th></th>
+									<th>Id</th>
+									<th>Username</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Email</th>
+									<th>User Type</th>
 								</thead>
 								<tbody id="user-data-tbody">
-								<tr>
-									<td></td>
-								</tr>
+									<tr>
+										<td></td>
+									</tr>
 								</tbody>
 							</table>
 						</div>
-
-
-
-
-
 					</div>
-
-
 				</div>
 				<div>
 					<button id="logout" class="btn" type="submit">logout</button>

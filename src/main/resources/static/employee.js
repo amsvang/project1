@@ -15,10 +15,16 @@ let reimbursementTableContainer = document.getElementById('reimbursement-table-c
 let submitBtn = document.getElementById('reimbursement-submit-btn');
 let userTableContainer = document.getElementById('user-table-container');
 let userDataTbody = document.getElementById('user-data-tbody');
+let welcomeUser = document.getElementById('h1-welcome-user');
+let userObj = JSON.parse(localStorage.getItem('userObj'));
 
 
-// Gets reimbursement data from server and display on web page in a table --------------------------------------
-//Shifted to top of page because view pending and approved reimbursements could not see it.
+// checks userObj logged in otherwise route to login page
+if(!userObj) {
+    location.replace("http://localhost:7000/login.html");
+}
+welcomeUser.innerHTML = "Welcome " + userObj.firstName + " " + userObj.lastName + "!";
+
 
 getReimbursementData = (data) => {
     console.log("DATA", data);
@@ -54,6 +60,7 @@ getUserData = (data) => {
 		let userTable = document.createElement('tr');
 
 		userTable.innerHTML = `
+		<td><img src="https://randomuser.me/portraits/men/${user.userId}.jpg"></td>
 		<td>${user.userId}</td>
 		<td>${user.username}</td>
         <td>${user.firstName}</td>

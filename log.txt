@@ -3642,3 +3642,283 @@ INFO - 2022-02-19T18:18:49.320 - GET request made to: /employee/user/5
 INFO - 2022-02-19T18:18:52.431 - GET request made to: /employee/reimbursement/status/5
 INFO - 2022-02-19T18:18:56.546 - GET request made to: /employee/reimbursement/status/5
 INFO - 2022-02-19T18:18:59.493 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:27:13.656 - GET request made to: /employee.html
+INFO - 2022-02-19T18:27:13.697 - GET request made to: /employee.css
+INFO - 2022-02-19T18:27:13.698 - GET request made to: /styles.css
+INFO - 2022-02-19T18:27:13.698 - GET request made to: /employee.js
+INFO - 2022-02-19T18:27:15.307 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:29:00.305 - GET request made to: /admin.html
+INFO - 2022-02-19T18:29:00.344 - GET request made to: /admin.css
+INFO - 2022-02-19T18:29:00.349 - GET request made to: /admin.js
+INFO - 2022-02-19T18:29:04.981 - GET request made to: /admin/users
+INFO - 2022-02-19T18:29:59.260 - GET request made to: /employee.html
+INFO - 2022-02-19T18:29:59.329 - GET request made to: /employee.css
+INFO - 2022-02-19T18:29:59.330 -  - GET request made to: /styles.cssGET request made to: /employee.jsINFO - 2022-02-19T18:29:59.330 -  - GET request made to: /styles.cssGET request made to: /employee.js
+
+INFO - 2022-02-19T18:30:06.732 - GET request made to: /employee.html
+INFO - 2022-02-19T18:30:06.768 - GET request made to: /employee.css
+INFO - 2022-02-19T18:30:06.769 - GET request made to: /employee.js
+INFO - 2022-02-19T18:30:08.171 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:32:01.276 - GET request made to: /employee.html
+INFO - 2022-02-19T18:32:01.314 - GET request made to: /employee.css
+INFO - 2022-02-19T18:32:01.314 - GET request made to: /employee.js
+INFO - 2022-02-19T18:32:01.316 - GET request made to: /styles.css
+INFO - 2022-02-19T18:32:02.564 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:34:16.735 - GET request made to: /employee.html
+INFO - 2022-02-19T18:34:16.809 - GET request made to: /employee.css
+INFO - 2022-02-19T18:34:16.809 - GET request made to: /employee.js
+INFO - 2022-02-19T18:34:22.022 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:39:46.734 - GET request made to: /employee.html
+INFO - 2022-02-19T18:39:46.771 - GET request made to: /employee.css
+INFO - 2022-02-19T18:39:46.772 - GET request made to: /styles.css
+INFO - 2022-02-19T18:39:46.773 - GET request made to: /employee.js
+INFO - 2022-02-19T18:39:50.048 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:39:58.147 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T18:39:59.702 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T18:40:00.555 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T18:40:02.885 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:44:33.270 - GET request made to: /employee.html
+INFO - 2022-02-19T18:44:33.307 - GET request made to: /employee.css
+INFO - 2022-02-19T18:44:33.307 - GET request made to: /styles.css
+INFO - 2022-02-19T18:44:33.308 - GET request made to: /employee.js
+INFO - 2022-02-19T18:44:47.640 - GET request made to: /employee.html
+INFO - 2022-02-19T18:44:47.682 - GET request made to: /employee.css
+INFO - 2022-02-19T18:44:47.683 - GET request made to: /styles.css
+INFO - 2022-02-19T18:44:47.684 - GET request made to: /employee.js
+INFO - 2022-02-19T18:44:49.712 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:45:12.229 - GET request made to: /employee.html
+INFO - 2022-02-19T18:45:12.263 - GET request made to: /styles.css
+INFO - 2022-02-19T18:45:12.263 - GET request made to: /styles.css - GET request made to: /employee.js - GET request made to: /employee.css
+INFO - 2022-02-19T18:45:12.263 - GET request made to: /styles.css - GET request made to: /employee.js
+INFO - 2022-02-19T18:45:19.542 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:46:35.915 - GET request made to: /employee.html
+INFO - 2022-02-19T18:46:35.966 - GET request made to: /employee.css
+INFO - 2022-02-19T18:46:35.968 - GET request made to: /styles.css
+INFO - 2022-02-19T18:46:35.969 - GET request made to: /employee.js
+INFO - 2022-02-19T18:46:39.398 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:48:42.665 - GET request made to: /employee.html
+INFO - 2022-02-19T18:48:42.725 - GET request made to: /employee.css
+INFO - 2022-02-19T18:48:42.728 - GET request made to: /styles.css
+INFO - 2022-02-19T18:48:42.729 - GET request made to: /employee.js
+INFO - 2022-02-19T18:49:52.415 - GET request made to: /employee.html
+INFO - 2022-02-19T18:49:52.449 - GET request made to: /employee.css
+INFO - 2022-02-19T18:49:52.450 - GET request made to: /styles.css
+INFO - 2022-02-19T18:49:52.450 - GET request made to: /employee.js
+INFO - 2022-02-19T18:49:56.400 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:50:08.558 - GET request made to: /employee.html
+INFO - 2022-02-19T18:50:08.578GET request made to: /styles.css - GET request made to: /employee.cssINFO - 2022-02-19T18:50:08.578GET request made to: /styles.css - GET request made to: /employee.css
+
+INFO - 2022-02-19T18:50:08.578 - GET request made to: /employee.js
+INFO - 2022-02-19T18:50:11.207 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:50:18.693 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:51:30.981 - GET request made to: /employee.html
+INFO - 2022-02-19T18:51:31.018 - GET request made to: /employee.css
+INFO - 2022-02-19T18:51:31.019 - GET request made to: /styles.css
+INFO - 2022-02-19T18:51:31.020 - GET request made to: /employee.js
+INFO - 2022-02-19T18:51:32.198 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:52:15.529 - GET request made to: /employee.html
+INFO - 2022-02-19T18:52:15.563 - GET request made to: /employee.css
+INFO - 2022-02-19T18:52:15.564 - GET request made to: /styles.css
+INFO - 2022-02-19T18:52:15.564 - GET request made to: /employee.js
+INFO - 2022-02-19T18:52:17.716 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:52:26.562 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T18:52:28.063 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T18:52:29.569 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T18:52:31.660 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T18:52:32.922 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T18:52:36.290 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T18:53:24.277 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T18:53:26.409 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T18:53:30.396 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:53:46.721 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T18:56:53.840 - GET request made to: /employee.html
+INFO - 2022-02-19T18:56:53.881 - GET request made to: /employee.css
+INFO - 2022-02-19T18:56:53.882 - GET request made to: /styles.css
+INFO - 2022-02-19T18:56:53.882 - GET request made to: /employee.js
+INFO - 2022-02-19T18:56:56.755 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:58:38.716 - GET request made to: /employee.html
+INFO - 2022-02-19T18:58:38.758 - GET request made to: /employee.css
+INFO -  - GET request made to: /styles.css
+INFO -  - GET request made to: /styles.css2022-02-19T18:58:38.760 - GET request made to: /employee.js
+INFO - 2022-02-19T18:59:25.036 - GET request made to: /employee.html
+INFO - 2022-02-19T18:59:25.069 - GET request made to: /employee.css
+INFO - 2022-02-19T18:59:25.070 - GET request made to: /styles.css
+INFO - 2022-02-19T18:59:25.070 - GET request made to: /employee.js
+INFO - 2022-02-19T18:59:34.773 - GET request made to: /employee/user/5
+INFO - 2022-02-19T18:59:50.967 - GET request made to: /employee.html
+INFO -  - GET request made to: /styles.css
+INFO -  - GET request made to: /styles.css2022-02-19T18:59:51.004 - GET request made to: /employee.css
+INFO - 2022-02-19T18:59:51.008 - GET request made to: /employee.js
+INFO - 2022-02-19T19:00:43.265 - GET request made to: /logout
+INFO - 2022-02-19T19:00:43.288 - GET request made to: /login.html
+INFO - 2022-02-19T19:00:43.310 - GET request made to: /login.css
+INFO - 2022-02-19T19:00:43.313 - GET request made to: /login.js
+INFO - 2022-02-19T19:00:43.315 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T19:01:01.001 - POST request made to: /login
+INFO - 2022-02-19T19:01:01.022 - Logan  Attempted login
+DEBUG - 2022-02-19T19:01:02.196 - CONNECTED
+INFO - 2022-02-19T19:01:02.366 - GET request made to: /employee.html
+INFO - 2022-02-19T19:01:02.393 - GET request made to: /employee.css
+INFO - 2022-02-19T19:01:02.393 - GET request made to: /styles.css
+INFO - 2022-02-19T19:01:02.395 - GET request made to: /employee.js
+INFO - 2022-02-19T19:01:09.353 - GET request made to: /employee/user/6
+INFO - 2022-02-19T19:01:40.428 - GET request made to: /employee/reimbursement/status/6
+INFO - 2022-02-19T19:01:43.095 - GET request made to: /employee/reimbursement/status/6
+INFO - 2022-02-19T19:01:45.032 - GET request made to: /employee/reimbursement/status/6
+INFO - 2022-02-19T19:01:45.770 - GET request made to: /employee/reimbursement/status/6
+INFO - 2022-02-19T19:01:54.255 - GET request made to: /employee/user/6
+INFO - 2022-02-19T19:02:28.154 - GET request made to: /admin.html
+INFO - 2022-02-19T19:02:28.186 - GET request made to: /admin.css
+INFO - 2022-02-19T19:02:28.188 - GET request made to: /admin.js
+INFO - 2022-02-19T19:02:35.951 - GET request made to: /admin/users
+INFO - 2022-02-19T19:02:58.357 - GET request made to: /admin/reimbursement
+INFO - 2022-02-19T19:03:07.816 - GET request made to: /admin/reimbursement
+INFO - 2022-02-19T19:03:08.464 - GET request made to: /admin/users
+INFO - 2022-02-19T19:03:25.269 - GET request made to: /employee.html
+INFO - 2022-02-19T19:03:25.321 - GET request made to: /employee.css
+INFO - 2022-02-19T19:03:25.322 - GET request made to: /styles.css
+INFO - 2022-02-19T19:03:25.323 - GET request made to: /employee.js
+INFO - 2022-02-19T19:03:27.099 - GET request made to: /logout
+INFO - 2022-02-19T19:03:27.115 - GET request made to: /login.html
+INFO - 2022-02-19T19:03:27.147 - GET request made to: /login.css
+INFO - 2022-02-19T19:03:27.147 - GET request made to: /login.css - GET request made to: /styles.css - GET request made to: /login.js
+INFO - 2022-02-19T19:03:27.147 - GET request made to: /login.css - GET request made to: /styles.css - GET request made to: /login.js
+INFO - 2022-02-19T19:03:27.154 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T19:03:33.862 - GET request made to: /employee.html
+INFO - 2022-02-19T19:03:33.895 - GET request made to: /employee.css
+INFO - 2022-02-19T19:03:33.897 - GET request made to: /employee.js
+INFO - 2022-02-19T19:03:33.897 - GET request made to: /employee.js - GET request made to: /styles.css
+INFO - 2022-02-19T19:03:46.249 - GET request made to: /employee.css
+INFO - 2022-02-19T19:03:46.251 - GET request made to: /styles.css
+INFO - 2022-02-19T19:04:08.453 - GET request made to: /admin.html
+INFO - 2022-02-19T19:04:08.506 - GET request made to: /admin.css
+INFO - 2022-02-19T19:04:08.507 - GET request made to: /admin.js
+INFO - 2022-02-19T19:04:10.135 - GET request made to: /admin/users
+INFO - 2022-02-19T19:04:57.218 - GET request made to: /login.html
+INFO - 2022-02-19T19:04:57.271 - GET request made to: /styles.css
+INFO - 2022-02-19T19:04:57.273 - GET request made to: /login.css
+INFO - 2022-02-19T19:04:57.282 - GET request made to: /login.js
+INFO - 2022-02-19T19:04:57.289 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T19:05:10.267 - POST request made to: /login
+INFO - 2022-02-19T19:05:10.289 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T19:05:11.444 - CONNECTED
+INFO - 2022-02-19T19:05:11.592 - GET request made to: /employee.html
+INFO - 2022-02-19T19:05:11.614 - GET request made to: /employee.css
+INFO - 2022-02-19T19:05:11.614 - GET request made to: /employee.css - GET request made to: /styles.css
+INFO - 2022-02-19T19:05:11.615 - GET request made to: /employee.js
+INFO - 2022-02-19T19:05:13.908 - GET request made to: /employee/user/5
+INFO - 2022-02-19T19:05:22.582 - GET request made to: /admin.html
+INFO - 2022-02-19T19:05:22.636 - GET request made to: /admin.css
+INFO - 2022-02-19T19:05:22.638 - GET request made to: /admin.js
+INFO - 2022-02-19T19:05:56.391 - GET request made to: /employee.html
+INFO - 2022-02-19T19:05:56.442 - GET request made to: /employee.css
+INFO - 2022-02-19T19:05:56.444 - GET request made to: /styles.css
+INFO - 2022-02-19T19:05:56.444 - GET request made to: /employee.js
+INFO - 2022-02-19T19:05:59.591 - GET request made to: /employee/user/5
+INFO - 2022-02-19T19:06:00.172 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T19:06:00.745 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T19:06:04.869 - GET request made to: /logout
+INFO - 2022-02-19T19:06:04.893 - GET request made to: /login.html
+INFO - 2022-02-19T19:06:04.941 -  - GET request made to: /styles.cssGET request made to: /login.cssINFO - 2022-02-19T19:06:04.941 -  - GET request made to: /styles.cssGET request made to: /login.css
+
+INFO - 2022-02-19T19:06:04.942 - GET request made to: /login.js
+INFO - 2022-02-19T19:06:04.943 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T19:06:11.175 - GET request made to: /employee.html
+INFO - 2022-02-19T19:06:11.235 - GET request made to: /employee.js
+INFO - 2022-02-19T19:06:11.235 - GET request made to: /employee.js - GET request made to: /employee.css - GET request made to: /styles.css
+INFO - 2022-02-19T19:06:11.235 - GET request made to: /employee.js - GET request made to: /employee.css
+INFO - 2022-02-19T19:08:22.566 - GET request made to: /employee.html
+INFO - 2022-02-19T19:08:22.602 - GET request made to: /employee.css
+INFO - 2022-02-19T19:08:22.604 - GET request made to: /styles.css
+INFO - 2022-02-19T19:08:22.606 - GET request made to: /employee.js
+INFO - 2022-02-19T19:08:22.634 - GET request made to: /login
+INFO - 2022-02-19T19:08:40.449 - GET request made to: /login
+INFO - 2022-02-19T19:08:48.782 - GET request made to: /employee.html
+INFO - 2022-02-19T19:08:48.811 - GET request made to: /employee.css
+INFO - 2022-02-19T19:08:48.821 - GET request made to: /employee.js
+INFO - 2022-02-19T19:08:48.865 - GET request made to: /login.html
+INFO - 2022-02-19T19:08:48.892 - GET request made to: /login.js
+INFO - 2022-02-19T19:08:48.892 - GET request made to: /login.js - GET request made to: /login.cssINFO - 2022-02-19T19:08:48.892 - GET request made to: /login.js - GET request made to: /login.css - GET request made to: /styles.css
+
+INFO - 2022-02-19T19:08:48.902 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T19:09:01.548 - GET request made to: /employee.html
+INFO - 2022-02-19T19:09:01.595 - GET request made to: /employee.css
+INFO - 2022-02-19T19:09:01.596 -  - GET request made to: /styles.cssGET request made to: /employee.jsINFO - 2022-02-19T19:09:01.596 -  - GET request made to: /styles.cssGET request made to: /employee.js
+
+INFO - 2022-02-19T19:09:01.613 - GET request made to: /login.html
+INFO - INFO - 2022-02-19T19:09:01.634 - GET request made to: /styles.css
+INFO - INFO - 2022-02-19T19:09:01.634 - GET request made to: /styles.css2022-02-19T19:09:01.634 - GET request made to: /login.css
+INFO - 2022-02-19T19:09:01.634 - GET request made to: /login.js
+INFO - 2022-02-19T19:09:01.640 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T19:09:11.243 - GET request made to: /employee.html
+INFO - 2022-02-19T19:09:11.271 - GET request made to: /employee.css
+INFO - 2022-02-19T19:09:11.274 - GET request made to: /employee.js
+INFO - 2022-02-19T19:09:11.274 - GET request made to: /styles.css
+INFO - 2022-02-19T19:09:11.310 - GET request made to: /login.html
+INFO - 2022-02-19T19:09:11.339 - GET request made to: /styles.css
+INFO - 2022-02-19T19:09:11.339 - GET request made to: /styles.css - GET request made to: /login.css
+INFO - 2022-02-19T19:09:11.341 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T19:09:23.614 - POST request made to: /login
+INFO - 2022-02-19T19:09:23.638 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T19:09:24.765 - CONNECTED
+INFO - 2022-02-19T19:09:24.912 - GET request made to: /employee.html
+INFO - 2022-02-19T19:09:24.944 - GET request made to: /employee.js
+INFO - 2022-02-19T19:09:24.945 - GET request made to: /employee.css
+INFO - 2022-02-19T19:09:24.946 - GET request made to: /styles.css
+INFO - 2022-02-19T19:09:37.813 - GET request made to: /login.html
+INFO - 2022-02-19T19:09:37.863 - GET request made to: /styles.css
+INFO - 2022-02-19T19:09:37.865 - GET request made to: /login.css
+INFO - 2022-02-19T19:09:37.865 - GET request made to: /login.js
+INFO - 2022-02-19T19:09:37.869 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T19:09:44.336 - GET request made to: /employee.html
+INFO - 2022-02-19T19:09:44.388 - GET request made to: /employee.css
+INFO - 2022-02-19T19:09:44.388 - GET request made to: /employee.css - GET request made to: /styles.css
+INFO - 2022-02-19T19:09:44.390 - GET request made to: /employee.js
+INFO - 2022-02-19T19:13:01.890 - GET request made to: /login.html
+INFO - 2022-02-19T19:13:01.957 - GET request made to: /styles.css
+INFO - 2022-02-19T19:13:01.959 - GET request made to: /login.css
+INFO - 2022-02-19T19:13:01.960 - GET request made to: /login.js
+INFO - 2022-02-19T19:13:01.962 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T19:13:02.005 - GET request made to: /employee.html
+INFO - 2022-02-19T19:13:02.035 - GET request made to: /employee.css
+INFO - 2022-02-19T19:13:02.038 - GET request made to: /styles.css
+INFO - 2022-02-19T19:13:02.038 - GET request made to: /employee.js
+INFO - 2022-02-19T19:13:11.210 - GET request made to: /login.html
+INFO - 2022-02-19T19:13:11.245 - GET request made to: /styles.css
+INFO - 2022-02-19T19:13:11.247 - GET request made to: /login.js
+INFO - 2022-02-19T19:13:11.247 - GET request made to: /login.css
+INFO - 2022-02-19T19:13:11.250 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T19:13:11.281 - GET request made to: /employee.html
+INFO - 2022-02-19T19:13:11.302 - GET request made to: /styles.css
+INFO - 2022-02-19T19:13:11.302 - GET request made to: /styles.css2022-02-19T19:13:11.302 - GET request made to: /employee.css
+INFO - 2022-02-19T19:13:16.578 - GET request made to: /logout
+INFO - 2022-02-19T19:13:16.612 - GET request made to: /login.html
+INFO - 2022-02-19T19:13:16.639 - GET request made to: /styles.css
+INFO - 2022-02-19T19:13:16.642 - GET request made to: /login.css
+INFO - 2022-02-19T19:13:16.644 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T19:13:16.644 - GET request made to: /images/undraw_authentication_re_svpt.svg - GET request made to: /login.js
+INFO - 2022-02-19T19:15:28.560 - GET request made to: /login.html
+INFO - 2022-02-19T19:15:28.599 - GET request made to: /styles.css
+INFO - 2022-02-19T19:15:28.599 - GET request made to: /login.css
+INFO - 2022-02-19T19:15:28.599 - GET request made to: /login.js
+INFO - 2022-02-19T19:15:28.603 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-19T19:15:39.191 - POST request made to: /login
+INFO - 2022-02-19T19:15:39.217 - iellesmere4 Attempted login
+DEBUG - 2022-02-19T19:15:40.377 - CONNECTED
+INFO - 2022-02-19T19:15:40.547 - GET request made to: /employee.html
+INFO - 2022-02-19T19:15:40.582 - GET request made to: /styles.css
+INFO - 2022-02-19T19:15:40.582 - GET request made to: /styles.css - GET request made to: /employee.css
+INFO - 2022-02-19T19:15:40.587 - GET request made to: /employee.js
+INFO - 2022-02-19T19:15:42.308 - GET request made to: /employee/user/5
+INFO - 2022-02-19T19:15:51.203 - GET request made to: /employee/user/5
+INFO - 2022-02-19T19:16:00.192 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T19:16:02.371 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T19:16:04.173 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T19:16:12.739 - GET request made to: /employee/reimbursement/status/5
+INFO - 2022-02-19T19:16:16.136 - GET request made to: /employee/user/5
+INFO - 2022-02-19T19:16:19.278 - GET request made to: /logout
+INFO - 2022-02-19T19:16:19.295 - GET request made to: /login.html
+INFO - 2022-02-19T19:16:19.332 - GET request made to: /styles.css
+INFO - 2022-02-19T19:16:19.333 - GET request made to: /login.css
+INFO - 2022-02-19T19:16:19.336 - GET request made to: /login.js
+INFO - 2022-02-19T19:16:19.337 - GET request made to: /images/undraw_authentication_re_svpt.svg
