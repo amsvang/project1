@@ -4404,3 +4404,12 @@ INFO - 2022-02-20T08:11:54.720 - GET request made to: /admin/reimbursement
 INFO - 2022-02-20T08:12:00.725 - GET request made to: /admin/reimbursement
 INFO - 2022-02-20T08:12:20.670 - GET request made to: /admin/reimbursement
 >>>>>>> origin/niko
+INFO - 2022-02-20T12:14:31.600 - GET request made to: /login.html
+INFO - 2022-02-20T12:14:31.651 - GET request made to: /styles.css
+INFO - 2022-02-20T12:14:31.651 - GET request made to: /login.js
+INFO - 2022-02-20T12:14:31.654 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-20T12:15:18.366 - GET request made to: /login.html
+INFO - 2022-02-20T12:15:18.425 - GET request made to: /styles.css
+INFO - 2022-02-20T12:15:18.427 - GET request made to: /login.css
+INFO - 2022-02-20T12:15:18.428 - GET request made to: /login.js
+INFO - 2022-02-20T12:15:18.443 - GET request made to: /images/yellow-desk.jpg
