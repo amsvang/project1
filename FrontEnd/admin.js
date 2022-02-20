@@ -1,4 +1,4 @@
-const url = 'http://localhost:8080/';
+const url = 'http://localhost:7000/';
 const userTbody = document.getElementById('user-tbody');
 const userTableContainer = document.getElementById('user-table-container');
 const userTable = document.getElementById('user-table');
@@ -138,6 +138,8 @@ const filterRmbData = (searchTerm) => {
 		}
 	});
 };
+
+const rmbStatusFilter = document.getElementById('status');
 
 //update rmb
 

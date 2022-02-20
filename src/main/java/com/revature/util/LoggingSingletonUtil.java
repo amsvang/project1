@@ -13,7 +13,7 @@ public class LoggingSingletonUtil {
 
     private BufferedWriter fileWriter;
 
-    private boolean writeToFile = false;
+    private boolean writeToFile = true;
     private boolean writeToConsole = true;
 
     private static LoggingSingletonUtil logger;

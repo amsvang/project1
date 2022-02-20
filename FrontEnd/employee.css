@@ -1,0 +1,22 @@
+.employee-container .hidden {
+	display: none;
+}
+
+.btn-reimb-hidden {
+	background-color: light gray;
+	opacity: 0.8;
+	color: #424040;
+	border: 1px solid #e7e7e7;
+	transition-duration: 0.4s;
+}
+
+.reimbursement-form-container .hidden {
+	display: none;
+}
+
+img {
+	border-radius: 50%;
+	object-fit: cover;
+	height: 70px;
+	width: 70px;
+}

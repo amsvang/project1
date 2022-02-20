@@ -5,37 +5,60 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
-				rel="stylesheet"
-				href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-				integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-				crossorigin="anonymous"
-				referrerpolicy="no-referrer"
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
 		/>
 		<link
-				rel="stylesheet"
-				href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
 		/>
-		<link rel="stylesheet" href="styles.css">
-		<title>Document</title>
+		<link rel="stylesheet" href="employee.css" />
+		<link rel="stylesheet" href="styles.css" />
+
+		<title>Employee page</title>
 	</head>
+
 	<body>
 		<div class="header">
-				<h3>Hello</h3>
+			<h3>Header Space</h3>
 		</div>
-		<div class="container">
-			<div class="row">
-				<h1>I'm an Employee</h1>
+
+		<div class="container employee-container">
+			<div id="welcome-user" class="row">
+				<h1 id="h1-welcome-user">I'm an Employee</h1>
 			</div>
+
 			<div class="row">
-				<button id="add-reimbursement" class="btn">post reimbursement</button>
-				<button id="view-pending-reimbursements" class="btn">view Pending Reimbursements</button>
-				<button id="view-resolved-reimbursement"class="btn">View Resolved Reimbursements </button>
+				<button id="view-account-info" class="btn">View Account Info</button>
+				<button id="view-reimbursements" class="btn">
+					View Reimbursements
+				</button>
 			</div>
-			<div class="row data-container" id="data-container">
-				data table placeholder
+			<div id="reimbursement-btn-container" class="hidden">
+				<button id="post-reimbursement" class="btn-reimb-hidden">
+					Post Reimbursement
+				</button>
+				<button id="view-pending-reimbursements" class="btn-reimb-hidden">
+					View Pending Reimbursement
+				</button>
+				<button id="view-approved-reimbursements" class="btn-reimb-hidden">
+					View Approved Reimbursement
+				</button>
+				<button id="view-disapproved-reimbursements" class="btn-reimb-hidden">
+					View Disapproved Reimbursement
+				</button>
 			</div>
+
+			<hr />
+
 			<div class="row">
-				<div class="table-container">
+				<div
+					id="reimbursement-table-container"
+					class="reimbursement-table-container hidden"
+				>
 					<table class="u-full-width">
 						<thead class="head-columns">
 							<th>Id</th>
@@ -50,8 +73,75 @@
 						</tbody>
 					</table>
 				</div>
+
+				<div class="reimbursement-form-container">
+					<form id="reimbursement-form" class="hidden">
+						<div class="row">
+							<label for="reimbursement-type">Reimbursement Type</label>
+							<select
+								class="u-full-width"
+								id="reimbursement-type"
+								name="reimbursementType"
+							>
+								<option value="Option 0">PLEASE SELECT AN OPTION</option>
+								<option value="FOOD">FOOD</option>
+								<option value="TRAVEL">TRAVEL</option>
+								<option value="LODGING">LODGING</option>
+								<option value="OTHER">OTHER</option>
+							</select>
+
+							<label for="reimbursement-amount">Reimbursement Amount</label>
+							<input
+								class="u-full-width"
+								type="text"
+								placeholder="amount"
+								id="reimbursement-amount"
+								name="reimbursementAmount"
+							/>
+
+							<label for="reimbursement-desc">Description</label>
+							<textarea
+								rows="4"
+								cols="50"
+								placeholder="description here"
+								id="reimbursement-desc"
+								name="description"
+							></textarea>
+
+							<div>
+								<button id="reimbursement-submit-btn" class="btn" type="submit">
+									submit
+								</button>
+							</div>
+						</div>
+					</form>
+					<div>
+						<div id="user-table-container" class="user-table-container hidden">
+							<table class="u-full-width">
+								<thead class="user-head-columns">
+									<th></th>
+									<th>Id</th>
+									<th>Username</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Email</th>
+									<th>User Type</th>
+								</thead>
+								<tbody id="user-data-tbody">
+									<tr>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div>
+					<button id="logout" class="btn" type="submit">logout</button>
+				</div>
 			</div>
 		</div>
-	<script src="employee.js"></script>
+
+		<script src="employee.js"></script>
 	</body>
 </html>

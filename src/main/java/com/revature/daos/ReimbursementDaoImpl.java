@@ -17,7 +17,7 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
     public boolean createReimbursement(Reimbursement reimbursement) {
         String sql = "insert into project1.ers_reimbursement (users_id, reimb_type, status_type, reimb_amount, " +
                 "reimb_submitted, reimb_resolved, reimb_description, reimb_receipt) " +
-                "values (?, ?::project1.ers_reimbursement_types ,?::project1.ers_reimbursement_status, ?, ?, ?,?,?);";
+                "values (?, ?::project1.ers_reimbursement_type ,?::project1.ers_reimbursement_status, ?, ?, ?,?,?);";
 
         try (Connection conn = ConnectionUtil.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)){
@@ -64,16 +64,17 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
             ps.setBoolean(8, reimbursement.getReimbursementReceipt());
             ps.setInt(9, reimbursement.getId());
 
-            System.out.println(reimbursement.getUserId());
-            System.out.println(reimbursement.getReimbursementType().name());
-            System.out.println(reimbursement.getReimbursementStatus().name());
-            System.out.println(reimbursement.getReimbursementAmount());
-            System.out.println(reimbursement.getIsReimbursementResolved());
-            System.out.println(reimbursement.getIsReimbursementSubmitted());
-            System.out.println(reimbursement.getDescription());
-            System.out.println(reimbursement.getReimbursementReceipt());
 
-
+              //TEST
+//            System.out.println(reimbursement.getUserId());
+//            System.out.println(reimbursement.getReimbursementType().name());
+//            System.out.println(reimbursement.getReimbursementStatus().name());
+//            System.out.println(reimbursement.getReimbursementAmount());
+//            System.out.println(reimbursement.getIsReimbursementResolved());
+//            System.out.println(reimbursement.getIsReimbursementSubmitted());
+//            System.out.println(reimbursement.getDescription());
+//            System.out.println(reimbursement.getReimbursementReceipt());
+//
 
             int rowsAffected = ps.executeUpdate();
 
@@ -104,8 +105,6 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
             e.printStackTrace();
         }
         return false;
-
-
 
     }
     //*************************************************************
