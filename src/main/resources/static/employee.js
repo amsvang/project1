@@ -23,7 +23,7 @@ let userObj = JSON.parse(localStorage.getItem('userObj'));
 if(!userObj) {
     location.replace("http://localhost:7000/login.html");
 }
-welcomeUser.innerHTML = "Welcome " + userObj.firstName + " " + userObj.lastName + "!";
+welcomeUser.innerHTML = "Hello " + userObj.firstName + " " + userObj.lastName + "!";
 
 
 getReimbursementData = (data) => {
