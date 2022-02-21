@@ -21,7 +21,7 @@ let userObj = JSON.parse(localStorage.getItem('userObj'));
 
 // checks userObj logged in otherwise route to login page
 if(!userObj) {
-    location.replace("http://35.236.13.105/login.html");
+    location.replace("http://35.236.13.105:7000/login.html");
 }
 welcomeUser.innerHTML = "Hello " + userObj.firstName + " " + userObj.lastName + "!";
 
@@ -183,7 +183,7 @@ logoutBtn.addEventListener('click', () => {
     fetch(URL)
         .then(() => {
         localStorage.removeItem('userObj');
-        location.replace("http://35.236.13.105/login.html");
+        location.replace("http://35.236.13.105:7000/login.html");
         })
 })
 
