@@ -87,6 +87,28 @@ public class ReimbursementDaoImpl implements ReimbursementDAO {
         return false;
     }
     //*************************************************************
+
+    @Override
+    public boolean updateReimbursementStatus(Reimbursement reimbursement) {
+        String sql = "update project1.ERS_REIMBURSEMENT SET status_type = ?::project1.ers_reimbursement_status where id = ?;";
+
+        try (Connection c = ConnectionUtil.getConnection();
+             PreparedStatement ps = c.prepareStatement(sql)) {
+
+            ps.setString(1, reimbursement.getReimbursementStatus().name());
+            ps.setInt(2, reimbursement.getId());
+
+            int rowsAffected = ps.executeUpdate();
+
+            if(rowsAffected==1){
+                return true;
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+        return false;
+    }
+
 //delete
     @Override
     public boolean deleteReimbursement(int id) {

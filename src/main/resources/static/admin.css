@@ -2,21 +2,131 @@
 	box-sizing: border-box;
 }
 
-.main-div {
-	background-color: aqua;
+/*body {
+	background-color: #fdf86d;
+	background-image: linear-gradient(315deg, #fdf86d 0%, #bddcf1 74%);
+}*/
+
+table img {
+	border-radius: 50%;
+	object-fit: cover;
+	height: 70px;
+	width: 70px;
 }
 
 .hide {
 	display: none;
 }
 
-button:focus {
-	border-bottom: red solid 3px;
+.user-table-title {
+	padding: 10px;
+}
+.user-table-title h5 {
+	margin: 0;
+}
+.user-table {
+	padding: 20px;
 }
 
-img {
-	border-radius: 50%;
-	object-fit: cover;
-	height: 70px;
-	width: 70px;
+.rmb-table-title {
+	padding: 10px;
+}
+.rmb-table-title h5 {
+	margin: 0;
+}
+.rmb-table {
+	padding: 20px;
+}
+
+.user-table-container {
+	background-color: transparent;
+
+	border: 1px solid #9fa4a8;
+	border-radius: 10px;
+	margin: 10px;
+	position: relative;
+	overflow: hidden;
+	transition: 0.3s ease;
+}
+.rmb-table-container {
+	background-color: transparent;
+	border: 1px solid #9fa4a8;
+	border-radius: 10px;
+	margin: 10px;
+	position: relative;
+	overflow: hidden;
+	transition: 0.3s ease;
+}
+
+.button-container {
+	margin: 10px;
+}
+/* toggle buttons */
+
+#user-toggle {
+	background-color: transparent;
+	border: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+#rmb-toggle {
+	background-color: transparent;
+	border: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+#user-refresh {
+	background-color: transparent;
+	border: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 50px;
+}
+#rmb-refresh {
+	background-color: transparent;
+	border: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 50px;
+}
+
+.container {
+	background: transparent;
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.3),
+		rgba(255, 255, 255, 0.7)
+	);
+	position: absolute;
+	top: 50px;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+.update-rmb-btn {
+	color: rgb(240, 125, 125);
 }
