@@ -37,6 +37,10 @@ public class ReimbursementServices {
         return reimbursementDao.updateReimbursement(reimbursement);
     }
 
+    public boolean updateReimbursementStatus(Reimbursement reimbursement) {
+        return reimbursementDao.updateReimbursementStatus(reimbursement);
+    }
+
     public boolean deleteReimbursement(int id) {
         return reimbursementDao.deleteReimbursement(id);
     }

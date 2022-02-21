@@ -1,4 +1,6 @@
 const url = 'http://localhost:7000/';
+const route = 'admin';
+
 const userTbody = document.getElementById('user-tbody');
 const userTableContainer = document.getElementById('user-table-container');
 const userTable = document.getElementById('user-table');
@@ -12,13 +14,57 @@ const rmbActions = document.getElementById('rmb-actions');
 const rmbBtn = document.getElementById('rmb-btn');
 const updateRmbBtn = document.getElementById('update-rmb-btn');
 const updateRmbFormDiv = document.getElementById('update-rmb-form-div');
+const submitRmbForm = document.getElementById('add-rmb-btn');
+const updateRmbForm = document.getElementById('update-rmb-form');
 // div buttons
 const userToggleBtn = document.getElementById('user-toggle');
 const rmbToggleBtn = document.getElementById('rmb-toggle');
+const rmbRefresh = document.getElementById('rmb-refresh');
+const userRefresh = document.getElementById('user-refresh');
+//filter rmb buttons
+const viewPending = document.getElementById('view-pending-btn');
+const viewApproved = document.getElementById('view-approved-btn');
+const viewDenied = document.getElementById('view-disapproved-btn');
+
 const userItems = [];
 const rmbItems = [];
+const a = 'DIS';
 
-//USER-----------------------------------------------------------------
+//form
+submitRmbForm.addEventListener('submit', (e) => {
+	const URL = `${url}/${route}/reimbursement`;
+	const formData = new FormData(updateRmbForm); // create form data object from form element/page
+	let postData = {}; // declaring postData
+
+	updateRmbForm.reset(); //clears out the form
+	console.log('SUBMIT', formData);
+	console.log(form);
+
+	// Convert formData object to JSON object that back end will accept
+	formData.forEach((value, key) => (postData[key] = value)); // select/option key value pairs
+	// let userObj = JSON.parse(localStorage.getItem('userObj'));
+	postData = {
+		...postData, //copying existing post data key values pairs ex. type and amount and desc
+		userId: usernameValue, //get the id
+		reimbursementStatus: statusTypeValue,
+		reimbursementType: rmbTypeValue,
+		isReimbursementSubmitted: true,
+		isReimbursementResolved: false,
+		reimbursementReceipt: true,
+	};
+
+	console.log(postData);
+
+	fetch(URL, {
+		method: 'put',
+		body: JSON.stringify(postData),
+		credentials: 'include',
+	}).then((result) => console.log(result.status)); //result.status tells you 201 successful or 400 error
+
+	e.preventDefault();
+});
+
+//USER-------------------------------------------------------------
 
 // click button to grab user data
 userBtn.addEventListener('click', () => {
@@ -29,7 +75,7 @@ userBtn.addEventListener('click', () => {
 		.then((res) => res.json())
 		.then((data) => getUserData(data));
 });
-// add db data to user table---------------
+// add db data to user table---------------------------------------
 getUserData = (data) => {
 	for (user of data) {
 		let tr = document.createElement('tr');
@@ -40,7 +86,7 @@ getUserData = (data) => {
 			<img src="https://randomuser.me/portraits/men/${user.userId}.jpg">
 		</td>
 		<td>
-			100${user.userId}
+			100${user.userId}0
 		</td>
 		<td>
 			${user.firstName}
@@ -72,52 +118,50 @@ const filterUserData = (searchTerm) => {
 	});
 };
 
-//REIMBURSEMENTS-------------------------------------------------------
+//REIMBURSEMENTS------------------------------------------------
 
 //click to rmb button to grab rmb data
 rmbBtn.addEventListener('click', () => {
-	rmbActions.classList.remove('hide');
+	// rmbActions.classList.remove('hide');
 	rmbDataTable.classList.remove('hide');
 	console.log('clicked');
 	rmbTbody.innerHTML = '';
 	fetch(`${url}admin/reimbursement`)
 		.then((res) => res.json())
 		.then((data) => getRmbData(data));
+	console.log(rmbItems);
 });
-//add rmb data to rmb table
+//add rmb data to rmb table------------------------------------
 getRmbData = (data) => {
-	for (user of data) {
+	for (rmb of data) {
 		let tr = document.createElement('tr');
 		rmbItems.push(tr);
 
 		tr.innerHTML = `
-	<td><img src="https://randomuser.me/portraits/men/${user.userId}.jpg"></td>
-		<td>
-		100${user.userId}u
-		</td>
+			<td><img src="https://randomuser.me/portraits/men/${rmb.userId}.jpg"></td>
 			<td>
-			${user.reimbursementType}
-			
+			100${rmb.userId}0
 			</td>
 			<td>
-			${user.reimbursementStatus}
-				
-
+			${rmb.reimbursementType}
 			</td>
 			<td>
-			$${user.reimbursementAmount}0.00
+			${rmb.reimbursementStatus}
 			</td>
 			<td>
-			${user.isReimbursementSubmitted}
+			$${rmb.reimbursementAmount}0.00
 			</td>
 			<td>
-			${user.isReimbursementResolved}
+			${rmb.isReimbursementSubmitted}
 			</td>
 			<td>
-			${user.description}
+			${rmb.isReimbursementResolved}
 			</td>
 			<td>
-			${user.reimbursementReceipt}
+			${rmb.description}
+			</td>
+			<td>
+			${rmb.reimbursementReceipt}
 			</td>
         `;
 
@@ -125,7 +169,8 @@ getRmbData = (data) => {
 	}
 };
 
-//rmb data search filter
+//rmb data search filter----------------------------------
+
 const rmbFilter = document.getElementById('rmb-filter');
 rmbFilter.addEventListener('input', (e) => filterRmbData(e.target.value));
 
@@ -139,18 +184,65 @@ const filterRmbData = (searchTerm) => {
 	});
 };
 
-const rmbStatusFilter = document.getElementById('status');
-
-//update rmb
+//update rmb-------------------------------------------------
 
 updateRmbBtn.addEventListener('click', () => {
-	updateRmbFormDiv.classList.remove('hide');
+	updateRmbFormDiv.classList.toggle('hide');
 });
 
 //Button function-------------------------------------------
+
 userToggleBtn.addEventListener('click', () => {
 	userTable.classList.toggle('hide');
 });
 rmbToggleBtn.addEventListener('click', () => {
 	rmbTable.classList.toggle('hide');
 });
+
+userRefresh.addEventListener('click', () => {
+	userTbody.innerHTML = '';
+	fetch(`${url}admin/users`)
+		.then((res) => res.json())
+		.then((data) => getUserData(data));
+});
+
+rmbRefresh.addEventListener('click', () => {
+	rmbTbody.innerHTML = '';
+	fetch(`${url}admin/reimbursement`)
+		.then((res) => res.json())
+		.then((data) => getRmbData(data));
+});
+
+//rmb filter buttons
+
+const rmbStatusA = (searchTerm) => {
+	console.log('clicky');
+	rmbItems.forEach((item) => {
+		if (
+			!item.innerText.toLowerCase().includes(searchTerm.toLowerCase()) &&
+			!item.innerText.toLowerCase().includes(a.toLowerCase())
+		) {
+			item.classList.remove('hide');
+		} else {
+			item.classList.add('hide');
+		}
+	});
+};
+const rmbStatus = (searchTerm) => {
+	console.log('clicky');
+	rmbItems.forEach((item) => {
+		if (item.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
+			item.classList.remove('hide');
+		} else {
+			item.classList.add('hide');
+		}
+	});
+};
+viewPending.addEventListener('click', () => rmbStatus('PENDING'));
+viewApproved.addEventListener('click', () => rmbStatusA('PEN'));
+viewDenied.addEventListener('click', () => rmbStatus('DIS'));
+// rmb form
+
+const usernameValue = document.getElementById('username').value;
+const statusTypeValue = document.getElementById('statusType').value;
+const rmbTypeValue = document.getElementById('rmbType').value;
