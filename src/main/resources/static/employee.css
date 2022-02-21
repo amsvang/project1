@@ -40,3 +40,14 @@ img {
 	height: 70px;
 	width: 70px;
 }
+
+#logout {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 325px;
+    right: 25px;
+
+}

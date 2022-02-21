@@ -125,8 +125,21 @@ table img {
 	border: 1px solid lightgray;
 	border-radius: 10px;
 	margin: 10px;
+	margin-bottom: 60px;
 }
 
 .update-rmb-btn {
 	color: rgb(240, 125, 125);
+}
+
+#logout {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 325px;
+    right: 25px;
+
+
 }

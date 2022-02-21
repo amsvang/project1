@@ -6,8 +6,6 @@ import java.util.List;
 
 public interface ReimbursementDAO {
 
-
-
     public boolean createReimbursement(Reimbursement reimbursement);
     public boolean updateReimbursement(Reimbursement reimbursement);
     public boolean updateReimbursementStatus(Reimbursement reimbursement);
@@ -17,8 +15,5 @@ public interface ReimbursementDAO {
     public List<Reimbursement> getReimbursementsByStatus(ReimbursementStatus status);
     public List<Reimbursement> getReimbursementsByStatusAndId(ReimbursementStatus status, int id);
     public List<Reimbursement> getReimbursementsByUserId(int inputUserid);
-
-
-
 
 }

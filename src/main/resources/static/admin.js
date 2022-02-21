@@ -83,7 +83,7 @@ getUserData = (data) => {
 			<img src="https://randomuser.me/portraits/men/${user.userId}.jpg">
 		</td>
 		<td>
-			100${user.userId}0
+			${user.userId}
 		</td>
 		<td>
 			${user.firstName}

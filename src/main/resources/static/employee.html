@@ -25,7 +25,9 @@
 	<body>
 
 		<div class="header">
-			<h1></h1>
+			<div>
+				<button id="logout" class="button-primary" type="submit">logout</button>
+			</div>
 			<p></p>
 		</div>
 
@@ -35,8 +37,8 @@
 			</div>
 
 			<div class="row">
-				<button id="view-account-info" class="btn">View Account Info</button>
-				<button id="view-reimbursements" class="btn">View Reimbursements</button>
+				<button id="view-account-info" class="button-primary">View Account Info</button>
+				<button id="view-reimbursements" class="button-primary">View Reimbursements</button>
 			</div>
 			<div id="reimbursement-btn-container" class="hidden">
 				<button id="post-reimbursement" class="btn-reimb-hidden"> Post Reimbursement</button>
@@ -87,7 +89,7 @@
 							<textarea rows="4" cols="50" placeholder="description here" id="reimbursement-desc" name="description"></textarea>
 
 							<div>
-								<button id="reimbursement-submit-btn" class="btn" type="submit">submit</button>
+								<button id="reimbursement-submit-btn" class="button-primary" type="submit">submit</button>
 							</div>
 
 						</div>
@@ -116,19 +118,9 @@
 						</div>
 					</div>
 				</div>
-				<div>
-					<button id="logout" class="btn" type="submit">logout</button>
-				</div>
 
 			</div>
 		</div>
-
-
-
-
-
-
-
 
 	<script src="employee.js"></script>
 	</body>
