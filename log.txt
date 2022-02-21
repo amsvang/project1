@@ -188,7 +188,7 @@ INFO - 2022-02-10T18:01:08.632 - PUT request made to: /admin/reimbursement/9
 INFO - 2022-02-10T18:04:28.366 - GET request made to: /admin/reimbursement/9
 INFO - 2022-02-10T18:13:33.004 - GET request made to: /admin/reimbursement/users/9
 INFO - 2022-02-10T18:13:47.083 - GET request made to: /admin/reimbursement/users/5
-<<<<<<< HEAD
+
 INFO - 2022-02-13T02:58:34.135 - GET request made to: /
 INFO - 2022-02-13T02:59:03.584 - GET request made to: /users
 INFO - 2022-02-13T02:59:36.617 - GET request made to: /users
@@ -202,7 +202,7 @@ INFO - 2022-02-13T03:04:09.705 - GET request made to: /employee/reimbursement
 INFO - 2022-02-13T03:05:13.825 - GET request made to: /admin/users
 INFO - 2022-02-13T03:05:39.940 - GET request made to: /employee/users
 INFO - 2022-02-13T03:06:15.590 - GET request made to: /admin/users
-=======
+
 INFO - 2022-02-11T09:37:54.083 - POST request made to: /employee/reimbursement
 INFO - 2022-02-11T09:40:31.959 - GET request made to: /employee/reimbursement/5
 INFO - 2022-02-11T09:43:33.480 - GET request made to: /employee/reimbursement/users/2
@@ -228,7 +228,7 @@ INFO - 2022-02-12T17:37:00.647 - GET request made to: /verify
 INFO - 2022-02-12T17:41:50.139 - GET request made to: /logout
 INFO - 2022-02-12T17:42:05.792 - GET request made to: /logout
 INFO - 2022-02-12T17:42:10.610 - GET request made to: /verify
->>>>>>> origin/main
+
 INFO - 2022-02-14T20:34:17.893 - GET request made to: /admin
 INFO - 2022-02-14T20:34:36.308 - GET request made to: /admin
 INFO - 2022-02-14T20:34:50.869 - GET request made to: /admin/reimbursemenet
@@ -735,7 +735,7 @@ INFO - 2022-02-15T23:24:09.768 - GET request made to: /employee.js
 INFO - 2022-02-15T23:24:09.772 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
 INFO - 2022-02-15T23:24:11.924 - POST request made to: /login
 INFO - 2022-02-15T23:24:11.951 - iellesmere4 Attempted login
-<<<<<<< HEAD
+
 INFO - 2022-02-16T08:31:19.931 - GET request made to: /admin/users
 INFO - 2022-02-16T08:31:23.112 - GET request made to: /admin/users
 INFO - 2022-02-16T08:31:34.466 - GET request made to: /admin/users
@@ -750,7 +750,7 @@ INFO - 2022-02-16T08:49:41.667 - GET request made to: /admin/users
 INFO - 2022-02-16T08:54:03.097 - GET request made to: /admin/users
 INFO - 2022-02-16T08:54:08.280 - GET request made to: /admin/users
 INFO - 2022-02-16T08:54:36.329 - GET request made to: /admin/users
-=======
+
 INFO - 2022-02-16T07:18:38.517 - POST request made to: /login
 INFO - 2022-02-16T07:18:38.538 - iellesmere4 Attempted login
 INFO - 2022-02-16T07:18:44.514 - GET request made to: /employee/reimbursement/status/5
@@ -896,7 +896,7 @@ INFO - 2022-02-16T08:07:08.020 - GET request made to: /employee.html
 INFO - 2022-02-16T08:07:08.076 - GET request made to: /styles.css
 INFO - 2022-02-16T08:07:08.078 - GET request made to: /employee.js
 INFO - 2022-02-16T08:07:16.606 - GET request made to: /employee/reimbursement/status/5
-<<<<<<< HEAD
+
 INFO - 2022-02-16T08:11:04.822 - POST request made to: /login
 INFO - 2022-02-16T08:11:04.850 - iellesmere4 Attempted login
 INFO - 2022-02-16T08:11:12.649 - GET request made to: /employee/reimbursement/status/5
@@ -964,16 +964,13 @@ INFO - 2022-02-16T08:43:32.906 - GET request made to: /login.html
 INFO - 2022-02-16T08:43:32.954 - GET request made to: /login.js
 INFO - 2022-02-16T08:43:32.958 - GET request made to: /styles.css
 INFO - 2022-02-16T08:43:32.963 - GET request made to: /images/undraw_digital_nomad_re_w8uy.svg
-=======
->>>>>>> origin/main
-<<<<<<< HEAD
->>>>>>> origin/main
+
 INFO - 2022-02-16T09:09:59.595 - POST request made to: /login
 INFO - 2022-02-16T09:09:59.632 - iellesmere4 Attempted login
-=======
+
 INFO - 2022-02-16T09:31:15.362 - GET request made to: /admin/users
 INFO - 2022-02-16T09:33:19.211 - GET request made to: /admin/users
-<<<<<<< HEAD
+
 INFO - 2022-02-16T12:54:16.818 - GET request made to: /admin/users
 INFO - 2022-02-16T12:54:31.555 - GET request made to: /admin/users
 INFO - 2022-02-16T12:57:16.728 - GET request made to: /admin/users
@@ -1249,8 +1246,7 @@ INFO - 2022-02-17T14:02:42.567 - GET request made to: /admin/users
 INFO - 2022-02-17T14:02:45.721 - GET request made to: /admin/users
 INFO - 2022-02-17T14:02:58.645 - GET request made to: /admin/reimbursement
 INFO - 2022-02-17T14:04:58.288 - GET request made to: /admin/users
-=======
->>>>>>> origin/main
+
 INFO - 2022-02-16T10:09:49.540 - POST request made to: /login
 INFO - 2022-02-16T10:09:49.557 - iellesmere4 Attempted login
 INFO - 2022-02-16T10:15:33.494 - POST request made to: /login
@@ -1353,8 +1349,7 @@ INFO - 2022-02-17T09:58:29.817 - POST request made to: /admin/users
 INFO - 2022-02-17T09:59:35.511 - PUT request made to: /employee/user/3
 INFO - 2022-02-17T10:02:35.584 - PUT request made to: /admin/reimbursement/9
 INFO - 2022-02-17T10:05:46.933 - POST request made to: /admin/users
->>>>>>> origin/main
-<<<<<<< HEAD
+
 INFO - 2022-02-17T14:43:16.360 - POST request made to: /login
 INFO - 2022-02-17T14:43:16.372 - iellesmere4 Attempted login
 INFO - 2022-02-17T14:43:32.260 - GET request made to: /employee/reimbursement/status/5
@@ -1866,7 +1861,7 @@ INFO - 2022-02-18T08:18:37.516 - GET request made to: /employee.html
 INFO - 2022-02-18T08:18:37.583 - GET request made to: /styles.css
 INFO - 2022-02-18T08:18:37.583 - GET request made to: /employee.css
 INFO - 2022-02-18T08:18:37.584 - GET request made to: /employee.js
-=======
+
 INFO - 2022-02-17T23:09:11.173 - GET request made to: /admin/users
 INFO - 2022-02-17T23:09:21.789 - GET request made to: /admin/users
 INFO - 2022-02-17T23:09:57.077 - GET request made to: /admin/users
@@ -2071,7 +2066,7 @@ INFO - 2022-02-18T04:43:26.222 - GET request made to: /admin/users
 INFO - 2022-02-18T04:49:50.594 - GET request made to: /admin/reimbursement
 INFO - 2022-02-18T04:53:32.788 - GET request made to: /admin/users
 INFO - 2022-02-18T04:53:39.473 - GET request made to: /admin/reimbursement
-<<<<<<< HEAD
+
 INFO - 2022-02-18T09:13:42.406 - GET request made to: /admin/users
 INFO - 2022-02-18T09:14:35.159 - GET request made to: /admin/reimbursement
 INFO - 2022-02-18T09:14:49.552 - GET request made to: /admin/users
@@ -2451,8 +2446,7 @@ INFO - 2022-02-20T05:12:01.052 - GET request made to: /admin/users
 INFO - 2022-02-20T05:12:05.550 - GET request made to: /admin/reimbursement
 INFO - 2022-02-20T05:12:33.261 - GET request made to: /admin/users
 INFO - 2022-02-20T05:12:43.252 - GET request made to: /admin/reimbursement
-=======
->>>>>>> origin/main
+
 INFO - 2022-02-18T09:15:49.310 - GET request made to: /employee.html
 INFO - 2022-02-18T09:15:49.362 - GET request made to: /employee.css
 INFO - 2022-02-18T09:15:49.362 - GET request made to: /styles.css
@@ -4303,7 +4297,7 @@ INFO - 2022-02-19T19:16:19.332 - GET request made to: /styles.css
 INFO - 2022-02-19T19:16:19.333 - GET request made to: /login.css
 INFO - 2022-02-19T19:16:19.336 - GET request made to: /login.js
 INFO - 2022-02-19T19:16:19.337 - GET request made to: /images/undraw_authentication_re_svpt.svg
-<<<<<<< HEAD
+
 INFO - 2022-02-19T21:10:33.410 - GET request made to: /login.html
 INFO -  - GET request made to: /styles.css
 INFO -  - GET request made to: /styles.css2022-02-19T21:10:33.449 - GET request made to: /login.css
@@ -4380,8 +4374,7 @@ INFO - 2022-02-19T21:18:52.973 - GET request made to: /employee/reimbursement/st
 INFO - 2022-02-19T21:18:54.099 - GET request made to: /employee/reimbursement/status/6
 INFO - 2022-02-19T21:19:24.692 - GET request made to: /employee/user/6
 INFO - 2022-02-19T21:19:29.500 - GET request made to: /employee/reimbursement/status/6
-=======
->>>>>>> origin/main
+
 INFO - 2022-02-20T05:30:28.412 - GET request made to: /login.html
 INFO - 2022-02-20T05:30:28.549 - GET request made to: /styles.css
 INFO - 2022-02-20T05:30:28.673 - GET request made to: /login.css
@@ -4403,7 +4396,204 @@ INFO - 2022-02-20T08:10:20.919 - GET request made to: /admin/reimbursement
 INFO - 2022-02-20T08:11:54.720 - GET request made to: /admin/reimbursement
 INFO - 2022-02-20T08:12:00.725 - GET request made to: /admin/reimbursement
 INFO - 2022-02-20T08:12:20.670 - GET request made to: /admin/reimbursement
->>>>>>> origin/niko
+
+INFO - 2022-02-20T08:17:38.618 - GET request made to: /admin/users
+INFO - 2022-02-20T08:18:14.060 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T08:19:26.977 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T08:20:01.124 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T08:20:34.081 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T08:20:36.556 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T08:23:32.099 - GET request made to: /admin/users
+INFO - 2022-02-20T08:24:13.474 - GET request made to: /admin/users
+INFO - 2022-02-20T08:24:25.838 - GET request made to: /admin/users
+INFO - 2022-02-20T08:28:19.247 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T08:28:22.323 - GET request made to: /admin/users
+INFO - 2022-02-20T08:31:38.735 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T08:34:00.740 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T08:34:45.050 - GET request made to: /admin/users
+INFO - 2022-02-20T08:34:48.825 - GET request made to: /admin/users
+INFO - 2022-02-20T08:36:20.549 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T08:37:21.993 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T08:50:38.852 - GET request made to: /admin/users
+INFO - 2022-02-20T08:50:54.374 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T08:54:23.599 - GET request made to: /admin/users
+INFO - 2022-02-20T08:54:33.261 - GET request made to: /admin/users
+INFO - 2022-02-20T08:56:59.478 - GET request made to: /admin/users
+INFO - 2022-02-20T08:57:03.973 - GET request made to: /admin/users
+INFO - 2022-02-20T08:57:05.434 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T08:58:13.499 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:00:29.023 - GET request made to: /admin/users
+INFO - 2022-02-20T09:00:31.057 - GET request made to: /admin/users
+INFO - 2022-02-20T09:00:34.937 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:00:39.178 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:00:39.874 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:00:40.615 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:00:41.269 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:00:42.632 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:01:25.044 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:01:27.285 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:02:17.529 - GET request made to: /admin/users
+INFO - 2022-02-20T09:02:59.039 - GET request made to: /admin/users
+INFO - 2022-02-20T09:10:11.597 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:10:58.549 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:31:12.493 - GET request made to: /admin/users
+INFO - 2022-02-20T09:32:13.484 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:32:18.116 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:32:20.984 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:32:40.785 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:32:45.288 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:33:22.202 - GET request made to: /admin/users
+INFO - 2022-02-20T09:40:25.346 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:44:11.825 - GET request made to: /admin/users
+INFO - 2022-02-20T09:44:12.283 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:46:20.698 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T09:50:19.793 - GET request made to: /admin/users
+INFO - 2022-02-20T09:50:40.860 - GET request made to: /admin/users
+INFO - 2022-02-20T09:57:42.340 - GET request made to: /admin/users
+INFO - 2022-02-20T10:07:56.100 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:07:58.551 - GET request made to: //admin/reimbursements
+INFO - 2022-02-20T10:10:33.653 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:10:39.929 - GET request made to: /admin/reimbursements
+INFO - 2022-02-20T10:11:25.502 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:11:28.461 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:12:46.642 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:12:48.944 - GET request made to: /admin/reimbursement/status
+INFO - 2022-02-20T10:13:54.692 - GET request made to: /admin/reimbursement/status
+INFO - 2022-02-20T10:20:31.825 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:20:34.578 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:26:39.415 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:26:41.836 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:26:51.182 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:26:52.691 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:27:55.060 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:36:08.496 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:36:44.939 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:37:06.675 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:37:36.159 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:39:20.832 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:41:06.977 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:41:13.423 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:41:17.493 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:42:55.406 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:43:06.469 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:43:48.986 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:44:38.604 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:44:39.998 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:46:07.604 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:46:58.401 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:47:35.520 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:47:54.156 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:51:10.697 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:52:09.152 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:52:36.639 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:54:53.337 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:56:24.665 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:56:42.535 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:56:48.308 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T10:58:50.737 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:00:02.641 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:03:38.560 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:05:00.145 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:06:34.281 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:06:51.395 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:06:55.247 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:07:42.422 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:07:55.186 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:08:35.038 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:09:24.026 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:12:21.830 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:13:24.421 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:15:14.776 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:15:35.574 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:16:15.110 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:17:07.110 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:17:22.133 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:18:21.848 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:18:34.915 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:21:50.472 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:22:08.081 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:22:19.900 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:24:57.421 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:26:40.301 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:27:00.220 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:27:38.063 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:28:10.160 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:29:15.040 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:29:51.173 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:30:06.072 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:30:15.668 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:30:50.369 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:34:00.217 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:34:09.304 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:34:38.565 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:35:06.431 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:36:05.801 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:36:32.342 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:36:43.085 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:37:47.695 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:39:36.691 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:41:32.782 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:42:54.094 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:44:53.007 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:45:05.342 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:46:40.178 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:47:44.332 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:47:47.819 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:48:06.257 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:51:54.574 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:52:26.999 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:54:07.082 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:55:40.800 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:56:17.473 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:57:03.178 - GET request made to: /admin/users
+INFO - 2022-02-20T11:57:13.840 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:58:00.407 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T11:59:01.121 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:01:17.989 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:01:25.165 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:04:44.734 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:07:28.145 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:11:26.524 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:11:49.814 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:13:02.653 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:13:46.671 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:16:15.399 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:19:16.622 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:25:02.057 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:25:15.681 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:26:02.794 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:26:34.729 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:27:22.461 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:28:29.149 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:28:52.946 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:29:37.774 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:30:19.803 - GET request made to: /admin/users
+INFO - 2022-02-20T12:30:32.851 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:31:48.151 - POST request made to: /login
+INFO - 2022-02-20T12:31:48.175 -  Attempted login
+DEBUG - 2022-02-20T12:31:48.657 - CONNECTED
+INFO - 2022-02-20T12:31:59.218 - GET request made to: /logout
+INFO - 2022-02-20T12:31:59.263 - GET request made to: /login.html
+INFO - 2022-02-20T12:31:59.371 - GET request made to: /styles.css
+INFO - 2022-02-20T12:31:59.373 - GET request made to: /login.css
+INFO - 2022-02-20T12:31:59.386 - GET request made to: /login.js
+INFO - 2022-02-20T12:31:59.486 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-20T12:32:02.073 - GET request made to: /login.html
+INFO - 2022-02-20T12:32:02.138 - GET request made to: /styles.css
+INFO - 2022-02-20T12:32:02.142 - GET request made to: /login.css
+INFO - 2022-02-20T12:32:02.146 - GET request made to: /login.js
+INFO - 2022-02-20T12:32:02.182 - GET request made to: /images/undraw_authentication_re_svpt.svg
+INFO - 2022-02-20T12:39:39.030 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:39:42.383 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:40:59.059 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:44:34.357 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:44:44.970 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:45:35.250 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:54:00.536 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:55:35.608 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T12:55:36.159 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T13:02:43.827 - GET request made to: /admin/reimbursement
+
 INFO - 2022-02-20T12:14:31.600 - GET request made to: /login.html
 INFO - 2022-02-20T12:14:31.651 - GET request made to: /styles.css
 INFO - 2022-02-20T12:14:31.651 - GET request made to: /login.js
@@ -4413,6 +4603,35 @@ INFO - 2022-02-20T12:15:18.425 - GET request made to: /styles.css
 INFO - 2022-02-20T12:15:18.427 - GET request made to: /login.css
 INFO - 2022-02-20T12:15:18.428 - GET request made to: /login.js
 INFO - 2022-02-20T12:15:18.443 - GET request made to: /images/yellow-desk.jpg
+
+INFO - 2022-02-20T15:38:24.128 - GET request made to: /admin/users
+INFO - 2022-02-20T15:38:25.815 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T15:40:11.653 - GET request made to: /admin/users
+INFO - 2022-02-20T15:40:20.787 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T15:40:33.985 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T15:41:03.945 - GET request made to: /admin/users
+INFO - 2022-02-20T15:41:12.042 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T15:41:57.739 - GET request made to: /admin/users
+INFO - 2022-02-20T15:42:02.007 - GET request made to: /admin/users
+INFO - 2022-02-20T15:42:14.143 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T15:44:22.904 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T15:44:24.005 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T15:47:53.406 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T15:51:15.666 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T15:51:44.551 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T16:04:00.713 - GET request made to: /admin/reimbursement
+INFO - 2022-02-20T16:05:59.437 - GET request made to: /admin/reimbursement/2
+INFO - 2022-02-20T16:07:12.468 - PUT request made to: /admin/reimbursement/2
+INFO - 2022-02-20T16:07:30.158 - GET request made to: /admin/reimbursement/2
+INFO - 2022-02-20T16:07:52.587 - PUT request made to: /admin/reimbursement/2
+INFO - 2022-02-20T16:08:16.807 - PUT request made to: /admin/reimbursement/2
+INFO - 2022-02-20T16:37:06.226 - GET request made to: /login.html
+INFO - 2022-02-20T16:37:06.460 - GET request made to: /styles.css
+INFO - 2022-02-20T16:37:06.481 - GET request made to: /login.css
+INFO - 2022-02-20T16:37:06.486 - GET request made to: /login.js
+INFO - 2022-02-20T16:37:06.825 - GET request made to: /images/yellow-desk.jpg
+INFO - 2022-02-20T16:37:07.640 - GET request made to: /favicon.ico
+
 INFO - 2022-02-20T14:18:08.596 - GET request made to: /login.html
 INFO - 2022-02-20T14:18:08.641 - GET request made to: /styles.css
 INFO - 2022-02-20T14:18:08.641 - GET request made to: /login.js
