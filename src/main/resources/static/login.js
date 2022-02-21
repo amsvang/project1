@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:7000';
+const baseURL = 'http://35.236.13.105:7000';
 const route = 'login'
 const form = document.getElementById('login-form');
 
@@ -34,9 +34,9 @@ form.addEventListener('submit', (e) => {
             //in our local storage so we can get user reimbursement info for specific user id/status in employee.js
 
             if(data?.role == "EMPLOYEE") {
-                location.replace("http://localhost:7000/employee.html");
+                location.replace("http://35.236.13.105:7000/employee.html");
             } else if (data?.role == "ADMIN") {
-                location.replace("http://localhost:7000/admin.html");
+                location.replace("http://35.236.13.105/admin.html");
             } else {
                 alert("You are not authorized");
             }

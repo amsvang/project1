@@ -1,4 +1,4 @@
-const url = 'http://localhost:7000/';
+const url = 'http://35.236.13.105:7000/';
 const route = 'admin';
 
 const userTbody = document.getElementById('user-tbody');
@@ -254,7 +254,7 @@ logoutBtn.addEventListener('click', () => {
     fetch(URL)
         .then(() => {
         localStorage.removeItem('userObj');
-        location.replace("http://localhost:7000/login.html");
+        location.replace("http://35.236.13.105:7000/login.html");
         })
 })
 
