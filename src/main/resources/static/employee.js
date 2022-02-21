@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:7000';
+const baseURL = 'http://35.236.13.105:7000';
 const route = 'employee';
 
 const form = document.getElementById('reimbursement-form');
@@ -21,7 +21,7 @@ let userObj = JSON.parse(localStorage.getItem('userObj'));
 
 // checks userObj logged in otherwise route to login page
 if(!userObj) {
-    location.replace("http://localhost:7000/login.html");
+    location.replace("http://35.236.13.105/login.html");
 }
 welcomeUser.innerHTML = "Hello " + userObj.firstName + " " + userObj.lastName + "!";
 
@@ -183,7 +183,7 @@ logoutBtn.addEventListener('click', () => {
     fetch(URL)
         .then(() => {
         localStorage.removeItem('userObj');
-        location.replace("http://localhost:7000/login.html");
+        location.replace("http://35.236.13.105/login.html");
         })
 })
 
