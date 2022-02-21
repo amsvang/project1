@@ -41,11 +41,12 @@ submitRmbForm.addEventListener('submit', (e) => {
 	console.log(form);
 
 	// Convert formData object to JSON object that back end will accept
-	formData.forEach((value, key) => (postData[key] = value)); // select/option key value pairs
-	let userObj = JSON.parse(localStorage.getItem('userObj'));
+	formData.forEach((value, key) => (postData[key] = value)); // select/option key value pairs 
+
+	// let userObj = JSON.parse(localStorage.getItem('userObj'));
 	postData = {
 		...postData, //copying existing post data key values pairs ex. type and amount and desc
-		id: 
+
 		userId: usernameValue, //get the id
 		reimbursementStatus: statusTypeValue,
 		reimbursementType: rmbTypeValue,
@@ -153,7 +154,9 @@ getRmbData = (data) => {
 			${rmb.reimbursementStatus}
 			</td>
 			<td>
+
 			$${rmb.reimbursementAmount}
+
 			</td>
 			<td>
 			${rmb.isReimbursementSubmitted}

@@ -37,6 +37,7 @@ public class JavalinApp {
                     get(reimbursementController::handleGetAllReimbursementByStatus);
                     path("{id}",()->{
                         get(reimbursementController::handleGetAllReimbursementByStatusAndId);
+                        put(reimbursementController::handleUpdateStatus);
                     });
                 });
                 path("{id}",()->{

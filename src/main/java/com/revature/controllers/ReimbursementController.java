@@ -73,6 +73,21 @@ public class ReimbursementController {
         }
     }
 
+    public void handleUpdateStatus(Context ctx) {
+        String idParam = ctx.pathParam("id");
+        Reimbursement reimbursementToUpdate = ctx.bodyAsClass(Reimbursement.class);
+        int idToUpdate = Integer.parseInt(idParam);
+        reimbursementToUpdate.setId(idToUpdate);
+
+        boolean success = reimbursementService.updateReimbursementStatus(reimbursementToUpdate);
+
+        if (success) {
+            ctx.status(200);
+        } else {
+            ctx.status(400);
+        }
+    }
+
     public void handleDelete(Context ctx) {
         String idParam = ctx.pathParam("id");
         int id = Integer.parseInt(idParam);
