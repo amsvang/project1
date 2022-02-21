@@ -1,8 +1,6 @@
 
 j
 :src/main/java/com/revature/controllers/UserController.java,3\3\33768bacf3381e61332680f8bd1e89d9a381ca67
-7
-log.txt,8\9\89dbeb08d7aa865d748d706c1d17ee94f6f82ba7
 Z
 *src/main/java/com/revature/model/User.java,5\f\5fcc915fdbcbc6d8ffe71f2816a056937af9f7d9
 \
