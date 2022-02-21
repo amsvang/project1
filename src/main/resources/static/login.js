@@ -36,7 +36,7 @@ form.addEventListener('submit', (e) => {
             if(data?.role == "EMPLOYEE") {
                 location.replace("http://35.236.13.105:7000/employee.html");
             } else if (data?.role == "ADMIN") {
-                location.replace("http://35.236.13.105/admin.html");
+                location.replace("http://35.236.13.105:7000/admin.html");
             } else {
                 alert("You are not authorized");
             }
