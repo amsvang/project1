@@ -42,9 +42,10 @@ submitRmbForm.addEventListener('submit', (e) => {
 
 	// Convert formData object to JSON object that back end will accept
 	formData.forEach((value, key) => (postData[key] = value)); // select/option key value pairs
-	// let userObj = JSON.parse(localStorage.getItem('userObj'));
+	let userObj = JSON.parse(localStorage.getItem('userObj'));
 	postData = {
 		...postData, //copying existing post data key values pairs ex. type and amount and desc
+		id: 
 		userId: usernameValue, //get the id
 		reimbursementStatus: statusTypeValue,
 		reimbursementType: rmbTypeValue,
@@ -126,7 +127,7 @@ rmbBtn.addEventListener('click', () => {
 	rmbDataTable.classList.remove('hide');
 	console.log('clicked');
 	rmbTbody.innerHTML = '';
-	fetch(`${url}admin/reimbursement`)
+	fetch(`${url}admin/reimbursement/status/1`)
 		.then((res) => res.json())
 		.then((data) => getRmbData(data));
 	console.log(rmbItems);
@@ -140,7 +141,10 @@ getRmbData = (data) => {
 		tr.innerHTML = `
 			<td><img src="https://randomuser.me/portraits/men/${rmb.userId}.jpg"></td>
 			<td>
-			100${rmb.userId}0
+			${rmb.id}
+			</td>
+			<td>
+			${rmb.userId}
 			</td>
 			<td>
 			${rmb.reimbursementType}
@@ -149,7 +153,7 @@ getRmbData = (data) => {
 			${rmb.reimbursementStatus}
 			</td>
 			<td>
-			$${rmb.reimbursementAmount}0.00
+			$${rmb.reimbursementAmount}
 			</td>
 			<td>
 			${rmb.isReimbursementSubmitted}
