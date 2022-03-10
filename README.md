@@ -45,6 +45,8 @@ Niko Garalde:
  - Expense html page and functionality
 
 Amy Vang:
+
   -User Model, DAO, Service, and Controller
   - Webpage Design and Styling
   - User html page and fuctionality
+  - Pipeline
