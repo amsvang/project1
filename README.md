@@ -37,7 +37,7 @@ User
 Niko Garalde
 Amy Vang
 
-Roles & Responsibilities
+**Roles & Responsibilities**
 
 Niko Garalde:
  - Expense Model, DAO, Service, and Controller
