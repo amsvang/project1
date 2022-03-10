@@ -34,8 +34,8 @@ User
 
 **Contributors**
 
-Niko Garalde
-Amy Vang
+- Niko Garalde
+- Amy Vang
 
 **Roles & Responsibilities**
 
